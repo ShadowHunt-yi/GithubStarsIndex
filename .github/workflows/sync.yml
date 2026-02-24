@@ -1,0 +1,84 @@
+name: 🌟 GitHub Stars 知识库同步
+
+on:
+  # ── 定时触发 ──────────────────────────────────────────────
+  # 修改下方 cron 表达式以自定义执行频率（UTC 时间）
+  # 示例:
+  #   "0 2 * * 1"   → 每周一 UTC 02:00（北京时间 10:00）
+  #   "0 18 * * *"  → 每天 UTC 18:00（北京时间次日 02:00）
+  #   "0 2 1 * *"   → 每月 1 日 UTC 02:00
+  # cron 在线生成器: https://crontab.guru
+  schedule:
+    - cron: "0 2 * * 1"   # ← 在此修改你的定时频率
+
+  # ── 手动触发 ──────────────────────────────────────────────
+  workflow_dispatch:
+    inputs:
+      force_rebuild:
+        description: "强制重新生成所有摘要（清空 .processed 记录）"
+        required: false
+        default: "false"
+        type: choice
+        options:
+          - "false"
+          - "true"
+
+permissions:
+  contents: write   # 允许 Action 提交文件到本仓库
+
+jobs:
+  sync:
+    name: 抓取 Stars 并生成摘要
+    runs-on: ubuntu-latest
+    timeout-minutes: 120   # 超时保护（Stars 较多时可能耗时长）
+
+    steps:
+      # ── 1. 检出代码 ───────────────────────────────────────
+      - name: Checkout 仓库
+        uses: actions/checkout@v4
+
+      # ── 2. 设置 Python 环境 ───────────────────────────────
+      - name: 设置 Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      # ── 3. 安装依赖 ───────────────────────────────────────
+      - name: 安装依赖
+        run: pip install -r requirements.txt
+
+      # ── 4. 可选：强制重置已处理记录 ──────────────────────
+      - name: 重置已处理记录（仅在 force_rebuild=true 时执行）
+        if: github.event.inputs.force_rebuild == 'true'
+        run: |
+          echo "⚠️ 强制重建模式：清空 .processed"
+          rm -f .processed
+
+      # ── 5. 执行同步脚本 ───────────────────────────────────
+      - name: 同步 GitHub Stars
+        env:
+          # ── Secrets（机密，加密保存）──
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}    # Actions 自动注入，无需手动添加
+          AI_API_KEY: ${{ secrets.AI_API_KEY }}        # AI API Key
+          VAULT_PAT: ${{ secrets.VAULT_PAT }}          # Vault 仓库写权限 PAT（Vault 同步时必填）
+
+          # ── Variables（非机密，明文，在 Settings → Variables 中配置）──
+          GH_USERNAME: ${{ vars.GH_USERNAME }}         # 要抓取 Stars 的 GitHub 用户名
+          AI_BASE_URL: ${{ vars.AI_BASE_URL }}         # AI 接口地址
+          AI_MODEL: ${{ vars.AI_MODEL }}               # 模型名（可留空，用 config.yml 默认值）
+          VAULT_SYNC_ENABLED: ${{ vars.VAULT_SYNC_ENABLED }}  # 是否启用 Vault 同步（true/false）
+          VAULT_REPO: ${{ vars.VAULT_REPO }}           # Vault 仓库（owner/repo 格式）
+          VAULT_FILE_PATH: ${{ vars.VAULT_FILE_PATH }} # stars.md 在 Vault 中的路径
+        run: python scripts/sync_stars.py
+
+      # ── 6. 提交变更到本仓库 ───────────────────────────────
+      - name: 提交并推送变更
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add stars.md .processed
+          # 如果没有变化则跳过 commit（避免空提交报错）
+          git diff --staged --quiet && echo "✅ 无新内容，跳过提交" || \
+            git commit -m "🤖 自动更新 GitHub Stars 摘要 [$(date -u '+%Y-%m-%d %H:%M UTC')]"
+          git push
