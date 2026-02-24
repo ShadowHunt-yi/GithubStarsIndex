@@ -15,10 +15,12 @@
 ## 功能特性
 
 - 🤖 自动抓取 GitHub 账号 Star 的全部仓库
-- 📝 为每个仓库读取 README，调用 AI 生成**摘要**
-- ⏭️ 增量更新，已处理的仓库**自动跳过**，不重复消耗 API
+- 📝 为每个仓库读取 README，调用 AI 生成内容摘要和技术标签
+- 🗃️ **数据驱动**：所有信息存储为 `data/stars.json`，支持二次开发
+- 🎨 **模版驱动**：使用 Jinja2 模版生成 Markdown（未来可扩展 HTML）
+- ⏭️ 增量更新，已处理项目状态保存在 JSON 中，避免重复消耗 API
 - ⏰ GitHub Actions **定时自动运行**，cron 表达式自由配置
-- 🔄 可选：自动将 `stars.md` **推送到 Obsidian Vault 仓库**
+- 🔄 可选：自动将生成的 `stars.md` **推送到 Obsidian Vault 仓库**
 - 🌐 支持任意 **OpenAI 格式兼容接口**（OpenAI / Azure / 本地 Ollama 等）
 
 ---
@@ -143,10 +145,11 @@ python scripts/sync_stars.py
 
 ## 文件说明
 
-| 文件                         | 说明                           |
-| ---------------------------- | ------------------------------ |
-| `config.yml`                 | 主配置文件（非敏感配置）       |
-| `stars.md`                   | 自动生成的 Stars 知识库文档    |
-| `.processed`                 | 已处理 repo 列表（防重复处理） |
-| `scripts/sync_stars.py`      | 核心同步脚本                   |
-| `.github/workflows/sync.yml` | GitHub Actions 定时工作流      |
+| 文件                         | 说明                                 |
+| ---------------------------- | ------------------------------------ |
+| `config.yml`                 | 主配置文件（非敏感配置）             |
+| `data/stars.json`            | **核心数据集**（抓取的全量项目数据） |
+| `templates/stars.md.j2`      | Markdown 生成模版                    |
+| `stars.md`                   | 自动生成的 Stars 知识库文档          |
+| `scripts/sync_stars.py`      | 核心同步与生成脚本                   |
+| `.github/workflows/sync.yml` | GitHub Actions 定时工作流            |

@@ -15,7 +15,7 @@ on:
   workflow_dispatch:
     inputs:
       force_rebuild:
-        description: "强制重新生成所有摘要（清空 .processed 记录）"
+        description: "强制重新生成所有摘要（重建 JSON 数据集）"
         required: false
         default: "false"
         type: choice
@@ -48,12 +48,12 @@ jobs:
       - name: 安装依赖
         run: pip install -r requirements.txt
 
-      # ── 4. 可选：强制重置已处理记录 ──────────────────────
-      - name: 重置已处理记录（仅在 force_rebuild=true 时执行）
+      # ── 4. 可选：强制重置数据集 ──────────────────────
+      - name: 重置数据集（仅在 force_rebuild=true 时执行）
         if: github.event.inputs.force_rebuild == 'true'
         run: |
-          echo "⚠️ 强制重建模式：清空 .processed"
-          rm -f .processed
+          echo "⚠️ 强制重建模式：删除现有数据"
+          rm -rf data/stars.json .processed
 
       # ── 5. 执行同步脚本 ───────────────────────────────────
       - name: 同步 GitHub Stars
@@ -77,7 +77,9 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add stars.md .processed
+          git add stars.md data/stars.json .processed || true
+          # 若文件不存在则跳过，git add 不会报错提示
+          
           # 如果没有变化则跳过 commit（避免空提交报错）
           git diff --staged --quiet && echo "✅ 无新内容，跳过提交" || \
             git commit -m "🤖 自动更新 GitHub Stars 摘要 [$(date -u '+%Y-%m-%d %H:%M UTC')]"

@@ -1,0 +1,29 @@
+# ⭐ GitHub Stars 知识库
+
+> 🤖 由 [GitHubStarIndex](https://github.com/iblogc/GithubStarIndex) 自动生成 · 最后更新：{{ last_updated }} · 共 **{{ repos|length }}** 个项目
+
+---
+
+## 📑 目录
+
+{% for repo in repos -%}
+- [{{ repo.full_name }}](#{{ repo.full_name | lower | replace('/', '') | replace('.', '') }})
+{% endfor %}
+
+---
+
+{% for repo in repos %}
+### {{ repo.full_name }}
+⭐ **{{ "{:,}".format(repo.stars) }}** · **{{ repo.language }}** · **{{ repo.updated_at }}** | [🔗 GitHub核心]({{ repo.url }}){% if repo.homepage %} | [🌐 官网]({{ repo.homepage }}){% endif %}
+> 🤖 **AI 摘要**: {{ repo.summary.zh }}
+{% set ai_tags = repo.summary.tags or [] %}
+{% set topics = repo.topics or [] %}
+{% if ai_tags or topics %}
+> 🏷️ {% for t in ai_tags %}`#{{ t }}` {% endfor %}{% for t in topics[:5] %}`#{{ t }}` {% endfor %}
+{% endif %}
+{% if repo.description %}
+> *📝 {{ repo.description | trim }}*
+{% endif %}
+
+---
+{% endfor %}
