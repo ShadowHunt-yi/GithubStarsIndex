@@ -25,6 +25,10 @@ import requests
 import yaml
 from openai import OpenAI
 from jinja2 import Environment, FileSystemLoader
+from dotenv import load_dotenv
+
+# 加载本地 .env 文件
+load_dotenv(override=True)
 
 # ── 日志配置 ─────────────────────────────────────────────
 logging.basicConfig(
@@ -98,8 +102,12 @@ def load_config() -> dict:
     cfg["pages_sync"] = pages
 
     # 测试限制（可选）
-    test_limit = os.environ.get("TEST_LIMIT", "")
-    cfg["test_limit"] = int(test_limit) if test_limit.isdigit() else None
+    test_limit = os.environ.get("TEST_LIMIT", "").strip()
+    if test_limit.isdigit():
+        cfg["test_limit"] = int(test_limit)
+        log.info(f"📍 测试模式已开启，限制处理项目数: {cfg['test_limit']}")
+    else:
+        cfg["test_limit"] = None
 
     # 并发控制
     concurrency = os.environ.get("MAX_CONCURRENCY", "")
@@ -287,12 +295,16 @@ class AISummarizer:
         context = f"Repo: {repo_name}\nDesc: {description}\n\nREADME:\n{readme}"
         prompt = """你是一个技术文档分析专家。请根据 GitHub 仓库信息生成：
 1. 专业的**中文摘要**（100字以内），描述核心功能、场景和亮点
-2. **关键词标签**（5-8个）
+2. 专业的**英文摘要**（100字以内）
+3. **中文关键词标签**（5-8个）
+4. **英文关键词标签**（5-8个）
 
 输出 JSON 格式：
 {
-  "zh": "摘要内容",
-  "tags": ["tag1", "tag2"]
+  "zh": "中文摘要",
+  "en": "English summary",
+  "tags_zh": ["标签1", "标签2"],
+  "tags_en": ["tag1", "tag2"]
 }"""
         for attempt in range(self.retry):
             try:
@@ -305,11 +317,20 @@ class AISummarizer:
                     temperature=0.3,
                     response_format={"type": "json_object"},
                 )
-                return json.loads(resp.choices[0].message.content)
+                data = json.loads(resp.choices[0].message.content)
+                # 兼容旧版本结构
+                if "tags" in data and "tags_zh" not in data:
+                    data["tags_zh"] = data["tags"]
+                return data
             except Exception as e:
                 if attempt == self.retry - 1:
                     log.error(f"AI 生成失败 [{repo_name}]: {e}")
-                    return {"zh": "生成失败", "tags": []}
+                    return {
+                        "zh": "生成失败",
+                        "en": "Generation failed",
+                        "tags_zh": [],
+                        "tags_en": [],
+                    }
                 log.warning(f"AI 重试 {attempt + 1}...")
                 time.sleep(2**attempt)
 
@@ -325,6 +346,10 @@ class TemplateGenerator:
             loader=FileSystemLoader(str(template_dir)),
             trim_blocks=True,
             lstrip_blocks=True,
+        )
+        # 添加简单的 JS 转义过滤器
+        self.env.filters["escapejs"] = (
+            lambda x: x.replace("'", "\\'").replace('"', '\\"').replace("\n", "\\n")
         )
 
     def render(self, template_name: str, context: dict) -> str:
@@ -368,13 +393,22 @@ def main():
             continue
 
         existing = store.get_repo(full_name)
-        if not existing:
+
+        # 检查是否需要处理：如果不存在，或者摘要数据缺失/无效
+        is_processed = False
+        if existing:
+            summ = existing.get("summary", {})
+            # 只有当摘要存在、且不是默认的失败信息时，才视为已处理
+            if summ and summ.get("zh") and "生成失败" not in summ.get("zh"):
+                is_processed = True
+
+        if not is_processed:
             if test_limit is not None and len(new_repos_to_process) >= test_limit:
                 continue
             new_repos_to_process.append(repo)
             seen_full_names.add(full_name)
         else:
-            # 更新元数据信息（Stars 数等）但保留旧摘要
+            # 更新元数据信息（Stars 数等）但保留已有摘要
             existing["metadata"] = repo
             seen_full_names.add(full_name)
 
@@ -413,31 +447,82 @@ def main():
     for r_meta in all_repos:
         entry = store.get_repo(r_meta["full_name"])
         if entry:
+            # 确保 summary 格式正确，防止旧数据或空数据导致模版崩溃
+            summary = entry.get("summary") or {}
+            if not isinstance(summary, dict):
+                summary = {"zh": str(summary), "tags": []}
+
+            # 补全缺失字段
+            summary.setdefault("zh", "暂无摘要")
+            summary.setdefault("en", summary.get("zh", "No summary available"))
+            summary.setdefault("tags_zh", summary.get("tags", []))
+            summary.setdefault("tags_en", summary.get("tags", []))
+
             # 合并展示需要的数据
-            view_data = {**entry["metadata"], "summary": entry["summary"]}
+            view_data = {**entry["metadata"], "summary": summary}
             ordered_repos.append(view_data)
 
-    # 4. 渲染 Markdown
+    # 4. 统计语言分布 (取前 5)
+    lang_stats = {}
+    for r in ordered_repos:
+        lang = r.get("language")
+        if lang:
+            lang_stats[lang] = lang_stats.get(lang, 0) + 1
+
+    # 转换为排序后的列表: [{"name": "Python", "count": 10}, ...]
+    top_langs = sorted(
+        [{"name": k, "count": v} for k, v in lang_stats.items()],
+        key=lambda x: x["count"],
+        reverse=True,
+    )[:5]
+
+    # 5. 渲染 Markdown (多语言版本)
     context = {
         "last_updated": store.data["last_updated"],
         "repos": ordered_repos,
+        "top_langs": top_langs,
     }
+    langs = ["zh", "en"]
+    generated_mds = {}
 
-    output_md_path = SCRIPT_DIR / cfg["output"].get("file_path", "stars.md")
-    md_content = generator.render(DEFAULT_MD_TEMPLATE, context)
-    output_md_path.write_text(md_content, encoding="utf-8")
-    log.info(f"✅ Markdown 生成完成: {output_md_path}")
+    # 确保 dist 目录存在
+    dist_dir = SCRIPT_DIR / "dist"
+    dist_dir.mkdir(exist_ok=True)
+
+    for lang in langs:
+        lang_context = {**context, "current_lang": lang}
+        base_name = cfg["output"].get("file_path", "stars.md")
+        if base_name.endswith(".md"):
+            output_name = f"{base_name[:-3]}_{lang}.md"
+        else:
+            output_name = f"{base_name}_{lang}"
+
+        # 直接写入 dist 目录
+        output_md_path = dist_dir / output_name
+        md_content = generator.render(DEFAULT_MD_TEMPLATE, lang_context)
+        output_md_path.write_text(md_content, encoding="utf-8")
+        generated_mds[lang] = {"path": output_md_path, "content": md_content}
+        log.info(f"✅ Markdown ({lang}) 生成完成: {output_md_path}")
 
     # 5. 可选：Vault 同步
     v_cfg = cfg.get("vault_sync", {})
     if v_cfg.get("enabled"):
-        gh.push_file(
-            v_cfg["repo"],
-            v_cfg.get("file_path", "stars.md"),
-            md_content,
-            v_cfg.get("commit_message", "automated update"),
-            v_cfg["pat"],
-        )
+        for lang, data in generated_mds.items():
+            base_vault_path = v_cfg.get("file_path") or v_cfg.get(
+                "default_file_path", "stars.md"
+            )
+            if base_vault_path.endswith(".md"):
+                vault_path = f"{base_vault_path[:-3]}_{lang}.md"
+            else:
+                vault_path = f"{base_vault_path}_{lang}"
+
+            gh.push_file(
+                v_cfg["repo"],
+                vault_path,
+                data["content"],
+                v_cfg.get("commit_message", "automated update"),
+                v_cfg["pat"],
+            )
 
     # 6. 可选：GitHub Pages 生成
     p_cfg = cfg.get("pages_sync", {})

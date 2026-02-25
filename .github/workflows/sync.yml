@@ -79,13 +79,11 @@ jobs:
           PAGES_SYNC_ENABLED: ${{ vars.PAGES_SYNC_ENABLED }} # 是否启用 Pages 同步
         run: python scripts/sync_stars.py
 
-      # ── 6. 提交变更到本仓库 ───────────────────────────────
       - name: 提交并推送变更
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add stars.md data/stars.json || true
-          # 若文件存在则跳过，git add 不会报错提示
+          git add data/stars.json
           
           # 如果没有变化则跳过 commit（避免空提交报错）
           git diff --staged --quiet && echo "✅ 无新内容，跳过提交" || \

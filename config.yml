@@ -33,7 +33,7 @@ ai:
   max_retries: 3
 
   # 并发生成摘要的线程数
-  concurrency: 5
+  concurrency: 3
 
 # ── 输出配置 ─────────────────────────────────────────────
 output:
@@ -61,13 +61,3 @@ pages_sync:
   file_name: "index.html"
   # HTML 模板文件
   template: "index.html.j2"
-
-# ── 定时调度配置 ──────────────────────────────────────────
-# 注意：cron 表达式需要同步修改到 .github/workflows/sync.yml 中的
-# schedule.cron 字段，此处仅作记录和文档用途。
-# 格式说明（UTC 时间）：
-#   "0 2 * * 1"   → 每周一 UTC 02:00（北京时间 10:00）
-#   "0 18 * * *"  → 每天 UTC 18:00（北京时间次日 02:00）
-#   "0 2 1 * *"   → 每月 1 日 UTC 02:00
-schedule:
-  cron: "0 2 * * 1"

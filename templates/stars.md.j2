@@ -17,11 +17,16 @@
 > [!info]
 > ⭐ {{ "{:,}".format(repo.stars) }} · {{ repo.language or "Unknown" }} · {{ repo.updated_at }}  
 > [GitHub]({{ repo.url }}){% if repo.homepage %} · [Website]({{ repo.homepage }}){% endif %}  
-{% set ai_tags = repo.summary.tags or [] %}
+{% if current_lang == 'en' %}
+{% set ai_tags = repo.summary.tags_en or [] %}
+{% else %}
+{% set ai_tags = repo.summary.tags_zh or repo.summary.tags or [] %}
+{% endif %}
 {% set topics = repo.topics or [] %}
+
 > {% for t in ai_tags %}`#{{ t }}` {% endfor %}{% for t in topics %}`#{{ t }}` {% endfor %}
 >
-> {{ repo.summary.zh | trim }}
+> {{ repo.summary[current_lang] if repo.summary[current_lang] else repo.summary.zh }}
 {% if repo.description %}
 
 > <sub>{{ repo.description | trim }}</sub>
