@@ -76,6 +76,7 @@ jobs:
           VAULT_REPO: ${{ vars.VAULT_REPO }}           # Vault 仓库（owner/repo 格式）
           VAULT_FILE_PATH: ${{ vars.VAULT_FILE_PATH }} # stars.md 在 Vault 中的路径
           TEST_LIMIT: ${{ github.event.inputs.test_limit }} # 手动触发时的测试限制量
+          PAGES_SYNC_ENABLED: ${{ vars.PAGES_SYNC_ENABLED }} # 是否启用 Pages 同步
         run: python scripts/sync_stars.py
 
       # ── 6. 提交变更到本仓库 ───────────────────────────────
@@ -84,9 +85,18 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add stars.md data/stars.json .processed || true
-          # 若文件不存在则跳过，git add 不会报错提示
+          # 若文件存在则跳过，git add 不会报错提示
           
           # 如果没有变化则跳过 commit（避免空提交报错）
           git diff --staged --quiet && echo "✅ 无新内容，跳过提交" || \
             git commit -m "🤖 自动更新 GitHub Stars 摘要 [$(date -u '+%Y-%m-%d %H:%M UTC')]"
           git push
+
+      # ── 7. 部署到 GitHub Pages ─────────────────────────────
+      - name: 部署到 GitHub Pages
+        if: vars.PAGES_SYNC_ENABLED == 'true'
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: dist           # 同步 dist 文件夹的内容
+          branch: gh-pages      # 目标分支
+          clean: true           # 保持分支整洁

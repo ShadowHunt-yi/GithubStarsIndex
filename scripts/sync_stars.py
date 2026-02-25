@@ -82,13 +82,14 @@ def load_config() -> dict:
     vault = cfg.get("vault_sync", {})
     if os.environ.get("VAULT_SYNC_ENABLED", "").lower() == "true":
         vault["enabled"] = True
-    if os.environ.get("VAULT_REPO"):
-        vault["repo"] = os.environ["VAULT_REPO"]
-    if os.environ.get("VAULT_FILE_PATH"):
-        vault["file_path"] = os.environ["VAULT_FILE_PATH"]
-    if os.environ.get("VAULT_PAT"):
-        vault["pat"] = os.environ["VAULT_PAT"]
     cfg["vault_sync"] = vault
+
+    pages = cfg.get("pages_sync", {})
+    if os.environ.get("PAGES_SYNC_ENABLED", "").lower() == "true":
+        pages["enabled"] = True
+    else:
+        pages["enabled"] = False
+    cfg["pages_sync"] = pages
 
     # 测试限制（可选）
     test_limit = os.environ.get("TEST_LIMIT", "")
@@ -431,6 +432,22 @@ def main():
             v_cfg.get("commit_message", "automated update"),
             v_cfg["pat"],
         )
+
+    # 6. 可选：GitHub Pages 生成
+    p_cfg = cfg.get("pages_sync", {})
+    if p_cfg.get("enabled"):
+        try:
+            out_dir = SCRIPT_DIR / p_cfg.get("output_dir", "dist")
+            out_dir.mkdir(exist_ok=True)
+
+            html_template = p_cfg.get("template", "index.html.j2")
+            html_content = generator.render(html_template, context)
+
+            html_path = out_dir / p_cfg.get("file_name", "index.html")
+            html_path.write_text(html_content, encoding="utf-8")
+            log.info(f"✅ HTML 生成完成: {html_path}")
+        except Exception as e:
+            log.error(f"❌ HTML 生成失败: {e}")
 
     log.info("同步任务结束")
 

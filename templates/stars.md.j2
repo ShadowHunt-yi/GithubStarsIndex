@@ -20,7 +20,7 @@
 {% set ai_tags = repo.summary.tags or [] %}
 {% set topics = repo.topics or [] %}
 > {% for t in ai_tags %}`#{{ t }}` {% endfor %}{% for t in topics %}`#{{ t }}` {% endfor %}
-
+>
 > {{ repo.summary.zh | trim }}
 {% if repo.description %}
 

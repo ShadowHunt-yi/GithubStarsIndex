@@ -18,11 +18,12 @@
 - 📝 为每个仓库读取 README，调用 AI 生成内容摘要和技术标签
 - ⚡️ **高效率**：支持**并发调用** AI 接口，大幅提升处理大量新项目时的速度
 - 🗃️ **数据驱动**：所有信息存储为 `data/stars.json`，支持二次开发
-- 🎨 **模版驱动**：使用 Jinja2 模版生成 Markdown（未来可扩展 HTML）
+- 🎨 **模版驱动**：使用 Jinja2 模版生成 Markdown 和 HTML 静态页面
 - ⏭️ 增量更新，已处理项目状态保存在 JSON 中，避免重复消耗 API
 - ⏰ GitHub Actions **定时自动运行**，cron 表达式自由配置
 - 🔄 可选：自动将生成的 `stars.md` **推送到 Obsidian Vault 仓库**
-- 🌐 支持任意 **OpenAI 格式兼容接口**（OpenAI / Azure / 本地 Ollama 等）
+- 🌐 可选：自动同步到 **GitHub Pages** 分支，支持前端交互搜索
+- 💻 支持任意 **OpenAI 格式兼容接口**（OpenAI / Azure / 本地 Ollama 等）
 
 ---
 
@@ -56,6 +57,7 @@
 | `VAULT_SYNC_ENABLED` | 是否启用同步到 Vault 仓库，填 `true` 开启                      | ❌    |
 | `VAULT_REPO`         | Vault 仓库（`owner/repo-name` 格式）                           | ❌    |
 | `VAULT_FILE_PATH`    | `stars.md` 在 Vault 仓库中的路径，默认 `GitHub-Stars/stars.md` | ❌    |
+| `PAGES_SYNC_ENABLED` | 是否启用同步到 GitHub Pages，填 `true` 开启                    | ❌    |
 
 ### 第三步：按需修改 config.yml
 
@@ -101,6 +103,12 @@ vault_sync:
   # Vault 同步的开关和仓库名通过 Actions Variables 控制，此处仅配置默认路径和 commit 信息
   default_file_path: "GitHub-Stars/stars.md"
   commit_message: "🤖 自动更新 GitHub Stars 摘要"
+
+pages_sync:
+  # GitHub Pages 开关通过 Actions Variable: PAGES_SYNC_ENABLED 控制
+  output_dir: "dist"             # 生成文件的输出目录
+  file_name: "index.html"        # 生成的文件名
+  template: "index.html.j2"      # 使用的模板文件
 ```
 
 ---
@@ -122,6 +130,25 @@ vault_sync:
    | `VAULT_FILE_PATH`    | `GitHub-Stars/stars.md`             |
 
 4. 确保 Obsidian Git 插件开启了**定时 Pull**，每次 Action 运行后 Obsidian 会自动获取最新的 `stars.md`
+    
+---
+
+## GitHub Pages 部署（可选）
+
+如果你想展示一个漂亮的静态网页：
+
+1. 在仓库 **Settings → Secrets and variables → Actions → Variables** 中配置：
+
+   | Variable 名称        | 示例值 | 说明                             |
+   | -------------------- | ------ | -------------------------------- |
+   | `PAGES_SYNC_ENABLED` | `true` | 填 `true` 以开启 HTML 生成及部署 |
+
+2. 进入仓库 **Settings → Pages**：
+   - **Build and deployment -> Source**: 选择 `Deploy from a branch`
+   - **Branch**: 选择 `gh-pages` 分支，目录选择 `/(root)`
+   - 点击 **Save**
+
+3. 成功运行一次 Action 后，你就可以通过 `https://<username>.github.io/<repo-name>/` 访问你的 Stars Index 页面了。
 
 ---
 
@@ -158,6 +185,8 @@ python scripts/sync_stars.py
 | `config.yml`                 | 主配置文件（非敏感配置）             |
 | `data/stars.json`            | **核心数据集**（抓取的全量项目数据） |
 | `templates/stars.md.j2`      | Markdown 生成模版                    |
-| `stars.md`                   | 自动生成的 Stars Index文档           |
+| `templates/index.html.j2`    | HTML (GitHub Pages) 生成模版         |
+| `stars.md`                   | 自动生成的 Stars Index 文档          |
+| `dist/index.html`            | 自动生成的 HTML 静态页面             |
 | `scripts/sync_stars.py`      | 核心同步与生成脚本                   |
 | `.github/workflows/sync.yml` | GitHub Actions 定时工作流            |
