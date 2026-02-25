@@ -82,6 +82,12 @@ def load_config() -> dict:
     vault = cfg.get("vault_sync", {})
     if os.environ.get("VAULT_SYNC_ENABLED", "").lower() == "true":
         vault["enabled"] = True
+    if os.environ.get("VAULT_REPO"):
+        vault["repo"] = os.environ["VAULT_REPO"]
+    if os.environ.get("VAULT_FILE_PATH"):
+        vault["file_path"] = os.environ["VAULT_FILE_PATH"]
+    if os.environ.get("VAULT_PAT"):
+        vault["pat"] = os.environ["VAULT_PAT"]
     cfg["vault_sync"] = vault
 
     pages = cfg.get("pages_sync", {})
