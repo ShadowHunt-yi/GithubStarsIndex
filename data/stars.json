@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-02-25 10:38 UTC",
+  "last_updated": "2026-02-25 16:41 UTC",
   "repos": {
     "op7418/Document-illustrator-skill": {
       "metadata": {
@@ -7,7 +7,7 @@
         "name": "Document-illustrator-skill",
         "owner": "op7418",
         "description": "帮你从文档生成对应的多张配图，内置了歸藏精心探索的图片风格，支持 16:9 和 3:4 两种比例，方便发小红书以及推特。",
-        "stars": 251,
+        "stars": 253,
         "language": "Python",
         "url": "https://github.com/op7418/Document-illustrator-skill",
         "homepage": "",
@@ -36,7 +36,7 @@
         "name": "nanobot",
         "owner": "HKUDS",
         "description": "\"🐈 nanobot: The Ultra-Lightweight OpenClaw\"",
-        "stars": 24890,
+        "stars": 25044,
         "language": "Python",
         "url": "https://github.com/HKUDS/nanobot",
         "homepage": "",
@@ -65,7 +65,7 @@
         "name": "memU",
         "owner": "NevaMind-AI",
         "description": "Memory for 24/7 proactive agents like openclaw (moltbot, clawdbot).",
-        "stars": 10553,
+        "stars": 10660,
         "language": "Python",
         "url": "https://github.com/NevaMind-AI/memU",
         "homepage": "https://memu.pro",
@@ -107,7 +107,7 @@
         "name": "prompt-optimizer",
         "owner": "linshenkx",
         "description": "一款提示词优化器，助力于编写高质量的提示词",
-        "stars": 22041,
+        "stars": 22069,
         "language": "TypeScript",
         "url": "https://github.com/linshenkx/prompt-optimizer",
         "homepage": "https://prompt.always200.com",
@@ -172,8 +172,8 @@
         "name": "cc-switch",
         "owner": "farion1231",
         "description": "A cross-platform desktop All-in-One assistant tool for Claude Code, Codex, OpenCode & Gemini CLI.",
-        "stars": 19991,
-        "language": "Rust",
+        "stars": 20082,
+        "language": "TypeScript",
         "url": "https://github.com/farion1231/cc-switch",
         "homepage": "https://github.com/farion1231/cc-switch",
         "topics": [
@@ -194,7 +194,7 @@
           "typescript",
           "wsl-support"
         ],
-        "updated_at": "2026-02-24"
+        "updated_at": "2026-02-25"
       },
       "summary": {
         "zh": "一款跨平台桌面全能助手工具，集成 Claude Code、Codex、OpenCode 和 Gemini CLI，支持多模型切换与高效开发协作，基于 Tauri 2 构建，提供稳定、低成本的 AI 编程服务接入。",
@@ -218,7 +218,7 @@
         "name": "everything-claude-code",
         "owner": "affaan-m",
         "description": "Complete Claude Code configuration collection - agents, skills, hooks, commands, rules, MCPs. Battle-tested configs from an Anthropic hackathon winner.",
-        "stars": 51673,
+        "stars": 51926,
         "language": "JavaScript",
         "url": "https://github.com/affaan-m/everything-claude-code",
         "homepage": "",
@@ -232,7 +232,7 @@
           "mcp",
           "productivity"
         ],
-        "updated_at": "2026-02-24"
+        "updated_at": "2026-02-25"
       },
       "summary": {
         "zh": "由Anthropic黑客马拉松获胜者整理的完整Claude Code配置库，包含生产级代理、技能、钩子、命令、规则和MCP配置，支持多语言开发，提供交互式安装向导与PM2多服务编排，优化令牌使用与持久化记忆。",
@@ -256,7 +256,7 @@
         "name": "RedInk",
         "owner": "HisMax",
         "description": "红墨 - 基于🍌Nano Banana Pro🍌 的一站式小红书图文生成器 《一句话一张图片生成小红书图文》 Red Ink - A one-stop Xiaohongshu image-and-text generator based on the 🍌Nano Banana Pro🍌, \"One Sentence, One Image: Generate Xiaohongshu Text and Images.\"",
-        "stars": 4897,
+        "stars": 4895,
         "language": "Python",
         "url": "https://github.com/HisMax/RedInk",
         "homepage": "https://redink.top",
@@ -285,12 +285,12 @@
         "name": "beautiful-mermaid",
         "owner": "lukilabs",
         "description": "",
-        "stars": 7698,
+        "stars": 7720,
         "language": "TypeScript",
         "url": "https://github.com/lukilabs/beautiful-mermaid",
         "homepage": "",
         "topics": [],
-        "updated_at": "2026-02-24"
+        "updated_at": "2026-02-25"
       },
       "summary": {
         "zh": "beautiful-mermaid 是一款专为 AI 编程时代设计的高性能 Mermaid 图表渲染工具，支持将流程图、状态图等 5 类图表同步渲染为美观 SVG 或终端 ASCII 艺术图，具备零 DOM 依赖、15 种内置主题、Shiki 兼容及实时主题切换等特性，适用于 CLI、React 及富 UI 场景。",
@@ -314,7 +314,7 @@
         "name": "BMAD-METHOD",
         "owner": "bmad-code-org",
         "description": "Breakthrough Method for Agile Ai Driven Development",
-        "stars": 37772,
+        "stars": 37833,
         "language": "JavaScript",
         "url": "https://github.com/bmad-code-org/BMAD-METHOD",
         "homepage": "",
@@ -343,7 +343,7 @@
         "name": "Antigravity-Manager",
         "owner": "lbjlaq",
         "description": "Professional Antigravity Account Manager & Switcher. One-click seamless account switching for Antigravity Tools. Built with Tauri v2 + React (Rust).专业的 Antigravity 账号管理与切换工具。为 Antigravity 提供一键无缝账号切换功能。",
-        "stars": 24250,
+        "stars": 24283,
         "language": "Rust",
         "url": "https://github.com/lbjlaq/Antigravity-Manager",
         "homepage": "https://lbjlaq.github.io/Antigravity-Manager/",
@@ -351,7 +351,7 @@
           "account-manager",
           "antigravity"
         ],
-        "updated_at": "2026-02-21"
+        "updated_at": "2026-02-25"
       },
       "summary": {
         "zh": "Antigravity Manager 是一款基于 Tauri v2 和 React（Rust 后端）构建的专业级 AI 账号管理与协议代理系统，支持多平台账号（如 Gemini、Claude）的一键无缝切换、智能配额监控、协议转换（OpenAI/Anthropic/Gemini 格式兼容），并提供模型路由、自动重试、静默降级等企业级功能，打造高性能本地 AI 调度网关。",
@@ -475,7 +475,7 @@
         "name": "Infographic",
         "owner": "antvis",
         "description": "🦋 An Infographic Generation and Rendering Framework, bring words to life with AI!",
-        "stars": 4484,
+        "stars": 4490,
         "language": "TypeScript",
         "url": "https://github.com/antvis/Infographic",
         "homepage": "https://infographic.antv.vision",
@@ -539,7 +539,7 @@
         "name": "workany",
         "owner": "workany-ai",
         "description": "Desktop Agent for Any Task",
-        "stars": 1272,
+        "stars": 1274,
         "language": "TypeScript",
         "url": "https://github.com/workany-ai/workany",
         "homepage": "https://workany.ai",
@@ -608,7 +608,7 @@
         "name": "next-ai-draw-io",
         "owner": "DayuanJiang",
         "description": "A next.js web application that integrates AI capabilities with draw.io diagrams. This app allows you to create, modify, and enhance diagrams through natural language commands and AI-assisted visualization.",
-        "stars": 21787,
+        "stars": 21823,
         "language": "TypeScript",
         "url": "https://github.com/DayuanJiang/next-ai-draw-io",
         "homepage": "https://next-ai-drawio.jiang.jp/",
@@ -670,7 +670,7 @@
         "name": "webnovel-writer",
         "owner": "lingfengQAQ",
         "description": "AI驱动的长篇网文辅助创作工具 - 基于Claude Code，支持200万字连载管理，内置防幻觉机制和5维质量审查",
-        "stars": 221,
+        "stars": 224,
         "language": "Python",
         "url": "https://github.com/lingfengQAQ/webnovel-writer",
         "homepage": "",
@@ -728,7 +728,7 @@
         "name": "vibe-kanban",
         "owner": "BloopAI",
         "description": "Get 10X more out of Claude Code, Codex or any coding agent",
-        "stars": 21841,
+        "stars": 21869,
         "language": "Rust",
         "url": "https://github.com/BloopAI/vibe-kanban",
         "homepage": "https://www.vibekanban.com/",
@@ -763,7 +763,7 @@
         "name": "proxycast",
         "owner": "aiclientproxy",
         "description": "把灵感、写作、出图、改稿、沉淀放进同一个工作台，让创作从“想到”直接走到“可发布”",
-        "stars": 1223,
+        "stars": 1222,
         "language": "Rust",
         "url": "https://github.com/aiclientproxy/proxycast",
         "homepage": "",
@@ -834,7 +834,7 @@
         "name": "kiss-translator",
         "owner": "fishjar",
         "description": "A simple, open source bilingual translation extension & Greasemonkey script (一个简约、开源的 双语对照翻译扩展 & 油猴脚本)",
-        "stars": 8844,
+        "stars": 8846,
         "language": "JavaScript",
         "url": "https://github.com/fishjar/kiss-translator",
         "homepage": "https://github.com/fishjar/kiss-translator",
@@ -899,7 +899,7 @@
         "name": "Handy",
         "owner": "cjpais",
         "description": "A free, open source, and extensible speech-to-text application that works completely offline.",
-        "stars": 16016,
+        "stars": 16069,
         "language": "Rust",
         "url": "https://github.com/cjpais/Handy",
         "homepage": "https://handy.computer",
@@ -962,7 +962,7 @@
         "name": "ui-ux-pro-max-skill",
         "owner": "nextlevelbuilder",
         "description": "An AI SKILL that provide design intelligence for building professional UI/UX multiple platforms",
-        "stars": 34451,
+        "stars": 34584,
         "language": "Python",
         "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill",
         "homepage": "https://www.uupm.cc/",
@@ -1034,7 +1034,7 @@
         "name": "go-wxpush",
         "owner": "hezhizheng",
         "description": "极简且免费的微信消息推送服务 (基于golang)",
-        "stars": 1564,
+        "stars": 1565,
         "language": "Go",
         "url": "https://github.com/hezhizheng/go-wxpush",
         "homepage": "https://push.hzz.cool",
@@ -1063,7 +1063,7 @@
         "name": "browserwing",
         "owner": "browserwing",
         "description": "BrowserWing turns your browser actions into MCP commands Or Claude Skill, allowing AI agents to control browsers efficiently and reliably. Say goodbye to slow, token-heavy LLM interactions — let agents call commands directly for faster automation. Perfect for AI-driven tasks, browser automation, and boosting productivity.",
-        "stars": 810,
+        "stars": 833,
         "language": "TypeScript",
         "url": "https://github.com/browserwing/browserwing",
         "homepage": "https://www.browserwing.com",
@@ -1097,7 +1097,7 @@
         "name": "vget",
         "owner": "guiyumin",
         "description": "Versatile downloader for audio, video, podcasts, PDFs and more. Available as CLI and Docker | 多功能下载工具，支持音视频、播客、PDF等，提供 CLI 和 Docker 两种方式",
-        "stars": 442,
+        "stars": 443,
         "language": "Go",
         "url": "https://github.com/guiyumin/vget",
         "homepage": "https://vget.io",
@@ -1162,7 +1162,7 @@
         "name": "anyrouter-check-in",
         "owner": "millylee",
         "description": "支持 AnyRouter、AgentRouter 的多平台多账号签到，理论兼容所有基于 NewAPI、OneAPI 的平台。",
-        "stars": 704,
+        "stars": 705,
         "language": "Python",
         "url": "https://github.com/millylee/anyrouter-check-in",
         "homepage": "https://anyrouter.top/register?aff=gSsN",
@@ -1200,7 +1200,7 @@
         "name": "openscreen",
         "owner": "siddharthvaddem",
         "description": "Create stunning screen recordings for free. Open-source, no subscriptions, no watermarks, and free for commercial use. An alternative to Screen Studio. ",
-        "stars": 7430,
+        "stars": 7436,
         "language": "TypeScript",
         "url": "https://github.com/siddharthvaddem/openscreen",
         "homepage": "https://openscreen.vercel.app",
@@ -1268,7 +1268,7 @@
         "name": "Mole",
         "owner": "tw93",
         "description": "🐹 Deep clean and optimize your Mac.",
-        "stars": 36952,
+        "stars": 37000,
         "language": "Shell",
         "url": "https://github.com/tw93/Mole",
         "homepage": "https://x.com/HiTw93/status/2025424790467871149",
@@ -1313,7 +1313,7 @@
         "name": "skills",
         "owner": "anthropics",
         "description": "Public repository for Agent Skills",
-        "stars": 75400,
+        "stars": 75627,
         "language": "Python",
         "url": "https://github.com/anthropics/skills",
         "homepage": "",
@@ -1344,7 +1344,7 @@
         "name": "serena",
         "owner": "oraios",
         "description": "A powerful coding agent toolkit providing semantic retrieval and editing capabilities (MCP server & other integrations)",
-        "stars": 20628,
+        "stars": 20647,
         "language": "Python",
         "url": "https://github.com/oraios/serena",
         "homepage": "https://oraios.github.io/serena",
@@ -1360,7 +1360,7 @@
           "programming",
           "vibe-coding"
         ],
-        "updated_at": "2026-02-24"
+        "updated_at": "2026-02-25"
       },
       "summary": {
         "zh": "Serena 是一款强大的开源编码代理工具包，通过语义级代码检索与编辑能力（如符号查找、引用分析、精准插入），将 LLM 转化为可直接操作代码库的智能代理。支持 MCP 协议集成 Claude、VSCode、JetBrains 等主流环境，兼容 30+ 语言，提供 LSP 与 JetBrains 插件双后端，显著提升大项目中的编码效率与准确性。",
@@ -1384,7 +1384,7 @@
         "name": "ClashMac",
         "owner": "666OS",
         "description": "Native Proxy Experience Built for macOS",
-        "stars": 4731,
+        "stars": 4730,
         "language": "N/A",
         "url": "https://github.com/666OS/ClashMac",
         "homepage": "https://clashmac.app",
@@ -1413,6 +1413,72 @@
         ]
       },
       "pushed_at": "2026-01-31",
+      "updated_at": "2026-02-25"
+    },
+    "tianchangNorth/WeSpy": {
+      "metadata": {
+        "full_name": "tianchangNorth/WeSpy",
+        "name": "WeSpy",
+        "owner": "tianchangNorth",
+        "description": "WeSpy 是一个用于获取wx公众号文章并转换为 Markdown 格式的 Python 工具",
+        "stars": 217,
+        "language": "Python",
+        "url": "https://github.com/tianchangNorth/WeSpy",
+        "homepage": "",
+        "topics": [],
+        "updated_at": "2025-11-24"
+      },
+      "summary": {
+        "zh": "WeSpy 是一款专为微信公众号设计的 Python 工具，支持从公众号文章或专辑中提取内容并转换为 Markdown 格式，具备图片防盗链处理、多格式输出（HTML/JSON/Markdown）、批量下载及命令行交互等特性，适用于内容归档与研究场景。",
+        "tags": [
+          "微信公众号",
+          "Markdown转换",
+          "文章抓取",
+          "批量下载",
+          "图片防盗链",
+          "命令行工具",
+          "Python",
+          "内容提取"
+        ]
+      },
+      "pushed_at": "2025-11-24",
+      "updated_at": "2026-02-25"
+    },
+    "github/spec-kit": {
+      "metadata": {
+        "full_name": "github/spec-kit",
+        "name": "spec-kit",
+        "owner": "github",
+        "description": "💫 Toolkit to help you get started with Spec-Driven Development",
+        "stars": 71962,
+        "language": "Python",
+        "url": "https://github.com/github/spec-kit",
+        "homepage": "https://github.github.com/spec-kit/",
+        "topics": [
+          "ai",
+          "copilot",
+          "development",
+          "engineering",
+          "prd",
+          "spec",
+          "spec-driven"
+        ],
+        "updated_at": "2026-02-25"
+      },
+      "summary": {
+        "zh": "Spec Kit 是一个开源工具包，支持规范驱动开发（Spec-Driven Development），通过可执行的规范直接生成高质量代码实现。它集成多种 AI 编程助手（如 Claude Code、GitHub Copilot 等），提供 CLI 工具链帮助开发者聚焦产品场景与预期结果，提升开发效率与一致性。",
+        "tags": [
+          "规范驱动开发",
+          "AI 编程助手",
+          "CLI 工具",
+          "代码生成",
+          "开源",
+          "软件开发流程",
+          "GitHub",
+          "自动化"
+        ]
+      },
+      "pushed_at": "2026-02-25",
       "updated_at": "2026-02-25"
     }
   }
