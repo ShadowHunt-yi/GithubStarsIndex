@@ -1,0 +1,1826 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Stars Index</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-primary: #f8fafc;
+            --text-secondary: #94a3b8;
+            --accent-color: #38bdf8;
+            --accent-gradient: linear-gradient(135deg, #38bdf8 0%, #818cf8 100%);
+            --border-color: rgba(255, 255, 255, 0.1);
+            --tag-bg: rgba(56, 189, 248, 0.1);
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 5rem;
+            position: relative;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: -100px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 300px;
+            height: 300px;
+            background: radial-gradient(circle, rgba(56, 189, 248, 0.15) 0%, transparent 70%);
+            z-index: -1;
+        }
+
+        h1 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 3.5rem;
+            font-weight: 800;
+            background: var(--accent-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 1rem;
+            letter-spacing: -0.02em;
+        }
+
+        .meta-info {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            font-weight: 500;
+        }
+
+        .search-container {
+            margin: 3rem auto;
+            max-width: 600px;
+            position: relative;
+        }
+
+        #search-input {
+            width: 100%;
+            padding: 1rem 1.5rem;
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            color: var(--text-primary);
+            font-size: 1rem;
+            outline: none;
+            transition: var(--transition);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+
+        #search-input:focus {
+            border-color: var(--accent-color);
+            box-shadow: 0 0 0 4px rgba(56, 189, 248, 0.1);
+        }
+
+        .repo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+            gap: 2rem;
+        }
+
+        .repo-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 2rem;
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            overflow: hidden;
+            animation: fadeIn 0.5s ease backwards;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .repo-card:hover {
+            transform: translateY(-8px);
+            border-color: rgba(56, 189, 248, 0.4);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+
+        .repo-card::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(135deg, transparent 80%, rgba(56, 189, 248, 0.05) 100%);
+            pointer-events: none;
+        }
+
+        .repo-header {
+            margin-bottom: 1.5rem;
+        }
+
+        .repo-name {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .repo-name a {
+            color: var(--text-primary);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .repo-name a:hover {
+            color: var(--accent-color);
+        }
+
+        .repo-stats {
+            display: flex;
+            gap: 1.5rem;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            font-weight: 600;
+        }
+
+        .stat-item {
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        .summary {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+            flex-grow: 1;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            line-height: 1.7;
+        }
+
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.6rem;
+        }
+
+        .tag {
+            background: var(--tag-bg);
+            color: var(--accent-color);
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 0.02em;
+            transition: var(--transition);
+        }
+
+        .tag:hover {
+            background: var(--accent-color);
+            color: var(--bg-color);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 6rem;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--border-color);
+        }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 2.5rem; }
+            .repo-grid { grid-template-columns: 1fr; }
+            .container { padding: 2rem 1rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>GitHub Stars Index</h1>
+            <div class="meta-info">
+                最后更新: 2026-02-25 16:56 UTC &bull; 共计 46 个仓库
+            </div>
+        </header>
+
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="搜索仓库、描述或标签...">
+        </div>
+
+        <div class="repo-grid" id="repo-grid">
+            <article class="repo-card" 
+                     data-name="op7418/document-illustrator-skill" 
+                     data-desc="基于ai的文档配图生成工具，支持多格式文档智能解析，内置渐变玻璃、票据、矢量插画三种风格，可生成16:9和3:4比例图片，适用于小红书、推特等社交媒体内容创作。" 
+                     data-tags="ai配图 文档可视化 社交媒体 claude skill 多风格生成 智能归纳 python工具 gemini api">
+                <div class="repo-header">
+                    <div class="repo-name">
+                        <a href="https://github.com/op7418/Document-illustrator-skill" target="_blank">op7418/Document-illustrator-skill</a>
+                    </div>
+                    <div class="repo-stats">
+                        <div class="stat-item">
+                            <span>⭐</span> 253
+                        </div>
+                        <div class="stat-item">
+                            <span>🔤</span> Python
+                        </div>
+                        <div class="stat-item">
+                            <span>📅</span> 2026-01-21
+                        </div>
+                    </div>
+                </div>
+                <div class="summary">
+                    基于AI的文档配图生成工具，支持多格式文档智能解析，内置渐变玻璃、票据、矢量插画三种风格，可生成16:9和3:4比例图片，适用于小红书、推特等社交媒体内容创作。
+                </div>
+                <div class="tags">
+                    <span class="tag">#AI配图</span>
+                    <span class="tag">#文档可视化</span>
+                    <span class="tag">#社交媒体</span>
+                    <span class="tag">#Claude Skill</span>
+                    <span class="tag">#多风格生成</span>
+                    <span class="tag">#智能归纳</span>
+                    <span class="tag">#Python工具</span>
+                    <span class="tag">#Gemini API</span>
+                </div>
+            </article>
+            <article class="repo-card" 
+                     data-name="hkuds/nanobot" 
+                     data-desc="nanobot 是一款超轻量级个人 ai 助手，仅约 4000 行代码，功能完整且高度模块化。支持多平台通信（slack、discord、飞书等）、mcp 协议、多模态输入与记忆系统，适用于构建高效、可扩展的智能代理应用。" 
+                     data-tags="ai助手 轻量级 多平台支持 mcp协议 python 开源 智能代理 模块化设计">
+                <div class="repo-header">
+                    <div class="repo-name">
+                        <a href="https://github.com/HKUDS/nanobot" target="_blank">HKUDS/nanobot</a>
+                    </div>
+                    <div class="repo-stats">
+                        <div class="stat-item">
+                            <span>⭐</span> 25049
+                        </div>
+                        <div class="stat-item">
+                            <span>🔤</span> Python
+                        </div>
+                        <div class="stat-item">
+                            <span>📅</span> 2026-02-25
+                        </div>
+                    </div>
+                </div>
+                <div class="summary">
+                    nanobot 是一款超轻量级个人 AI 助手，仅约 4000 行代码，功能完整且高度模块化。支持多平台通信（Slack、Discord、飞书等）、MCP 协议、多模态输入与记忆系统，适用于构建高效、可扩展的智能代理应用。
+                </div>
+                <div class="tags">
+                    <span class="tag">#AI助手</span>
+                    <span class="tag">#轻量级</span>
+                    <span class="tag">#多平台支持</span>
+                    <span class="tag">#MCP协议</span>
+                    <span class="tag">#Python</span>
+                    <span class="tag">#开源</span>
+                    <span class="tag">#智能代理</span>
+                    <span class="tag">#模块化设计</span>
+                </div>
+            </article>
+            <article class="repo-card" 
+                     data-name="nevamind-ai/memu" 
+                     data-desc="memu 是一个专为 24/7 主动式 ai 代理设计的记忆框架，通过类文件系统的结构化记忆管理，持续捕捉用户意图并降低 llm 调用成本，支持长期运行、跨会话记忆与主动决策。" 
+                     data-tags="ai 代理 长期记忆 用户意图识别 成本优化 文件系统式记忆 主动式智能 llm 效率 知识图谱">
+                <div class="repo-header">
+                    <div class="repo-name">
+                        <a href="https://github.com/NevaMind-AI/memU" target="_blank">NevaMind-AI/memU</a>
+                    </div>
+                    <div class="repo-stats">
+                        <div class="stat-item">
+                            <span>⭐</span> 10663
+                        </div>
+                        <div class="stat-item">
+                            <span>🔤</span> Python
+                        </div>
+                        <div class="stat-item">
+                            <span>📅</span> 2026-02-24
+                        </div>
+                    </div>
+                </div>
+                <div class="summary">
+                    memU 是一个专为 24/7 主动式 AI 代理设计的记忆框架，通过类文件系统的结构化记忆管理，持续捕捉用户意图并降低 LLM 调用成本，支持长期运行、跨会话记忆与主动决策。
+                </div>
+                <div class="tags">
+                    <span class="tag">#AI 代理</span>
+                    <span class="tag">#长期记忆</span>
+                    <span class="tag">#用户意图识别</span>
+                    <span class="tag">#成本优化</span>
+                    <span class="tag">#文件系统式记忆</span>
+                    <span class="tag">#主动式智能</span>
+                    <span class="tag">#LLM 效率</span>
+                    <span class="tag">#知识图谱</span>
+                </div>
+            </article>
+            <article class="repo-card" 
+                     data-name="linshenkx/prompt-optimizer" 
+                     data-desc="prompt optimizer 是一款专业的ai提示词优化工具，支持多模型集成与多端部署（web/桌面/chrome插件/docker），提供智能优化、双模式编辑、对比测试、图像生成及mcp协议支持，助力提升ai输出质量与生产效率。" 
+                     data-tags="提示词优化 ai工具 多模型支持 图像生成 mcp协议 chrome插件 vercel部署 开源">
+                <div class="repo-header">
+                    <div class="repo-name">
+                        <a href="https://github.com/linshenkx/prompt-optimizer" target="_blank">linshenkx/prompt-optimizer</a>
+                    </div>
+                    <div class="repo-stats">
+                        <div class="stat-item">
+                            <span>⭐</span> 22069
+                        </div>
+                        <div class="stat-item">
+                            <span>🔤</span> TypeScript
+                        </div>
+                        <div class="stat-item">
+                            <span>📅</span> 2026-02-10
+                        </div>
+                    </div>
+                </div>
+                <div class="summary">
+                    Prompt Optimizer 是一款专业的AI提示词优化工具，支持多模型集成与多端部署（Web/桌面/Chrome插件/Docker），提供智能优化、双模式编辑、对比测试、图像生成及MCP协议支持，助力提升AI输出质量与生产效率。
+                </div>
+                <div class="tags">
+                    <span class="tag">#提示词优化</span>
+                    <span class="tag">#AI工具</span>
+                    <span class="tag">#多模型支持</span>
+                    <span class="tag">#图像生成</span>
+                    <span class="tag">#MCP协议</span>
+                    <span class="tag">#Chrome插件</span>
+                    <span class="tag">#Vercel部署</span>
+                    <span class="tag">#开源</span>
+                </div>
+            </article>
+            <article class="repo-card" 
+                     data-name="pxw3504k-web/free-n8n-workflows" 
+                     data-desc="提供8000+个已验证的n8n自动化工作流，涵盖营销、devops、销售与ai场景，支持一键导入。包含可自托管的next.js前端，支持按角色或集成筛选搜索，数据以json和sql格式开放，助力快速实现无代码自动化。" 
+                     data-tags="n8n 自动化工作流 开源 无代码 next.js supabase 模板库 自托管">
+                <div class="repo-header">
+                    <div class="repo-name">
+                        <a href="https://github.com/pxw3504k-web/free-n8n-workflows" target="_blank">pxw3504k-web/free-n8n-workflows</a>
+                    </div>
+                    <div class="repo-stats">
+                        <div class="stat-item">
+                            <span>⭐</span> 25
+                        </div>
+                        <div class="stat-item">
+                            <span>🔤</span> TypeScript
+                        </div>
+                        <div class="stat-item">
+                            <span>📅</span> 2026-02-06
+                        </div>
+                    </div>
+                </div>
+                <div class="summary">
+                    提供8000+个已验证的n8n自动化工作流，涵盖营销、DevOps、销售与AI场景，支持一键导入。包含可自托管的Next.js前端，支持按角色或集成筛选搜索，数据以JSON和SQL格式开放，助力快速实现无代码自动化。
+                </div>
+                <div class="tags">
+                    <span class="tag">#n8n</span>
+                    <span class="tag">#自动化工作流</span>
+                    <span class="tag">#开源</span>
+                    <span class="tag">#无代码</span>
+                    <span class="tag">#Next.js</span>
+                    <span class="tag">#Supabase</span>
+                    <span class="tag">#模板库</span>
+                    <span class="tag">#自托管</span>
+                </div>
+            </article>
+            <article class="repo-card" 
+                     data-name="farion1231/cc-switch" 
+                     data-desc="一款跨平台桌面全能助手工具，集成 claude code、codex、opencode 和 gemini cli，支持多模型切换与高效开发协作，基于 tauri 2 构建，提供稳定、低成本的 ai 编程服务接入。" 
+                     data-tags="ai 编程助手 跨平台桌面应用 claude code codex gemini cli tauri api 中继 开发者工具">
+                <div class="repo-header">
+                    <div class="repo-name">
+                        <a href="https://github.com/farion1231/cc-switch" target="_blank">farion1231/cc-switch</a>
+                    </div>
+                    <div class="repo-stats">
+                        <div class="stat-item">
+                            <span>⭐</span> 20085
+                        </div>
+                        <div class="stat-item">
+                            <span>🔤</span> TypeScript
+                        </div>
+                        <div class="stat-item">
+                            <span>📅</span> 2026-02-25
+                        </div>
+                    </div>
+                </div>
+                <div class="summary">
+                    一款跨平台桌面全能助手工具，集成 Claude Code、Codex、OpenCode 和 Gemini CLI，支持多模型切换与高效开发协作，基于 Tauri 2 构建，提供稳定、低成本的 AI 编程服务接入。
+                </div>
+                <div class="tags">
+                    <span class="tag">#AI 编程助手</span>
+                    <span class="tag">#跨平台桌面应用</span>
+                    <span class="tag">#Claude Code</span>
+                    <span class="tag">#Codex</span>
+                    <span class="tag">#Gemini CLI</span>
+                    <span class="tag">#Tauri</span>
+                    <span class="tag">#API 中继</span>
+                    <span class="tag">#开发者工具</span>
+                </div>
+            </article>
+            <article class="repo-card" 
+                     data-name="affaan-m/everything-claude-code" 
+                     data-desc="由anthropic黑客马拉松获胜者整理的完整claude code配置库，包含生产级代理、技能、钩子、命令、规则和mcp配置，支持多语言开发，提供交互式安装向导与pm2多服务编排，优化令牌使用与持久化记忆。" 
+                     data-tags="claude code ai代理配置 mcp 多语言支持 pm2编排 记忆持久化 令牌优化 生产就绪">
+                <div class="repo-header">
+                    <div class="repo-name">
+                        <a href="https://github.com/affaan-m/everything-claude-code" target="_blank">affaan-m/everything-claude-code</a>
+                    </div>
+                    <div class="repo-stats">
+                        <div class="stat-item">
+                            <span>⭐</span> 51938
+                        </div>
+                        <div class="stat-item">
+                            <span>🔤</span> JavaScript
+                        </div>
+                        <div class="stat-item">
+                            <span>📅</span> 2026-02-25
+                        </div>
+                    </div>
+                </div>
+                <div class="summary">
+                    由Anthropic黑客马拉松获胜者整理的完整Claude Code配置库，包含生产级代理、技能、钩子、命令、规则和MCP配置，支持多语言开发，提供交互式安装向导与PM2多服务编排，优化令牌使用与持久化记忆。
+                </div>
+                <div class="tags">
+                    <span class="tag">#Claude Code</span>
+                    <span class="tag">#AI代理配置</span>
+                    <span class="tag">#MCP</span>
+                    <span class="tag">#多语言支持</span>
+                    <span class="tag">#PM2编排</span>
+                    <span class="tag">#记忆持久化</span>
+                    <span class="tag">#令牌优化</span>
+                    <span class="tag">#生产就绪</span>
+                </div>
+            </article>
+            <article class="repo-card" 
+                     data-name="hismax/redink" 
+                     data-desc="红墨（redink）是一款基于 nano banana pro 的小红书图文生成器，支持‘一句话生成一张图’，通过 ai 自动生成封面与内容页，提供智能大纲编辑、批量图片生成及风格统一输出，适用于高效内容创作。" 
+                     data-tags="小红书生成器 ai图文生成 nano banana pro flask vue 3 gemini docker部署 内容创作工具">
+                <div class="repo-header">
+                    <div class="repo-name">
+                        <a href="https://github.com/HisMax/RedInk" target="_blank">HisMax/RedInk</a>
+                    </div>
+                    <div class="repo-stats">
+                        <div class="stat-item">
+                            <span>⭐</span> 4895
+                        </div>
+                        <div class="stat-item">
+                            <span>🔤</span> Python
+                        </div>
+                        <div class="stat-item">
+                            <span>📅</span> 2025-12-29
+                        </div>
+                    </div>
+                </div>
+                <div class="summary">
+                    红墨（RedInk）是一款基于 Nano Banana Pro 的小红书图文生成器，支持‘一句话生成一张图’，通过 AI 自动生成封面与内容页，提供智能大纲编辑、批量图片生成及风格统一输出，适用于高效内容创作。
+                </div>
+                <div class="tags">
+                    <span class="tag">#小红书生成器</span>
+                    <span class="tag">#AI图文生成</span>
+                    <span class="tag">#Nano Banana Pro</span>
+                    <span class="tag">#Flask</span>
+                    <span class="tag">#Vue 3</span>
+                    <span class="tag">#Gemini</span>
+                    <span class="tag">#Docker部署</span>
+                    <span class="tag">#内容创作工具</span>
+                </div>
+            </article>
+            <article class="repo-card" 
+                     data-name="lukilabs/beautiful-mermaid" 
+                     data-desc="beautiful-mermaid 是一款专为 ai 编程时代设计的高性能 mermaid 图表渲染工具，支持将流程图、状态图等 5 类图表同步渲染为美观 svg 或终端 ascii 艺术图，具备零 dom 依赖、15 种内置主题、shiki 兼容及实时主题切换等特性，适用于 cli、react 及富 ui 场景。" 
+                     data-tags="mermaid svg 渲染 ascii 图表 主题定制 同步渲染 typescript ai 编程助手 零 dom 依赖">
+                <div class="repo-header">
+                    <div class="repo-name">
+                        <a href="https://github.com/lukilabs/beautiful-mermaid" target="_blank">lukilabs/beautiful-mermaid</a>
+                    </div>
+                    <div class="repo-stats">
+                        <div class="stat-item">
+                            <span>⭐</span> 7720
+                        </div>
+                        <div class="stat-item">
+                            <span>🔤</span> TypeScript
+                        </div>
+                        <div class="stat-item">
+                            <span>📅</span> 2026-02-25
+                        </div>
+                    </div>
+                </div>
+                <div class="summary">
+                    beautiful-mermaid 是一款专为 AI 编程时代设计的高性能 Mermaid 图表渲染工具，支持将流程图、状态图等 5 类图表同步渲染为美观 SVG 或终端 ASCII 艺术图，具备零 DOM 依赖、15 种内置主题、Shiki 兼容及实时主题切换等特性，适用于 CLI、React 及富 UI 场景。
+                </div>
+                <div class="tags">
+                    <span class="tag">#Mermaid</span>
+                    <span class="tag">#SVG 渲染</span>
+                    <span class="tag">#ASCII 图表</span>
+                    <span class="tag">#主题定制</span>
+                    <span class="tag">#同步渲染</span>
+                    <span class="tag">#TypeScript</span>
+                    <span class="tag">#AI 编程助手</span>
+                    <span class="tag">#零 DOM 依赖</span>
+                </div>
+            </article>
+            <article class="repo-card" 
+                     data-name="bmad-code-org/bmad-method" 
+                     data-desc="bmad method 是一个开源的 ai 驱动敏捷开发框架，提供结构化工作流、多领域专家代理（如架构师、开发者）和自适应规模智能，支持从需求分析到部署的全生命周期开发，适用于个人至企业级项目。" 
+                     data-tags="ai驱动开发 敏捷开发 开源框架 多代理协作 全生命周期 node.js 自动化工作流 规模自适应">
+                <div class="repo-header">
+                    <div class="repo-name">
+                        <a href="https://github.com/bmad-code-org/BMAD-METHOD" target="_blank">bmad-code-org/BMAD-METHOD</a>
+                    </div>
+                    <div class="repo-stats">
+                        <div class="stat-item">
+                            <span>⭐</span> 37833
+                        </div>
+                        <div class="stat-item">
+                            <span>🔤</span> JavaScript
+                        </div>
+                        <div class="stat-item">
+                            <span>📅</span> 2026-02-25
+                        </div>
+                    </div>
+                </div>
+                <div class="summary">
+                    BMad Method 是一个开源的 AI 驱动敏捷开发框架，提供结构化工作流、多领域专家代理（如架构师、开发者）和自适应规模智能，支持从需求分析到部署的全生命周期开发，适用于个人至企业级项目。
+                </div>
+                <div class="tags">
+                    <span class="tag">#AI驱动开发</span>
+                    <span class="tag">#敏捷开发</span>
+                    <span class="tag">#开源框架</span>
+                    <span class="tag">#多代理协作</span>
+                    <span class="tag">#全生命周期</span>
+                    <span class="tag">#Node.js</span>
+                    <span class="tag">#自动化工作流</span>
+                    <span class="tag">#规模自适应</span>
+                </div>
+            </article>
+            <article class="repo-card" 
+                     data-name="lbjlaq/antigravity-manager" 
+                     data-desc="antigravity manager 是一款基于 tauri v2 和 react（rust 后端）构建的专业级 ai 账号管理与协议代理系统，支持多平台账号（如 gemini、claude）的一键无缝切换、智能配额监控、协议转换（openai/anthropic/gemini 格式兼容），并提供模型路由、自动重试、静默降级等企业级功能，打造高性能本地 ai 调度网关。" 
+                     data-tags="ai 账号管理 协议代理 tauri rust react 模型路由 多模态支持 api 中转">
+                <div class="repo-header">
+                    <div class="repo-name">
+                        <a href="https://github.com/lbjlaq/Antigravity-Manager" target="_blank">lbjlaq/Antigravity-Manager</a>
+                    </div>
+                    <div class="repo-stats">
+                        <div class="stat-item">
+                            <span>⭐</span> 24284
+                        </div>
+                        <div class="stat-item">
+                            <span>🔤</span> Rust
+                        </div>
+                        <div class="stat-item">
+                            <span>📅</span> 2026-02-25
+                        </div>
+                    </div>
+                </div>
+                <div class="summary">
+                    Antigravity Manager 是一款基于 Tauri v2 和 React（Rust 后端）构建的专业级 AI 账号管理与协议代理系统，支持多平台账号（如 Gemini、Claude）的一键无缝切换、智能配额监控、协议转换（OpenAI/Anthropic/Gemini 格式兼容），并提供模型路由、自动重试、静默降级等企业级功能，打造高性能本地 AI 调度网关。
+                </div>
+                <div class="tags">
+                    <span class="tag">#AI 账号管理</span>
+                    <span class="tag">#协议代理</span>
+                    <span class="tag">#Tauri</span>
+                    <span class="tag">#Rust</span>
+                    <span class="tag">#React</span>
+                    <span class="tag">#模型路由</span>
+                    <span class="tag">#多模态支持</span>
+                    <span class="tag">#API 中转</span>
+                </div>
+            </article>
+            <article class="repo-card" 
+                     data-name="openmozi/openmozi" 
+                     data-desc="openmozi 是一个轻量级、专注国产生态的 ai 助手框架，支持 deepseek、豆包、qwen 等国产大模型及飞书、钉钉、qq、企业微信等通讯平台。提供 function calling、25+ 内置工具、技能系统、记忆与定时任务等核心能力，代码简洁（约1.6万行），适合企业内部机器人开发与 agent 原理学习。" 
+                     data-tags="ai助手框架 国产大模型 多平台机器人 function calling 轻量级架构 飞书钉钉集成 会话管理 插件系统">
+                <div class="repo-header">
+                    <div class="repo-name">
+                        <a href="https://github.com/openmozi/openmozi" target="_blank">openmozi/openmozi</a>
+                    </div>
+                    <div class="repo-stats">
+                        <div class="stat-item">
+                            <span>⭐</span> 164
+                        </div>
+                        <div class="stat-item">
+                            <span>🔤</span> TypeScript
+                        </div>
+                        <div class="stat-item">
+                            <span>📅</span> 2026-02-13
+                        </div>
+                    </div>
+                </div>
+                <div class="summary">
+                    OpenMozi 是一个轻量级、专注国产生态的 AI 助手框架，支持 DeepSeek、豆包、Qwen 等国产大模型及飞书、钉钉、QQ、企业微信等通讯平台。提供 Function Calling、25+ 内置工具、技能系统、记忆与定时任务等核心能力，代码简洁（约1.6万行），适合企业内部机器人开发与 Agent 原理学习。
+                </div>
+                <div class="tags">
+                    <span class="tag">#AI助手框架</span>
+                    <span class="tag">#国产大模型</span>
+                    <span class="tag">#多平台机器人</span>
+                    <span class="tag">#Function Calling</span>
+                    <span class="tag">#轻量级架构</span>
+                    <span class="tag">#飞书钉钉集成</span>
+                    <span class="tag">#会话管理</span>
+                    <span class="tag">#插件系统</span>
+                </div>
+            </article>
+            <article class="repo-card" 
+                     data-name="nocmt/tomic" 
+                     data-desc="tomic 是一款基于 web 技术的局域网虚拟麦克风工具，支持通过手机浏览器将音频实时传输至电脑，并利用虚拟声卡（如 blackhole 或 vb-cable）注入系统输入。适用于 zoom、teams 等会议场景，无需安装手机 app，具备低延迟、https 安全连接及跨平台原生监听支持。" 
+                     data-tags="虚拟麦克风 webrtc 音频流 局域网传输 跨平台 node.js 虚拟声卡 低延迟">
+                <div class="repo-header">
+                    <div class="repo-name">
+                        <a href="https://github.com/nocmt/toMic" target="_blank">nocmt/toMic</a>
+                    </div>
+                    <div class="repo-stats">
+                        <div class="stat-item">
+                            <span>⭐</span> 50
+                        </div>
+                        <div class="stat-item">
+                            <span>🔤</span> JavaScript
+                        </div>
+                        <div class="stat-item">
+                            <span>📅</span> 2026-02-14
+                        </div>
+                    </div>
+                </div>
+                <div class="summary">
+                    ToMic 是一款基于 Web 技术的局域网虚拟麦克风工具，支持通过手机浏览器将音频实时传输至电脑，并利用虚拟声卡（如 BlackHole 或 VB-CABLE）注入系统输入。适用于 Zoom、Teams 等会议场景，无需安装手机 App，具备低延迟、HTTPS 安全连接及跨平台原生监听支持。
+                </div>
+                <div class="tags">
+                    <span class="tag">#虚拟麦克风</span>
+                    <span class="tag">#WebRTC</span>
+                    <span class="tag">#音频流</span>
+                    <span class="tag">#局域网传输</span>
+                    <span class="tag">#跨平台</span>
+                    <span class="tag">#Node.js</span>
+                    <span class="tag">#虚拟声卡</span>
+                    <span class="tag">#低延迟</span>
+                </div>
+            </article>
+            <article class="repo-card" 
+                     data-name="nolanzhao/creative_tools" 
+                     data-desc="基于 gemini（nano banano 和 veo）的短视频与漫画创作工具，支持分镜生成、角色一致性管理、剧本导入及画布视图，提供端到端 ai 内容创作流程。" 
+                     data-tags="ai 内容生成 短视频制作 漫画创作 角色管理 分镜生成 gemini api veo api next.js">
+                <div class="repo-header">
+                    <div class="repo-name">
+                        <a href="https://github.com/nolanzhao/creative_tools" target="_blank">nolanzhao/creative_tools</a>
+                    </div>
+                    <div class="repo-stats">
+                        <div class="stat-item">
+                            <span>⭐</span> 72
+                        </div>
+                        <div class="stat-item">
+                            <span>🔤</span> TypeScript
+                        </div>
+                        <div class="stat-item">
+                            <span>📅</span> 2026-02-02
+                        </div>
+                    </div>
+                </div>
+                <div class="summary">
+                    基于 Gemini（Nano Banano 和 Veo）的短视频与漫画创作工具，支持分镜生成、角色一致性管理、剧本导入及画布视图，提供端到端 AI 内容创作流程。
+                </div>
+                <div class="tags">
+                    <span class="tag">#AI 内容生成</span>
+                    <span class="tag">#短视频制作</span>
+                    <span class="tag">#漫画创作</span>
+                    <span class="tag">#角色管理</span>
+                    <span class="tag">#分镜生成</span>
+                    <span class="tag">#Gemini API</span>
+                    <span class="tag">#VEO API</span>
+                    <span class="tag">#Next.js</span>
+                </div>
+            </article>
+            <article class="repo-card" 
+                     data-name="antvis/infographic" 
+                     data-desc="antv infographic 是一款声明式信息图生成与渲染框架，支持通过简洁语法快速构建高质量信息图，内置200+模板、主题系统和编辑器，兼容ai生成与流式输出，默认svg渲染保障视觉精度，适用于数据叙事与高效信息展示。" 
+                     data-tags="信息图生成 数据可视化 ai驱动 svg渲染 声明式语法 主题定制 内置编辑器 antv">
+                <div class="repo-header">
+                    <div class="repo-name">
+                        <a href="https://github.com/antvis/Infographic" target="_blank">antvis/Infographic</a>
+                    </div>
+                    <div class="repo-stats">
+                        <div class="stat-item">
+                            <span>⭐</span> 4490
+                        </div>
+                        <div class="stat-item">
+                            <span>🔤</span> TypeScript
+                        </div>
+                        <div class="stat-item">
+                            <span>📅</span> 2026-02-25
+                        </div>
+                    </div>
+                </div>
+                <div class="summary">
+                    AntV Infographic 是一款声明式信息图生成与渲染框架，支持通过简洁语法快速构建高质量信息图，内置200+模板、主题系统和编辑器，兼容AI生成与流式输出，默认SVG渲染保障视觉精度，适用于数据叙事与高效信息展示。
+                </div>
+                <div class="tags">
+                    <span class="tag">#信息图生成</span>
+                    <span class="tag">#数据可视化</span>
+                    <span class="tag">#AI驱动</span>
+                    <span class="tag">#SVG渲染</span>
+                    <span class="tag">#声明式语法</span>
+                    <span class="tag">#主题定制</span>
+                    <span class="tag">#内置编辑器</span>
+                    <span class="tag">#AntV</span>
+                </div>
+            </article>
+            <article class="repo-card" 
+                     data-name="aresbit/matebot" 
+                     data-desc="matecode 是一个通过 telegram 远程控制 claude code 的桥接工具，支持长期记忆、会话管理、代码高亮和本地 sqlite 记忆系统，采用纯轮询模式保障隐私安全，无需公网暴露。" 
+                     data-tags="telegram bot claude code 远程控制 长期记忆 sqlite 会话管理 代码高亮 隐私安全">
+                <div class="repo-header">
+                    <div class="repo-name">
+                        <a href="https://github.com/aresbit/MateBot" target="_blank">aresbit/MateBot</a>
+                    </div>
+                    <div class="repo-stats">
+                        <div class="stat-item">
+                            <span>⭐</span> 38
+                        </div>
+                        <div class="stat-item">
+                            <span>🔤</span> JavaScript
+                        </div>
+                        <div class="stat-item">
+                            <span>📅</span> 2026-02-17
+                        </div>
+                    </div>
+                </div>
+                <div class="summary">
+                    MateCode 是一个通过 Telegram 远程控制 Claude Code 的桥接工具，支持长期记忆、会话管理、代码高亮和本地 SQLite 记忆系统，采用纯轮询模式保障隐私安全，无需公网暴露。
+                </div>
+                <div class="tags">
+                    <span class="tag">#Telegram Bot</span>
+                    <span class="tag">#Claude Code</span>
+                    <span class="tag">#远程控制</span>
+                    <span class="tag">#长期记忆</span>
+                    <span class="tag">#SQLite</span>
+                    <span class="tag">#会话管理</span>
+                    <span class="tag">#代码高亮</span>
+                    <span class="tag">#隐私安全</span>
+                </div>
+            </article>
+            <article class="repo-card" 
+                     data-name="workany-ai/workany" 
+                     data-desc="workany 是一款桌面 ai 智能体应用，支持通过自然语言执行任务，具备实时代码生成、工具调用、工作区管理及沙箱安全执行能力，集成多模型提供商与 mcp 协议，适用于文件整理、网页/文档/表格/幻灯片生成等场景。" 
+                     data-tags="ai agent 桌面应用 自然语言处理 代码生成 沙箱执行 多模型支持 mcp 协议 tauri">
+                <div class="repo-header">
+                    <div class="repo-name">
+                        <a href="https://github.com/workany-ai/workany" target="_blank">workany-ai/workany</a>
+                    </div>
+                    <div class="repo-stats">
+                        <div class="stat-item">
+                            <span>⭐</span> 1274
+                        </div>
+                        <div class="stat-item">
+                            <span>🔤</span> TypeScript
+                        </div>
+                        <div class="stat-item">
+                            <span>📅</span> 2026-02-25
+                        </div>
+                    </div>
+                </div>
+                <div class="summary">
+                    WorkAny 是一款桌面 AI 智能体应用，支持通过自然语言执行任务，具备实时代码生成、工具调用、工作区管理及沙箱安全执行能力，集成多模型提供商与 MCP 协议，适用于文件整理、网页/文档/表格/幻灯片生成等场景。
+                </div>
+                <div class="tags">
+                    <span class="tag">#AI Agent</span>
+                    <span class="tag">#桌面应用</span>
+                    <span class="tag">#自然语言处理</span>
+                    <span class="tag">#代码生成</span>
+                    <span class="tag">#沙箱执行</span>
+                    <span class="tag">#多模型支持</span>
+                    <span class="tag">#MCP 协议</span>
+                    <span class="tag">#Tauri</span>
+                </div>
+            </article>
+            <article class="repo-card" 
+                     data-name="liu-ziting/thinkflowai" 
+                     data-desc="thinkflow ai 是一个轻量级“从想法到结构化图谱”的工作台，用户输入核心想法后，系统自动扩展为可交互浏览的知识图谱。支持节点追问、深度解析与配图生成，具备智能发散、深度挖掘和极致交互体验，采用 vue 3 + vite + typescript 构建，本地优先架构保障数据隐私。" 
+                     data-tags="知识图谱 ai 发散思维 vue 3 typescript 本地优先 交互式可视化 markdown 渲染 配图生成">
+                <div class="repo-header">
+                    <div class="repo-name">
+                        <a href="https://github.com/liu-ziting/ThinkFlowAI" target="_blank">liu-ziting/ThinkFlowAI</a>
+                    </div>
+                    <div class="repo-stats">
+                        <div class="stat-item">
+                            <span>⭐</span> 139
+                        </div>
+                        <div class="stat-item">
+                            <span>🔤</span> Vue
+                        </div>
+                        <div class="stat-item">
+                            <span>📅</span> 2026-02-06
+                        </div>
+                    </div>
+                </div>
+                <div class="summary">
+                    ThinkFlow AI 是一个轻量级“从想法到结构化图谱”的工作台，用户输入核心想法后，系统自动扩展为可交互浏览的知识图谱。支持节点追问、深度解析与配图生成，具备智能发散、深度挖掘和极致交互体验，采用 Vue 3 + Vite + TypeScript 构建，本地优先架构保障数据隐私。
+                </div>
+                <div class="tags">
+                    <span class="tag">#知识图谱</span>
+                    <span class="tag">#AI 发散思维</span>
+                    <span class="tag">#Vue 3</span>
+                    <span class="tag">#TypeScript</span>
+                    <span class="tag">#本地优先</span>
+                    <span class="tag">#交互式可视化</span>
+                    <span class="tag">#Markdown 渲染</span>
+                    <span class="tag">#配图生成</span>
+                </div>
+            </article>
+            <article class="repo-card" 
+                     data-name="dayuanjiang/next-ai-draw-io" 
+                     data-desc="基于 next.js 的 ai 驱动绘图工具，集成 draw.io 实现自然语言生成与编辑图表，支持多平台部署和多种 ai 模型（如豆包 k2），适用于架构图、流程图等可视化场景。" 
+                     data-tags="next.js ai 绘图 draw.io 自然语言处理 架构图生成 多模型支持 可视化工具 web 应用">
+                <div class="repo-header">
+                    <div class="repo-name">
+                        <a href="https://github.com/DayuanJiang/next-ai-draw-io" target="_blank">DayuanJiang/next-ai-draw-io</a>
+                    </div>
+                    <div class="repo-stats">
+                        <div class="stat-item">
+                            <span>⭐</span> 21823
+                        </div>
+                        <div class="stat-item">
+                            <span>🔤</span> TypeScript
+                        </div>
+                        <div class="stat-item">
+                            <span>📅</span> 2026-02-25
+                        </div>
+                    </div>
+                </div>
+                <div class="summary">
+                    基于 Next.js 的 AI 驱动绘图工具，集成 draw.io 实现自然语言生成与编辑图表，支持多平台部署和多种 AI 模型（如豆包 K2），适用于架构图、流程图等可视化场景。
+                </div>
+                <div class="tags">
+                    <span class="tag">#Next.js</span>
+                    <span class="tag">#AI 绘图</span>
+                    <span class="tag">#draw.io</span>
+                    <span class="tag">#自然语言处理</span>
+                    <span class="tag">#架构图生成</span>
+                    <span class="tag">#多模型支持</span>
+                    <span class="tag">#可视化工具</span>
+                    <span class="tag">#Web 应用</span>
+                </div>
+            </article>
+            <article class="repo-card" 
+                     data-name="zeframlou/call-me" 
+                     data-desc="callme 是一个极简插件，允许 claude code 在任务完成、卡住或需要决策时通过电话呼叫用户。支持多轮对话、语音交互，兼容智能手机/手表/座机，并可与工具调用（如网页搜索）组合使用。需配合 telnyx 或 twilio 及 ngrok 实现。" 
+                     data-tags="claude code 插件 电话通知 语音交互 telnyx twilio ngrok 实时通信 ai 助手扩展">
+                <div class="repo-header">
+                    <div class="repo-name">
+                        <a href="https://github.com/ZeframLou/call-me" target="_blank">ZeframLou/call-me</a>
+                    </div>
+                    <div class="repo-stats">
+                        <div class="stat-item">
+                            <span>⭐</span> 2321
+                        </div>
+                        <div class="stat-item">
+                            <span>🔤</span> TypeScript
+                        </div>
+                        <div class="stat-item">
+                            <span>📅</span> 2026-01-09
+                        </div>
+                    </div>
+                </div>
+                <div class="summary">
+                    CallMe 是一个极简插件，允许 Claude Code 在任务完成、卡住或需要决策时通过电话呼叫用户。支持多轮对话、语音交互，兼容智能手机/手表/座机，并可与工具调用（如网页搜索）组合使用。需配合 Telnyx 或 Twilio 及 ngrok 实现。
+                </div>
+                <div class="tags">
+                    <span class="tag">#Claude Code 插件</span>
+                    <span class="tag">#电话通知</span>
+                    <span class="tag">#语音交互</span>
+                    <span class="tag">#Telnyx</span>
+                    <span class="tag">#Twilio</span>
+                    <span class="tag">#ngrok</span>
+                    <span class="tag">#实时通信</span>
+                    <span class="tag">#AI 助手扩展</span>
+                </div>
+            </article>
+            <article class="repo-card" 
+                     data-name="lingfengqaq/webnovel-writer" 
+                     data-desc="基于claude code的ai网文创作辅助系统，支持200万字级长篇连载管理，通过双agent架构、防幻觉三定律、六维质量审查和rag检索，解决ai写作中的遗忘与逻辑矛盾问题，内置创意约束、追读力机制与三线叙事节奏控制，保障内容一致性与读者吸引力。" 
+                     data-tags="ai写作 网文创作 claude code 防幻觉机制 长篇连载 质量审查 rag检索 叙事节奏">
+                <div class="repo-header">
+                    <div class="repo-name">
+                        <a href="https://github.com/lingfengQAQ/webnovel-writer" target="_blank">lingfengQAQ/webnovel-writer</a>
+                    </div>
+                    <div class="repo-stats">
+                        <div class="stat-item">
+                            <span>⭐</span> 224
+                        </div>
+                        <div class="stat-item">
+                            <span>🔤</span> Python
+                        </div>
+                        <div class="stat-item">
+                            <span>📅</span> 2026-02-11
+                        </div>
+                    </div>
+                </div>
+                <div class="summary">
+                    基于Claude Code的AI网文创作辅助系统，支持200万字级长篇连载管理，通过双Agent架构、防幻觉三定律、六维质量审查和RAG检索，解决AI写作中的遗忘与逻辑矛盾问题，内置创意约束、追读力机制与三线叙事节奏控制，保障内容一致性与读者吸引力。
+                </div>
+                <div class="tags">
+                    <span class="tag">#AI写作</span>
+                    <span class="tag">#网文创作</span>
+                    <span class="tag">#Claude Code</span>
+                    <span class="tag">#防幻觉机制</span>
+                    <span class="tag">#长篇连载</span>
+                    <span class="tag">#质量审查</span>
+                    <span class="tag">#RAG检索</span>
+                    <span class="tag">#叙事节奏</span>
+                </div>
+            </article>
+            <article class="repo-card" 
+                     data-name="tosencen/xmsleep" 
+                     data-desc="xmsleep 是一款专注于白噪音播放的 android 应用，提供雨声、篝火、鸟鸣等自然音效，支持无缝循环、音量调节、倒计时、预设场景及动态主题。采用 jetpack compose 与 material design 3 构建，兼容 android 8.0+，助力用户放松、专注与助眠。" 
+                     data-tags="白噪音 助眠应用 jetpack compose material design 3 音频播放 android kotlin 自然音效">
+                <div class="repo-header">
+                    <div class="repo-name">
+                        <a href="https://github.com/Tosencen/XMSLEEP" target="_blank">Tosencen/XMSLEEP</a>
+                    </div>
+                    <div class="repo-stats">
+                        <div class="stat-item">
+                            <span>⭐</span> 1113
+                        </div>
+                        <div class="stat-item">
+                            <span>🔤</span> Kotlin
+                        </div>
+                        <div class="stat-item">
+                            <span>📅</span> 2026-02-04
+                        </div>
+                    </div>
+                </div>
+                <div class="summary">
+                    XMSLEEP 是一款专注于白噪音播放的 Android 应用，提供雨声、篝火、鸟鸣等自然音效，支持无缝循环、音量调节、倒计时、预设场景及动态主题。采用 Jetpack Compose 与 Material Design 3 构建，兼容 Android 8.0+，助力用户放松、专注与助眠。
+                </div>
+                <div class="tags">
+                    <span class="tag">#白噪音</span>
+                    <span class="tag">#助眠应用</span>
+                    <span class="tag">#Jetpack Compose</span>
+                    <span class="tag">#Material Design 3</span>
+                    <span class="tag">#音频播放</span>
+                    <span class="tag">#Android</span>
+                    <span class="tag">#Kotlin</span>
+                    <span class="tag">#自然音效</span>
+                </div>
+            </article>
+            <article class="repo-card" 
+                     data-name="cjpais/handy" 
+                     data-desc="handy 是一款免费、开源且可扩展的离线语音转文本桌面应用，支持跨平台使用。通过快捷键录音，利用本地 whisper 或 parakeet 模型进行语音识别，并将转录文本直接输入到任意文本框，全程无需上传数据，保障隐私。" 
+                     data-tags="语音识别 离线转录 开源工具 隐私保护 跨平台 whisper tauri rust">
+                <div class="repo-header">
+                    <div class="repo-name">
+                        <a href="https://github.com/cjpais/Handy" target="_blank">cjpais/Handy</a>
+                    </div>
+                    <div class="repo-stats">
+                        <div class="stat-item">
+                            <span>⭐</span> 16073
+                        </div>
+                        <div class="stat-item">
+                            <span>🔤</span> Rust
+                        </div>
+                        <div class="stat-item">
+                            <span>📅</span> 2026-02-25
+                        </div>
+                    </div>
+                </div>
+                <div class="summary">
+                    Handy 是一款免费、开源且可扩展的离线语音转文本桌面应用，支持跨平台使用。通过快捷键录音，利用本地 Whisper 或 Parakeet 模型进行语音识别，并将转录文本直接输入到任意文本框，全程无需上传数据，保障隐私。
+                </div>
+                <div class="tags">
+                    <span class="tag">#语音识别</span>
+                    <span class="tag">#离线转录</span>
+                    <span class="tag">#开源工具</span>
+                    <span class="tag">#隐私保护</span>
+                    <span class="tag">#跨平台</span>
+                    <span class="tag">#Whisper</span>
+                    <span class="tag">#Tauri</span>
+                    <span class="tag">#Rust</span>
+                </div>
+            </article>
+            <article class="repo-card" 
+                     data-name="nextlevelbuilder/ui-ux-pro-max-skill" 
+                     data-desc="" 
+                     data-tags="">
+                <div class="repo-header">
+                    <div class="repo-name">
+                        <a href="https://github.com/nextlevelbuilder/ui-ux-pro-max-skill" target="_blank">nextlevelbuilder/ui-ux-pro-max-skill</a>
+                    </div>
+                    <div class="repo-stats">
+                        <div class="stat-item">
+                            <span>⭐</span> 34588
+                        </div>
+                        <div class="stat-item">
+                            <span>🔤</span> Python
+                        </div>
+                        <div class="stat-item">
+                            <span>📅</span> 2026-02-12
+                        </div>
+                    </div>
+                </div>
+                <div class="summary">
+                    
+                </div>
+                <div class="tags">
+                </div>
+            </article>
+            <article class="repo-card" 
+                     data-name="bloopai/vibe-kanban" 
+                     data-desc="vibe kanban 是一款专为 ai 编程代理（如 claude code、codex、gemini cli）设计的任务编排与管理工具，支持多代理并行/串行执行、任务状态跟踪、mcp 配置集中管理及远程 ssh 项目打开，显著提升工程师在 ai 辅助开发中的协作效率。" 
+                     data-tags="ai 编程代理 任务编排 kanban 看板 mcp 配置 远程开发 vscode 集成 自托管 多代理协同">
+                <div class="repo-header">
+                    <div class="repo-name">
+                        <a href="https://github.com/BloopAI/vibe-kanban" target="_blank">BloopAI/vibe-kanban</a>
+                    </div>
+                    <div class="repo-stats">
+                        <div class="stat-item">
+                            <span>⭐</span> 21871
+                        </div>
+                        <div class="stat-item">
+                            <span>🔤</span> Rust
+                        </div>
+                        <div class="stat-item">
+                            <span>📅</span> 2026-02-25
+                        </div>
+                    </div>
+                </div>
+                <div class="summary">
+                    Vibe Kanban 是一款专为 AI 编程代理（如 Claude Code、Codex、Gemini CLI）设计的任务编排与管理工具，支持多代理并行/串行执行、任务状态跟踪、MCP 配置集中管理及远程 SSH 项目打开，显著提升工程师在 AI 辅助开发中的协作效率。
+                </div>
+                <div class="tags">
+                    <span class="tag">#AI 编程代理</span>
+                    <span class="tag">#任务编排</span>
+                    <span class="tag">#Kanban 看板</span>
+                    <span class="tag">#MCP 配置</span>
+                    <span class="tag">#远程开发</span>
+                    <span class="tag">#VSCode 集成</span>
+                    <span class="tag">#自托管</span>
+                    <span class="tag">#多代理协同</span>
+                </div>
+            </article>
+            <article class="repo-card" 
+                     data-name="ychisbest/easytype" 
+                     data-desc="easytype 是一款基于 flask 的跨平台工具，支持通过手机浏览器实时将输入内容推送到 windows 电脑，提供直接键盘输入或剪贴板复制两种模式，适用于远程输入、演示辅助等场景，具备低延迟和移动端优化界面。" 
+                     data-tags="flask pyautogui 剪贴板同步 移动端输入 实时传输 windows自动化 跨设备输入 python">
+                <div class="repo-header">
+                    <div class="repo-name">
+                        <a href="https://github.com/ychisbest/easytype" target="_blank">ychisbest/easytype</a>
+                    </div>
+                    <div class="repo-stats">
+                        <div class="stat-item">
+                            <span>⭐</span> 10
+                        </div>
+                        <div class="stat-item">
+                            <span>🔤</span> HTML
+                        </div>
+                        <div class="stat-item">
+                            <span>📅</span> 2025-12-30
+                        </div>
+                    </div>
+                </div>
+                <div class="summary">
+                    EasyType 是一款基于 Flask 的跨平台工具，支持通过手机浏览器实时将输入内容推送到 Windows 电脑，提供直接键盘输入或剪贴板复制两种模式，适用于远程输入、演示辅助等场景，具备低延迟和移动端优化界面。
+                </div>
+                <div class="tags">
+                    <span class="tag">#Flask</span>
+                    <span class="tag">#PyAutoGUI</span>
+                    <span class="tag">#剪贴板同步</span>
+                    <span class="tag">#移动端输入</span>
+                    <span class="tag">#实时传输</span>
+                    <span class="tag">#Windows自动化</span>
+                    <span class="tag">#跨设备输入</span>
+                    <span class="tag">#Python</span>
+                </div>
+            </article>
+            <article class="repo-card" 
+                     data-name="aiclientproxy/proxycast" 
+                     data-desc="proxycast 是一款面向普通创作者的 ai agent 平台，集成灵感激发、内容生成、图文创作、迭代修改与成果沉淀于一体，支持社媒、短视频、小说、歌词等多元创作场景，实现从创意到发布的端到端高效工作流。" 
+                     data-tags="ai 创作助手 内容生成 多模态输出 创作工作流 自媒体工具 小说写作 短视频脚本 知识管理">
+                <div class="repo-header">
+                    <div class="repo-name">
+                        <a href="https://github.com/aiclientproxy/proxycast" target="_blank">aiclientproxy/proxycast</a>
+                    </div>
+                    <div class="repo-stats">
+                        <div class="stat-item">
+                            <span>⭐</span> 1222
+                        </div>
+                        <div class="stat-item">
+                            <span>🔤</span> Rust
+                        </div>
+                        <div class="stat-item">
+                            <span>📅</span> 2026-02-25
+                        </div>
+                    </div>
+                </div>
+                <div class="summary">
+                    ProxyCast 是一款面向普通创作者的 AI Agent 平台，集成灵感激发、内容生成、图文创作、迭代修改与成果沉淀于一体，支持社媒、短视频、小说、歌词等多元创作场景，实现从创意到发布的端到端高效工作流。
+                </div>
+                <div class="tags">
+                    <span class="tag">#AI 创作助手</span>
+                    <span class="tag">#内容生成</span>
+                    <span class="tag">#多模态输出</span>
+                    <span class="tag">#创作工作流</span>
+                    <span class="tag">#自媒体工具</span>
+                    <span class="tag">#小说写作</span>
+                    <span class="tag">#短视频脚本</span>
+                    <span class="tag">#知识管理</span>
+                </div>
+            </article>
+            <article class="repo-card" 
+                     data-name="doocs/cose" 
+                     data-desc="cose 是一款与 doocs/md markdown 编辑器配合使用的浏览器扩展，支持一键将文章同步至微信公众号、知乎、csdn、掘金等 30+ 内容平台，具备本地运行、样式保留、自动分组等特性，提升多平台内容分发效率。" 
+                     data-tags="markdown 浏览器扩展 内容同步 多平台发布 微信公众号 开发者工具 开源 doocs">
+                <div class="repo-header">
+                    <div class="repo-name">
+                        <a href="https://github.com/doocs/cose" target="_blank">doocs/cose</a>
+                    </div>
+                    <div class="repo-stats">
+                        <div class="stat-item">
+                            <span>⭐</span> 399
+                        </div>
+                        <div class="stat-item">
+                            <span>🔤</span> JavaScript
+                        </div>
+                        <div class="stat-item">
+                            <span>📅</span> 2026-02-24
+                        </div>
+                    </div>
+                </div>
+                <div class="summary">
+                    COSE 是一款与 doocs/md Markdown 编辑器配合使用的浏览器扩展，支持一键将文章同步至微信公众号、知乎、CSDN、掘金等 30+ 内容平台，具备本地运行、样式保留、自动分组等特性，提升多平台内容分发效率。
+                </div>
+                <div class="tags">
+                    <span class="tag">#Markdown</span>
+                    <span class="tag">#浏览器扩展</span>
+                    <span class="tag">#内容同步</span>
+                    <span class="tag">#多平台发布</span>
+                    <span class="tag">#微信公众号</span>
+                    <span class="tag">#开发者工具</span>
+                    <span class="tag">#开源</span>
+                    <span class="tag">#doocs</span>
+                </div>
+            </article>
+            <article class="repo-card" 
+                     data-name="fishjar/kiss-translator" 
+                     data-desc="kiss translator 是一款简约开源的双语对照翻译工具，支持浏览器扩展与油猴脚本。提供网页翻译、划词翻译、输入框翻译、youtube字幕翻译等功能，兼容google、openai、deepl等主流翻译服务，支持自定义规则、ai上下文记忆及富文本保留，适配chrome、firefox、safari等主流浏览器。" 
+                     data-tags="双语翻译 浏览器扩展 油猴脚本 ai翻译 youtube字幕 自定义规则 开源 多语言支持">
+                <div class="repo-header">
+                    <div class="repo-name">
+                        <a href="https://github.com/fishjar/kiss-translator" target="_blank">fishjar/kiss-translator</a>
+                    </div>
+                    <div class="repo-stats">
+                        <div class="stat-item">
+                            <span>⭐</span> 8846
+                        </div>
+                        <div class="stat-item">
+                            <span>🔤</span> JavaScript
+                        </div>
+                        <div class="stat-item">
+                            <span>📅</span> 2026-02-12
+                        </div>
+                    </div>
+                </div>
+                <div class="summary">
+                    KISS Translator 是一款简约开源的双语对照翻译工具，支持浏览器扩展与油猴脚本。提供网页翻译、划词翻译、输入框翻译、YouTube字幕翻译等功能，兼容Google、OpenAI、DeepL等主流翻译服务，支持自定义规则、AI上下文记忆及富文本保留，适配Chrome、Firefox、Safari等主流浏览器。
+                </div>
+                <div class="tags">
+                    <span class="tag">#双语翻译</span>
+                    <span class="tag">#浏览器扩展</span>
+                    <span class="tag">#油猴脚本</span>
+                    <span class="tag">#AI翻译</span>
+                    <span class="tag">#YouTube字幕</span>
+                    <span class="tag">#自定义规则</span>
+                    <span class="tag">#开源</span>
+                    <span class="tag">#多语言支持</span>
+                </div>
+            </article>
+            <article class="repo-card" 
+                     data-name="hezhizheng/go-wxpush" 
+                     data-desc="基于 go 开发的免费微信消息推送服务，支持通过 http get/post 接口向微信用户发送模板消息，具备原生弹窗提醒、多用户支持、docker 一键部署（镜像仅2mb）、每日10万次额度及自定义跳转详情页等功能，适用于个人通知与自动化场景。" 
+                     data-tags="微信推送 go语言 http api docker部署 模板消息 webhook 免费服务 自动化通知">
+                <div class="repo-header">
+                    <div class="repo-name">
+                        <a href="https://github.com/hezhizheng/go-wxpush" target="_blank">hezhizheng/go-wxpush</a>
+                    </div>
+                    <div class="repo-stats">
+                        <div class="stat-item">
+                            <span>⭐</span> 1565
+                        </div>
+                        <div class="stat-item">
+                            <span>🔤</span> Go
+                        </div>
+                        <div class="stat-item">
+                            <span>📅</span> 2026-01-23
+                        </div>
+                    </div>
+                </div>
+                <div class="summary">
+                    基于 Go 开发的免费微信消息推送服务，支持通过 HTTP GET/POST 接口向微信用户发送模板消息，具备原生弹窗提醒、多用户支持、Docker 一键部署（镜像仅2MB）、每日10万次额度及自定义跳转详情页等功能，适用于个人通知与自动化场景。
+                </div>
+                <div class="tags">
+                    <span class="tag">#微信推送</span>
+                    <span class="tag">#Go语言</span>
+                    <span class="tag">#HTTP API</span>
+                    <span class="tag">#Docker部署</span>
+                    <span class="tag">#模板消息</span>
+                    <span class="tag">#Webhook</span>
+                    <span class="tag">#免费服务</span>
+                    <span class="tag">#自动化通知</span>
+                </div>
+            </article>
+            <article class="repo-card" 
+                     data-name="browserwing/browserwing" 
+                     data-desc="browserwing 是一款集成 ai 的原生浏览器自动化平台，支持通过 mcp 协议或 claude skill 将浏览器操作转化为 ai 可调用指令。提供 26+ api 接口、可视化脚本录制、多 llm 支持及会话管理，实现高效、稳定的 ai 驱动浏览器自动化，适用于数据采集、rpa 和智能代理场景。" 
+                     data-tags="浏览器自动化 ai 集成 mcp 协议 claude skill 可视化脚本 llm 支持 http api 会话管理">
+                <div class="repo-header">
+                    <div class="repo-name">
+                        <a href="https://github.com/browserwing/browserwing" target="_blank">browserwing/browserwing</a>
+                    </div>
+                    <div class="repo-stats">
+                        <div class="stat-item">
+                            <span>⭐</span> 834
+                        </div>
+                        <div class="stat-item">
+                            <span>🔤</span> TypeScript
+                        </div>
+                        <div class="stat-item">
+                            <span>📅</span> 2026-02-25
+                        </div>
+                    </div>
+                </div>
+                <div class="summary">
+                    BrowserWing 是一款集成 AI 的原生浏览器自动化平台，支持通过 MCP 协议或 Claude Skill 将浏览器操作转化为 AI 可调用指令。提供 26+ API 接口、可视化脚本录制、多 LLM 支持及会话管理，实现高效、稳定的 AI 驱动浏览器自动化，适用于数据采集、RPA 和智能代理场景。
+                </div>
+                <div class="tags">
+                    <span class="tag">#浏览器自动化</span>
+                    <span class="tag">#AI 集成</span>
+                    <span class="tag">#MCP 协议</span>
+                    <span class="tag">#Claude Skill</span>
+                    <span class="tag">#可视化脚本</span>
+                    <span class="tag">#LLM 支持</span>
+                    <span class="tag">#HTTP API</span>
+                    <span class="tag">#会话管理</span>
+                </div>
+            </article>
+            <article class="repo-card" 
+                     data-name="ranfeng/clipsketch-ai" 
+                     data-desc="clipsketch ai 是一款 ai 驱动的视频创作工具，支持解析 bilibili 和小红书视频链接，实现帧级标记精彩瞬间，并借助 google gemini 多模态模型将标记帧转化为手绘风格故事板，同时自动生成适配社交媒体的爆款文案与封面，助力内容创作者高效产出。" 
+                     data-tags="ai 内容生成 视频剪辑 手绘故事板 gemini api 社交媒体文案 react typescript 多平台适配">
+                <div class="repo-header">
+                    <div class="repo-name">
+                        <a href="https://github.com/RanFeng/clipsketch-ai" target="_blank">RanFeng/clipsketch-ai</a>
+                    </div>
+                    <div class="repo-stats">
+                        <div class="stat-item">
+                            <span>⭐</span> 1618
+                        </div>
+                        <div class="stat-item">
+                            <span>🔤</span> TypeScript
+                        </div>
+                        <div class="stat-item">
+                            <span>📅</span> 2026-01-14
+                        </div>
+                    </div>
+                </div>
+                <div class="summary">
+                    ClipSketch AI 是一款 AI 驱动的视频创作工具，支持解析 Bilibili 和小红书视频链接，实现帧级标记精彩瞬间，并借助 Google Gemini 多模态模型将标记帧转化为手绘风格故事板，同时自动生成适配社交媒体的爆款文案与封面，助力内容创作者高效产出。
+                </div>
+                <div class="tags">
+                    <span class="tag">#AI 内容生成</span>
+                    <span class="tag">#视频剪辑</span>
+                    <span class="tag">#手绘故事板</span>
+                    <span class="tag">#Gemini API</span>
+                    <span class="tag">#社交媒体文案</span>
+                    <span class="tag">#React</span>
+                    <span class="tag">#TypeScript</span>
+                    <span class="tag">#多平台适配</span>
+                </div>
+            </article>
+            <article class="repo-card" 
+                     data-name="oraios/serena" 
+                     data-desc="serena 是一款强大的开源编码代理工具包，通过语义级代码检索与编辑能力（如符号查找、引用分析、精准插入），将 llm 转化为可直接操作代码库的智能代理。支持 mcp 协议集成 claude、vscode、jetbrains 等主流环境，兼容 30+ 语言，提供 lsp 与 jetbrains 插件双后端，显著提升大项目中的编码效率与准确性。" 
+                     data-tags="编码代理 语义检索 mcp 服务器 llm 集成 jetbrains 插件 多语言支持 代码编辑 开源工具">
+                <div class="repo-header">
+                    <div class="repo-name">
+                        <a href="https://github.com/oraios/serena" target="_blank">oraios/serena</a>
+                    </div>
+                    <div class="repo-stats">
+                        <div class="stat-item">
+                            <span>⭐</span> 20647
+                        </div>
+                        <div class="stat-item">
+                            <span>🔤</span> Python
+                        </div>
+                        <div class="stat-item">
+                            <span>📅</span> 2026-02-25
+                        </div>
+                    </div>
+                </div>
+                <div class="summary">
+                    Serena 是一款强大的开源编码代理工具包，通过语义级代码检索与编辑能力（如符号查找、引用分析、精准插入），将 LLM 转化为可直接操作代码库的智能代理。支持 MCP 协议集成 Claude、VSCode、JetBrains 等主流环境，兼容 30+ 语言，提供 LSP 与 JetBrains 插件双后端，显著提升大项目中的编码效率与准确性。
+                </div>
+                <div class="tags">
+                    <span class="tag">#编码代理</span>
+                    <span class="tag">#语义检索</span>
+                    <span class="tag">#MCP 服务器</span>
+                    <span class="tag">#LLM 集成</span>
+                    <span class="tag">#JetBrains 插件</span>
+                    <span class="tag">#多语言支持</span>
+                    <span class="tag">#代码编辑</span>
+                    <span class="tag">#开源工具</span>
+                </div>
+            </article>
+            <article class="repo-card" 
+                     data-name="wordflowlab/article-writer" 
+                     data-desc="ai驱动的智能写作工具，专为微信公众号/自媒体创作设计。支持claude、cursor、gemini等13个ai平台斜杠命令，提供教练/快速/混合/框架约束四种写作模式，强调真实经历融入与低ai味输出，集成素材库、文档爬虫、三遍审校及微信格式化功能。" 
+                     data-tags="ai写作助手 微信公众号 多模式创作 真实内容生成 斜杠命令 文档爬虫 素材库管理 ai味检测">
+                <div class="repo-header">
+                    <div class="repo-name">
+                        <a href="https://github.com/wordflowlab/article-writer" target="_blank">wordflowlab/article-writer</a>
+                    </div>
+                    <div class="repo-stats">
+                        <div class="stat-item">
+                            <span>⭐</span> 197
+                        </div>
+                        <div class="stat-item">
+                            <span>🔤</span> TypeScript
+                        </div>
+                        <div class="stat-item">
+                            <span>📅</span> 2025-11-27
+                        </div>
+                    </div>
+                </div>
+                <div class="summary">
+                    AI驱动的智能写作工具，专为微信公众号/自媒体创作设计。支持Claude、Cursor、Gemini等13个AI平台斜杠命令，提供教练/快速/混合/框架约束四种写作模式，强调真实经历融入与低AI味输出，集成素材库、文档爬虫、三遍审校及微信格式化功能。
+                </div>
+                <div class="tags">
+                    <span class="tag">#AI写作助手</span>
+                    <span class="tag">#微信公众号</span>
+                    <span class="tag">#多模式创作</span>
+                    <span class="tag">#真实内容生成</span>
+                    <span class="tag">#斜杠命令</span>
+                    <span class="tag">#文档爬虫</span>
+                    <span class="tag">#素材库管理</span>
+                    <span class="tag">#AI味检测</span>
+                </div>
+            </article>
+            <article class="repo-card" 
+                     data-name="wordflowlab/novel-writer" 
+                     data-desc="novel writer 是一款基于规格驱动开发（sdd）的 ai 驱动中文小说创作工具，支持在 claude、cursor、gemini 等 13 个 ai 助手中通过斜杠命令调用。提供七步系统化创作流程、情节追踪、角色一致性验证及插件扩展功能，专为高质量中文小说创作优化，跨平台兼容。" 
+                     data-tags="ai 小说创作 规格驱动开发 斜杠命令 中文写作工具 多平台支持 情节追踪 插件系统 七步方法论">
+                <div class="repo-header">
+                    <div class="repo-name">
+                        <a href="https://github.com/wordflowlab/novel-writer" target="_blank">wordflowlab/novel-writer</a>
+                    </div>
+                    <div class="repo-stats">
+                        <div class="stat-item">
+                            <span>⭐</span> 638
+                        </div>
+                        <div class="stat-item">
+                            <span>🔤</span> Shell
+                        </div>
+                        <div class="stat-item">
+                            <span>📅</span> 2025-10-26
+                        </div>
+                    </div>
+                </div>
+                <div class="summary">
+                    Novel Writer 是一款基于规格驱动开发（SDD）的 AI 驱动中文小说创作工具，支持在 Claude、Cursor、Gemini 等 13 个 AI 助手中通过斜杠命令调用。提供七步系统化创作流程、情节追踪、角色一致性验证及插件扩展功能，专为高质量中文小说创作优化，跨平台兼容。
+                </div>
+                <div class="tags">
+                    <span class="tag">#AI 小说创作</span>
+                    <span class="tag">#规格驱动开发</span>
+                    <span class="tag">#斜杠命令</span>
+                    <span class="tag">#中文写作工具</span>
+                    <span class="tag">#多平台支持</span>
+                    <span class="tag">#情节追踪</span>
+                    <span class="tag">#插件系统</span>
+                    <span class="tag">#七步方法论</span>
+                </div>
+            </article>
+            <article class="repo-card" 
+                     data-name="siddharthvaddem/openscreen" 
+                     data-desc="openscreen 是一款免费开源的屏幕录制工具，专为创建美观的产品演示和教程设计。支持全屏或应用录制、手动缩放、背景自定义、标注添加及视频裁剪，无订阅、无水印，可商用。基于 electron 和 react 构建，是 screen studio 的轻量替代方案。" 
+                     data-tags="屏幕录制 开源 免费商用 electron react 视频编辑 产品演示 无水印">
+                <div class="repo-header">
+                    <div class="repo-name">
+                        <a href="https://github.com/siddharthvaddem/openscreen" target="_blank">siddharthvaddem/openscreen</a>
+                    </div>
+                    <div class="repo-stats">
+                        <div class="stat-item">
+                            <span>⭐</span> 7436
+                        </div>
+                        <div class="stat-item">
+                            <span>🔤</span> TypeScript
+                        </div>
+                        <div class="stat-item">
+                            <span>📅</span> 2026-02-23
+                        </div>
+                    </div>
+                </div>
+                <div class="summary">
+                    OpenScreen 是一款免费开源的屏幕录制工具，专为创建美观的产品演示和教程设计。支持全屏或应用录制、手动缩放、背景自定义、标注添加及视频裁剪，无订阅、无水印，可商用。基于 Electron 和 React 构建，是 Screen Studio 的轻量替代方案。
+                </div>
+                <div class="tags">
+                    <span class="tag">#屏幕录制</span>
+                    <span class="tag">#开源</span>
+                    <span class="tag">#免费商用</span>
+                    <span class="tag">#Electron</span>
+                    <span class="tag">#React</span>
+                    <span class="tag">#视频编辑</span>
+                    <span class="tag">#产品演示</span>
+                    <span class="tag">#无水印</span>
+                </div>
+            </article>
+            <article class="repo-card" 
+                     data-name="666os/clashmac" 
+                     data-desc="clashmac 是一款专为 macos 打造的原生代理工具，基于 swiftui 开发，提供系统级代理与 tun 增强双模式。核心亮点包括全球路由地图可视化、实时连接拓扑图、4d 流量统计及隐私保护功能，支持订阅管理、一键规则配置和菜单栏快捷操作，兼顾高性能与用户体验。" 
+                     data-tags="macos 代理工具 swiftui 流量可视化 tun模式 隐私保护 订阅管理 原生应用">
+                <div class="repo-header">
+                    <div class="repo-name">
+                        <a href="https://github.com/666OS/ClashMac" target="_blank">666OS/ClashMac</a>
+                    </div>
+                    <div class="repo-stats">
+                        <div class="stat-item">
+                            <span>⭐</span> 4730
+                        </div>
+                        <div class="stat-item">
+                            <span>🔤</span> N/A
+                        </div>
+                        <div class="stat-item">
+                            <span>📅</span> 2026-01-31
+                        </div>
+                    </div>
+                </div>
+                <div class="summary">
+                    ClashMac 是一款专为 macOS 打造的原生代理工具，基于 SwiftUI 开发，提供系统级代理与 TUN 增强双模式。核心亮点包括全球路由地图可视化、实时连接拓扑图、4D 流量统计及隐私保护功能，支持订阅管理、一键规则配置和菜单栏快捷操作，兼顾高性能与用户体验。
+                </div>
+                <div class="tags">
+                    <span class="tag">#macOS</span>
+                    <span class="tag">#代理工具</span>
+                    <span class="tag">#SwiftUI</span>
+                    <span class="tag">#流量可视化</span>
+                    <span class="tag">#TUN模式</span>
+                    <span class="tag">#隐私保护</span>
+                    <span class="tag">#订阅管理</span>
+                    <span class="tag">#原生应用</span>
+                </div>
+            </article>
+            <article class="repo-card" 
+                     data-name="guiyumin/vget" 
+                     data-desc="vget 是一款多功能下载工具，支持音视频、播客、pdf 等多种格式，兼容 twitter、小红书、小宇宙等平台。提供 cli 和 docker 部署方式，支持 webdav 远程管理、多语言配置及自更新功能，适合跨平台高效下载需求。" 
+                     data-tags="下载工具 cli docker 音视频下载 播客 webdav 多语言 跨平台">
+                <div class="repo-header">
+                    <div class="repo-name">
+                        <a href="https://github.com/guiyumin/vget" target="_blank">guiyumin/vget</a>
+                    </div>
+                    <div class="repo-stats">
+                        <div class="stat-item">
+                            <span>⭐</span> 443
+                        </div>
+                        <div class="stat-item">
+                            <span>🔤</span> Go
+                        </div>
+                        <div class="stat-item">
+                            <span>📅</span> 2026-02-24
+                        </div>
+                    </div>
+                </div>
+                <div class="summary">
+                    vget 是一款多功能下载工具，支持音视频、播客、PDF 等多种格式，兼容 Twitter、小红书、小宇宙等平台。提供 CLI 和 Docker 部署方式，支持 WebDAV 远程管理、多语言配置及自更新功能，适合跨平台高效下载需求。
+                </div>
+                <div class="tags">
+                    <span class="tag">#下载工具</span>
+                    <span class="tag">#CLI</span>
+                    <span class="tag">#Docker</span>
+                    <span class="tag">#音视频下载</span>
+                    <span class="tag">#播客</span>
+                    <span class="tag">#WebDAV</span>
+                    <span class="tag">#多语言</span>
+                    <span class="tag">#跨平台</span>
+                </div>
+            </article>
+            <article class="repo-card" 
+                     data-name="millylee/auo" 
+                     data-desc="auo 是一个增强 claude code 使用体验的工具，支持多配置切换与环境变量管理，适用于多账号或代理中转场景。主要特性包括配置自动升级、向后兼容、交互式配置管理及无缝集成 claude code 命令。" 
+                     data-tags="claude code 多配置切换 环境变量管理 api 代理 命令行工具 自动升级 向后兼容 node.js">
+                <div class="repo-header">
+                    <div class="repo-name">
+                        <a href="https://github.com/millylee/auo" target="_blank">millylee/auo</a>
+                    </div>
+                    <div class="repo-stats">
+                        <div class="stat-item">
+                            <span>⭐</span> 75
+                        </div>
+                        <div class="stat-item">
+                            <span>🔤</span> TypeScript
+                        </div>
+                        <div class="stat-item">
+                            <span>📅</span> 2025-09-17
+                        </div>
+                    </div>
+                </div>
+                <div class="summary">
+                    auo 是一个增强 Claude Code 使用体验的工具，支持多配置切换与环境变量管理，适用于多账号或代理中转场景。主要特性包括配置自动升级、向后兼容、交互式配置管理及无缝集成 Claude Code 命令。
+                </div>
+                <div class="tags">
+                    <span class="tag">#Claude Code</span>
+                    <span class="tag">#多配置切换</span>
+                    <span class="tag">#环境变量管理</span>
+                    <span class="tag">#API 代理</span>
+                    <span class="tag">#命令行工具</span>
+                    <span class="tag">#自动升级</span>
+                    <span class="tag">#向后兼容</span>
+                    <span class="tag">#Node.js</span>
+                </div>
+            </article>
+            <article class="repo-card" 
+                     data-name="millylee/anyrouter-check-in" 
+                     data-desc="支持 anyrouter、agentrouter 等多平台多账号自动签到，兼容基于 newapi/oneapi 的服务，内置 waf 绕过、多种通知方式及自定义 provider 配置，适用于 claude code 中转站等场景。" 
+                     data-tags="自动签到 多账号管理 newapi oneapi anyrouter agentrouter waf绕过 github actions">
+                <div class="repo-header">
+                    <div class="repo-name">
+                        <a href="https://github.com/millylee/anyrouter-check-in" target="_blank">millylee/anyrouter-check-in</a>
+                    </div>
+                    <div class="repo-stats">
+                        <div class="stat-item">
+                            <span>⭐</span> 705
+                        </div>
+                        <div class="stat-item">
+                            <span>🔤</span> Python
+                        </div>
+                        <div class="stat-item">
+                            <span>📅</span> 2026-02-25
+                        </div>
+                    </div>
+                </div>
+                <div class="summary">
+                    支持 AnyRouter、AgentRouter 等多平台多账号自动签到，兼容基于 NewAPI/OneAPI 的服务，内置 WAF 绕过、多种通知方式及自定义 Provider 配置，适用于 Claude Code 中转站等场景。
+                </div>
+                <div class="tags">
+                    <span class="tag">#自动签到</span>
+                    <span class="tag">#多账号管理</span>
+                    <span class="tag">#NewAPI</span>
+                    <span class="tag">#OneAPI</span>
+                    <span class="tag">#AnyRouter</span>
+                    <span class="tag">#AgentRouter</span>
+                    <span class="tag">#WAF绕过</span>
+                    <span class="tag">#GitHub Actions</span>
+                </div>
+            </article>
+            <article class="repo-card" 
+                     data-name="tw93/mole" 
+                     data-desc="mole 是一款专为 macos 设计的全能系统优化工具，集深度清理、智能卸载、磁盘分析、实时状态监控于一体，可一键释放数十gb空间，支持缓存重建、服务刷新及项目构建产物清理，提供交互式菜单与命令行操作，安全可靠且高效。" 
+                     data-tags="macos 系统清理 磁盘优化 应用卸载 实时监控 命令行工具 homebrew 性能监控">
+                <div class="repo-header">
+                    <div class="repo-name">
+                        <a href="https://github.com/tw93/Mole" target="_blank">tw93/Mole</a>
+                    </div>
+                    <div class="repo-stats">
+                        <div class="stat-item">
+                            <span>⭐</span> 37000
+                        </div>
+                        <div class="stat-item">
+                            <span>🔤</span> Shell
+                        </div>
+                        <div class="stat-item">
+                            <span>📅</span> 2026-02-25
+                        </div>
+                    </div>
+                </div>
+                <div class="summary">
+                    Mole 是一款专为 macOS 设计的全能系统优化工具，集深度清理、智能卸载、磁盘分析、实时状态监控于一体，可一键释放数十GB空间，支持缓存重建、服务刷新及项目构建产物清理，提供交互式菜单与命令行操作，安全可靠且高效。
+                </div>
+                <div class="tags">
+                    <span class="tag">#macOS</span>
+                    <span class="tag">#系统清理</span>
+                    <span class="tag">#磁盘优化</span>
+                    <span class="tag">#应用卸载</span>
+                    <span class="tag">#实时监控</span>
+                    <span class="tag">#命令行工具</span>
+                    <span class="tag">#Homebrew</span>
+                    <span class="tag">#性能监控</span>
+                </div>
+            </article>
+            <article class="repo-card" 
+                     data-name="anthropics/skills" 
+                     data-desc="anthropic 官方技能库，提供 claude 可动态加载的专用任务技能，涵盖创意设计、技术开发、企业流程及文档处理等场景。包含开源示例、生产级文档技能（如 pdf/docx 处理）及技能创建模板，支持在 claude code、claude.ai 和 api 中使用。" 
+                     data-tags="claude agent skills ai 技能 文档处理 企业自动化 开源示例 技能模板 anthropic">
+                <div class="repo-header">
+                    <div class="repo-name">
+                        <a href="https://github.com/anthropics/skills" target="_blank">anthropics/skills</a>
+                    </div>
+                    <div class="repo-stats">
+                        <div class="stat-item">
+                            <span>⭐</span> 75635
+                        </div>
+                        <div class="stat-item">
+                            <span>🔤</span> Python
+                        </div>
+                        <div class="stat-item">
+                            <span>📅</span> 2026-02-25
+                        </div>
+                    </div>
+                </div>
+                <div class="summary">
+                    Anthropic 官方技能库，提供 Claude 可动态加载的专用任务技能，涵盖创意设计、技术开发、企业流程及文档处理等场景。包含开源示例、生产级文档技能（如 PDF/DOCX 处理）及技能创建模板，支持在 Claude Code、Claude.ai 和 API 中使用。
+                </div>
+                <div class="tags">
+                    <span class="tag">#Claude</span>
+                    <span class="tag">#Agent Skills</span>
+                    <span class="tag">#AI 技能</span>
+                    <span class="tag">#文档处理</span>
+                    <span class="tag">#企业自动化</span>
+                    <span class="tag">#开源示例</span>
+                    <span class="tag">#技能模板</span>
+                    <span class="tag">#Anthropic</span>
+                </div>
+            </article>
+            <article class="repo-card" 
+                     data-name="tianchangnorth/wespy" 
+                     data-desc="wespy 是一款专为微信公众号设计的 python 工具，支持从公众号文章或专辑中提取内容并转换为 markdown 格式，具备图片防盗链处理、多格式输出（html/json/markdown）、批量下载及命令行交互等特性，适用于内容归档与研究场景。" 
+                     data-tags="微信公众号 markdown转换 文章抓取 批量下载 图片防盗链 命令行工具 python 内容提取">
+                <div class="repo-header">
+                    <div class="repo-name">
+                        <a href="https://github.com/tianchangNorth/WeSpy" target="_blank">tianchangNorth/WeSpy</a>
+                    </div>
+                    <div class="repo-stats">
+                        <div class="stat-item">
+                            <span>⭐</span> 217
+                        </div>
+                        <div class="stat-item">
+                            <span>🔤</span> Python
+                        </div>
+                        <div class="stat-item">
+                            <span>📅</span> 2025-11-24
+                        </div>
+                    </div>
+                </div>
+                <div class="summary">
+                    WeSpy 是一款专为微信公众号设计的 Python 工具，支持从公众号文章或专辑中提取内容并转换为 Markdown 格式，具备图片防盗链处理、多格式输出（HTML/JSON/Markdown）、批量下载及命令行交互等特性，适用于内容归档与研究场景。
+                </div>
+                <div class="tags">
+                    <span class="tag">#微信公众号</span>
+                    <span class="tag">#Markdown转换</span>
+                    <span class="tag">#文章抓取</span>
+                    <span class="tag">#批量下载</span>
+                    <span class="tag">#图片防盗链</span>
+                    <span class="tag">#命令行工具</span>
+                    <span class="tag">#Python</span>
+                    <span class="tag">#内容提取</span>
+                </div>
+            </article>
+            <article class="repo-card" 
+                     data-name="github/spec-kit" 
+                     data-desc="spec kit 是一个开源工具包，支持规范驱动开发（spec-driven development），通过可执行的规范直接生成高质量代码实现。它集成多种 ai 编程助手（如 claude code、github copilot 等），提供 cli 工具链帮助开发者聚焦产品场景与预期结果，提升开发效率与一致性。" 
+                     data-tags="规范驱动开发 ai 编程助手 cli 工具 代码生成 开源 软件开发流程 github 自动化">
+                <div class="repo-header">
+                    <div class="repo-name">
+                        <a href="https://github.com/github/spec-kit" target="_blank">github/spec-kit</a>
+                    </div>
+                    <div class="repo-stats">
+                        <div class="stat-item">
+                            <span>⭐</span> 71966
+                        </div>
+                        <div class="stat-item">
+                            <span>🔤</span> Python
+                        </div>
+                        <div class="stat-item">
+                            <span>📅</span> 2026-02-25
+                        </div>
+                    </div>
+                </div>
+                <div class="summary">
+                    Spec Kit 是一个开源工具包，支持规范驱动开发（Spec-Driven Development），通过可执行的规范直接生成高质量代码实现。它集成多种 AI 编程助手（如 Claude Code、GitHub Copilot 等），提供 CLI 工具链帮助开发者聚焦产品场景与预期结果，提升开发效率与一致性。
+                </div>
+                <div class="tags">
+                    <span class="tag">#规范驱动开发</span>
+                    <span class="tag">#AI 编程助手</span>
+                    <span class="tag">#CLI 工具</span>
+                    <span class="tag">#代码生成</span>
+                    <span class="tag">#开源</span>
+                    <span class="tag">#软件开发流程</span>
+                    <span class="tag">#GitHub</span>
+                    <span class="tag">#自动化</span>
+                </div>
+            </article>
+            <article class="repo-card" 
+                     data-name="scipline/image_matting" 
+                     data-desc="一键批量图像抠图工具，支持两种模式：调用 remove.bg 免费 api（需网络，精度高但分辨率低）或本地运行 rembg + onnx 模型（速度快、清晰度高）。支持自动切换 api key、批量处理、背景替换及规范文件命名，适用于无 gui 场景下的高效自动化抠图需求。" 
+                     data-tags="图像抠图 批量处理 remove.bg rembg onnx 自动化 背景移除 计算机视觉">
+                <div class="repo-header">
+                    <div class="repo-name">
+                        <a href="https://github.com/Scipline/Image_matting" target="_blank">Scipline/Image_matting</a>
+                    </div>
+                    <div class="repo-stats">
+                        <div class="stat-item">
+                            <span>⭐</span> 14
+                        </div>
+                        <div class="stat-item">
+                            <span>🔤</span> Python
+                        </div>
+                        <div class="stat-item">
+                            <span>📅</span> 2023-01-11
+                        </div>
+                    </div>
+                </div>
+                <div class="summary">
+                    一键批量图像抠图工具，支持两种模式：调用 remove.bg 免费 API（需网络，精度高但分辨率低）或本地运行 rembg + ONNX 模型（速度快、清晰度高）。支持自动切换 API Key、批量处理、背景替换及规范文件命名，适用于无 GUI 场景下的高效自动化抠图需求。
+                </div>
+                <div class="tags">
+                    <span class="tag">#图像抠图</span>
+                    <span class="tag">#批量处理</span>
+                    <span class="tag">#remove.bg</span>
+                    <span class="tag">#rembg</span>
+                    <span class="tag">#ONNX</span>
+                    <span class="tag">#自动化</span>
+                    <span class="tag">#背景移除</span>
+                    <span class="tag">#计算机视觉</span>
+                </div>
+            </article>
+            <article class="repo-card" 
+                     data-name="voltagent/awesome-claude-code-subagents" 
+                     data-desc="voltagent/awesome-claude-code-subagents 是一个包含127+个专用claude code子代理的开源集合，覆盖核心开发、语言专家、基础设施、数据科学等九大类别，支持插件化安装与交互式部署，旨在为开发者提供针对特定任务的ai编程助手。" 
+                     data-tags="claude code ai编程助手 子代理集合 开发工具 插件化 多语言支持 devops 开源">
+                <div class="repo-header">
+                    <div class="repo-name">
+                        <a href="https://github.com/VoltAgent/awesome-claude-code-subagents" target="_blank">VoltAgent/awesome-claude-code-subagents</a>
+                    </div>
+                    <div class="repo-stats">
+                        <div class="stat-item">
+                            <span>⭐</span> 11397
+                        </div>
+                        <div class="stat-item">
+                            <span>🔤</span> Shell
+                        </div>
+                        <div class="stat-item">
+                            <span>📅</span> 2026-02-21
+                        </div>
+                    </div>
+                </div>
+                <div class="summary">
+                    VoltAgent/awesome-claude-code-subagents 是一个包含127+个专用Claude Code子代理的开源集合，覆盖核心开发、语言专家、基础设施、数据科学等九大类别，支持插件化安装与交互式部署，旨在为开发者提供针对特定任务的AI编程助手。
+                </div>
+                <div class="tags">
+                    <span class="tag">#Claude Code</span>
+                    <span class="tag">#AI编程助手</span>
+                    <span class="tag">#子代理集合</span>
+                    <span class="tag">#开发工具</span>
+                    <span class="tag">#插件化</span>
+                    <span class="tag">#多语言支持</span>
+                    <span class="tag">#DevOps</span>
+                    <span class="tag">#开源</span>
+                </div>
+            </article>
+        </div>
+
+        <footer>
+            Built with 🤖 AI Summarizer &bull; Generated by GitHub Star Index
+        </footer>
+    </div>
+
+    <script>
+        const searchInput = document.getElementById('search-input');
+        const repoCards = document.querySelectorAll('.repo-card');
+
+        searchInput.addEventListener('input', (e) => {
+            const query = e.target.value.toLowerCase().trim();
+            
+            repoCards.forEach(card => {
+                const name = card.getAttribute('data-name');
+                const desc = card.getAttribute('data-desc');
+                const tags = card.getAttribute('data-tags');
+                
+                if (name.includes(query) || desc.includes(query) || tags.includes(query)) {
+                    card.style.display = 'flex';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
