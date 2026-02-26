@@ -33,7 +33,7 @@ ai:
   max_retries: 3
 
   # 并发生成摘要的线程数
-  concurrency: 3
+  concurrency: 2
 
 # ── 输出配置 ─────────────────────────────────────────────
 output:

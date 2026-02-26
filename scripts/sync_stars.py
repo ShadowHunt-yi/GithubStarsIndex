@@ -500,8 +500,12 @@ def main():
         # 直接写入 dist 目录
         output_md_path = dist_dir / output_name
         md_content = generator.render(DEFAULT_MD_TEMPLATE, lang_context)
-        generated_mds[lang] = {"filename": output_name, "content": md_content}
-        log.info(f"✨ Markdown ({lang}) 已生成并准备同步")
+
+        # 物理写入磁盘
+        output_md_path.write_text(md_content, encoding="utf-8")
+
+        generated_mds[lang] = {"path": output_md_path, "content": md_content}
+        log.info(f"✅ Markdown ({lang}) 生成完成: {output_md_path}")
 
     # 5. 可选：Vault 同步
     v_cfg = cfg.get("vault_sync", {})
