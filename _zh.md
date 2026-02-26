@@ -1,6 +1,6 @@
 # ⭐ GitHub Stars Index
 
-> Updated: 2026-02-26 07:44 UTC · Total: 41
+> Updated: 2026-02-26 14:41 UTC · Total: 53
 
 ---
 
@@ -46,13 +46,25 @@
 - [[#guiyumin/vget|guiyumin/vget]]
 - [[#millylee/auo|millylee/auo]]
 - [[#millylee/anyrouter-check-in|millylee/anyrouter-check-in]]
+- [[#tw93/Mole|tw93/Mole]]
+- [[#anthropics/skills|anthropics/skills]]
+- [[#tianchangNorth/WeSpy|tianchangNorth/WeSpy]]
+- [[#github/spec-kit|github/spec-kit]]
+- [[#Scipline/Image_matting|Scipline/Image_matting]]
+- [[#VoltAgent/awesome-claude-code-subagents|VoltAgent/awesome-claude-code-subagents]]
+- [[#UfoMiao/zcf|UfoMiao/zcf]]
+- [[#MapleShaw/auto-claude-writing-agent-pub|MapleShaw/auto-claude-writing-agent-pub]]
+- [[#google-gemini/gemini-cli|google-gemini/gemini-cli]]
+- [[#xunbu/docutranslate|xunbu/docutranslate]]
+- [[#dataease/SQLBot|dataease/SQLBot]]
+- [[#ckanner/jta|ckanner/jta]]
 
 ---
 
 ## LifeArchiveProject/WeChatDataAnalysis
 
 > [!info]
-> ⭐ 372 · Python · 2026-02-22  
+> ⭐ 375 · Python · 2026-02-26  
 > [GitHub](https://github.com/LifeArchiveProject/WeChatDataAnalysis)  
 
 > `#微信解密` `#聊天记录分析` `#数据库导出` `#年度总结` `#数据可视化` `#SQLite` `#隐私工具` `#桌面应用` >
@@ -64,7 +76,7 @@
 ## op7418/Document-illustrator-skill
 
 > [!info]
-> ⭐ 257 · Python · 2026-01-21  
+> ⭐ 260 · Python · 2026-01-21  
 > [GitHub](https://github.com/op7418/Document-illustrator-skill)  
 
 > `#AI配图` `#文档可视化` `#智能归纳` `#多风格生成` `#社交媒体` `#Claude Skill` `#Gemini API` `#Python工具` >
@@ -76,7 +88,7 @@
 ## HKUDS/nanobot
 
 > [!info]
-> ⭐ 25,388 · Python · 2026-02-26  
+> ⭐ 25,644 · Python · 2026-02-26  
 > [GitHub](https://github.com/HKUDS/nanobot)  
 
 > `#AI助手` `#轻量级` `#多平台支持` `#MCP协议` `#开源` `#Python` `#个人智能代理` `#研究友好` >
@@ -88,7 +100,7 @@
 ## NevaMind-AI/memU
 
 > [!info]
-> ⭐ 10,958 · Python · 2026-02-24  
+> ⭐ 11,027 · Python · 2026-02-24  
 > [GitHub](https://github.com/NevaMind-AI/memU) · [Website](https://memu.pro)  
 
 > `#AI 记忆框架` `#主动式代理` `#用户意图识别` `#成本优化` `#文件系统式记忆` `#长期记忆` `#LLM 效率` `#生产级 AI` `#agent-memory` `#agentic-workflow` `#claude` `#claude-skills` `#clawdbot` `#clawdbot-skill` `#mcp` `#memory` `#proactive` `#proactive-ai` `#sandbox` `#skills` >
@@ -100,7 +112,7 @@
 ## linshenkx/prompt-optimizer
 
 > [!info]
-> ⭐ 22,113 · TypeScript · 2026-02-10  
+> ⭐ 22,179 · TypeScript · 2026-02-10  
 > [GitHub](https://github.com/linshenkx/prompt-optimizer) · [Website](https://prompt.always200.com)  
 
 > `#提示词优化` `#AI提示工程` `#多模型集成` `#图像生成` `#MCP协议` `#Docker部署` `#Chrome插件` `#多端支持` `#llm` `#prompt` `#prompt-engineering` `#prompt-optimization` `#prompt-toolkit` `#prompt-tuning` >
@@ -124,7 +136,7 @@
 ## farion1231/cc-switch
 
 > [!info]
-> ⭐ 20,276 · TypeScript · 2026-02-25  
+> ⭐ 20,497 · TypeScript · 2026-02-25  
 > [GitHub](https://github.com/farion1231/cc-switch) · [Website](https://github.com/farion1231/cc-switch)  
 
 > `#AI编程助手` `#跨平台桌面应用` `#Tauri框架` `#API中继` `#Claude Code` `#Codex` `#Gemini CLI` `#多模型集成` `#ai-tools` `#claude-code` `#codex` `#desktop-app` `#kimi-k2-thiking` `#mcp` `#minimax` `#open-source` `#opencode` `#provider-management` `#rust` `#skills` `#skills-management` `#tauri` `#typescript` `#wsl-support` >
@@ -136,7 +148,7 @@
 ## affaan-m/everything-claude-code
 
 > [!info]
-> ⭐ 52,702 · JavaScript · 2026-02-25  
+> ⭐ 53,105 · JavaScript · 2026-02-25  
 > [GitHub](https://github.com/affaan-m/everything-claude-code)  
 
 > `#Claude Code` `#AI代理` `#配置管理` `#多语言支持` `#持续学习` `#MCP` `#GitHub Marketplace` `#自动化` `#ai-agents` `#anthropic` `#claude` `#claude-code` `#developer-tools` `#llm` `#mcp` `#productivity` >
@@ -148,7 +160,7 @@
 ## HisMax/RedInk
 
 > [!info]
-> ⭐ 4,902 · Python · 2025-12-29  
+> ⭐ 4,905 · Python · 2025-12-29  
 > [GitHub](https://github.com/HisMax/RedInk) · [Website](https://redink.top)  
 
 > `#小红书生成器` `#AI图文创作` `#Nano Banana Pro` `#Gemini` `#Docker部署` `#Vue3` `#Flask` `#内容自动化` >
@@ -160,7 +172,7 @@
 ## lukilabs/beautiful-mermaid
 
 > [!info]
-> ⭐ 7,777 · TypeScript · 2026-02-25  
+> ⭐ 7,798 · TypeScript · 2026-02-26  
 > [GitHub](https://github.com/lukilabs/beautiful-mermaid)  
 
 > `#Mermaid` `#SVG 渲染` `#ASCII 图表` `#主题系统` `#React 集成` `#同步渲染` `#零依赖` `#AI 编程辅助` >
@@ -170,7 +182,7 @@
 ## bmad-code-org/BMAD-METHOD
 
 > [!info]
-> ⭐ 37,964 · JavaScript · 2026-02-26  
+> ⭐ 38,060 · JavaScript · 2026-02-26  
 > [GitHub](https://github.com/bmad-code-org/BMAD-METHOD)  
 
 > `#AI驱动开发` `#敏捷开发` `#智能体协作` `#全生命周期` `#开源框架` `#自适应规划` `#专家工作流` `#Node.js` >
@@ -182,7 +194,7 @@
 ## lbjlaq/Antigravity-Manager
 
 > [!info]
-> ⭐ 24,372 · Rust · 2026-02-25  
+> ⭐ 24,436 · Rust · 2026-02-26  
 > [GitHub](https://github.com/lbjlaq/Antigravity-Manager) · [Website](https://lbjlaq.github.io/Antigravity-Manager/)  
 
 > `#AI账号管理` `#协议代理` `#Tauri` `#Rust` `#React` `#模型路由` `#多模态支持` `#一键切换` `#account-manager` `#antigravity` >
@@ -194,7 +206,7 @@
 ## openmozi/openmozi
 
 > [!info]
-> ⭐ 163 · TypeScript · 2026-02-13  
+> ⭐ 164 · TypeScript · 2026-02-13  
 > [GitHub](https://github.com/openmozi/openmozi) · [Website](https://mozi.aigcshow.com/)  
 
 > `#AI助手` `#国产大模型` `#多平台机器人` `#Function Calling` `#技能系统` `#上下文压缩` `#记忆系统` `#轻量级框架` `#agent` `#claude` `#claude-code` `#clawdbot` `#deepseek` `#dingding` `#feishu` `#minimax` `#moltbot` `#openclaw` `#qq` `#qqbot` >
@@ -206,7 +218,7 @@
 ## nocmt/toMic
 
 > [!info]
-> ⭐ 50 · JavaScript · 2026-02-14  
+> ⭐ 51 · JavaScript · 2026-02-14  
 > [GitHub](https://github.com/nocmt/toMic)  
 
 > `#虚拟麦克风` `#手机变麦克风` `#局域网音频传输` `#WebRTC` `#Opus编码` `#虚拟声卡` `#跨平台` `#低延迟` >
@@ -230,7 +242,7 @@
 ## antvis/Infographic
 
 > [!info]
-> ⭐ 4,497 · TypeScript · 2026-02-26  
+> ⭐ 4,498 · TypeScript · 2026-02-26  
 > [GitHub](https://github.com/antvis/Infographic) · [Website](https://infographic.antv.vision)  
 
 > `#信息图生成` `#AI 可视化` `#声明式语法` `#SVG 渲染` `#主题系统` `#流式渲染` `#数据叙事` `#AntV` `#ai` `#antv` `#infographic` `#llm` `#visualization` >
@@ -278,7 +290,7 @@
 ## DayuanJiang/next-ai-draw-io
 
 > [!info]
-> ⭐ 21,887 · TypeScript · 2026-02-25  
+> ⭐ 21,937 · TypeScript · 2026-02-26  
 > [GitHub](https://github.com/DayuanJiang/next-ai-draw-io) · [Website](https://next-ai-drawio.jiang.jp/)  
 
 > `#AI绘图` `#draw.io集成` `#自然语言处理` `#云架构图` `#Next.js` `#MCP协议` `#图表生成` `#实时协作` `#ai` `#diagrams` `#productivity` >
@@ -290,7 +302,7 @@
 ## ZeframLou/call-me
 
 > [!info]
-> ⭐ 2,323 · TypeScript · 2026-01-09  
+> ⭐ 2,324 · TypeScript · 2026-01-09  
 > [GitHub](https://github.com/ZeframLou/call-me)  
 
 > `#电话通知` `#Claude Code 插件` `#语音交互` `#Telnyx` `#Twilio` `#MCP 工具` `#实时通信` `#自动化回调` >
@@ -302,7 +314,7 @@
 ## lingfengQAQ/webnovel-writer
 
 > [!info]
-> ⭐ 225 · Python · 2026-02-11  
+> ⭐ 225 · Python · 2026-02-26  
 > [GitHub](https://github.com/lingfengQAQ/webnovel-writer)  
 
 > `#AI写作` `#网文创作` `#防幻觉机制` `#双Agent架构` `#六维审查` `#RAG检索` `#追读力系统` `#长篇连载管理` >
@@ -326,7 +338,7 @@
 ## cjpais/Handy
 
 > [!info]
-> ⭐ 16,130 · Rust · 2026-02-26  
+> ⭐ 16,171 · Rust · 2026-02-26  
 > [GitHub](https://github.com/cjpais/Handy) · [Website](https://handy.computer)  
 
 > `#语音识别` `#离线转录` `#开源工具` `#跨平台` `#隐私保护` `#Whisper` `#无障碍` `#Tauri` `#accessibility` `#cross-platform` `#speech-to-text` `#tauri-v2` >
@@ -338,11 +350,11 @@
 ## nextlevelbuilder/ui-ux-pro-max-skill
 
 > [!info]
-> ⭐ 34,797 · Python · 2026-02-12  
+> ⭐ 34,922 · Python · 2026-02-12  
 > [GitHub](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill) · [Website](https://www.uupm.cc/)  
 
-> `#ai-skills` `#antigravity` `#claude` `#claude-code` `#codex` `#command-line` `#copilot` `#cursor-ai` `#html5` `#kiro` `#landing-page` `#mobile-ui` `#qoder` `#react` `#tailwindcss` `#trae` `#ui-design` `#uikit` `#windsurf-ai` >
-> 暂无摘要
+> `#AI设计` `#UI/UX` `#设计系统` `#多平台` `#智能生成` `#可访问性` `#软UI` `#响应式` `#ai-skills` `#antigravity` `#claude` `#claude-code` `#codex` `#command-line` `#copilot` `#cursor-ai` `#html5` `#kiro` `#landing-page` `#mobile-ui` `#qoder` `#react` `#tailwindcss` `#trae` `#ui-design` `#uikit` `#windsurf-ai` >
+> UI UX Pro Max 是一款 AI 技能，提供跨多平台的专业 UI/UX 设计智能支持，核心功能包括基于 100 条推理规则和 67 种 UI 风格的智能设计系统生成，支持软 UI 等风格推荐与可访问性优化。
 
 > <sub>An AI SKILL that provide design intelligence for building professional UI/UX multiple platforms</sub>
 
@@ -350,7 +362,7 @@
 ## BloopAI/vibe-kanban
 
 > [!info]
-> ⭐ 21,911 · Rust · 2026-02-26  
+> ⭐ 21,952 · Rust · 2026-02-26  
 > [GitHub](https://github.com/BloopAI/vibe-kanban) · [Website](https://www.vibekanban.com/)  
 
 > `#AI编程代理` `#任务编排` `#Kanban看板` `#MCP配置` `#远程开发` `#多代理协同` `#开发效率` `#自托管` `#agent` `#ai-agents` `#kanban` `#management` `#task-manager` >
@@ -374,7 +386,7 @@
 ## aiclientproxy/proxycast
 
 > [!info]
-> ⭐ 1,223 · Rust · 2026-02-25  
+> ⭐ 1,223 · Rust · 2026-02-26  
 > [GitHub](https://github.com/aiclientproxy/proxycast)  
 
 > `#AI创作助手` `#多模态生成` `#内容沉淀` `#社媒运营` `#短视频脚本` `#小说写作` `#歌词创作` `#知识管理` `#agent` `#agentic-ai` `#ai` `#antigravity` `#gemini` `#kiro` >
@@ -398,7 +410,7 @@
 ## fishjar/kiss-translator
 
 > [!info]
-> ⭐ 8,850 · JavaScript · 2026-02-12  
+> ⭐ 8,854 · JavaScript · 2026-02-26  
 > [GitHub](https://github.com/fishjar/kiss-translator) · [Website](https://github.com/fishjar/kiss-translator)  
 
 > `#双语翻译` `#浏览器扩展` `#油猴脚本` `#AI翻译` `#YouTube字幕` `#划词翻译` `#开源工具` `#多服务支持` `#extension` `#translate` `#translation` `#translator` `#userscript` `#userscripts` >
@@ -410,7 +422,7 @@
 ## hezhizheng/go-wxpush
 
 > [!info]
-> ⭐ 1,569 · Go · 2026-01-23  
+> ⭐ 1,573 · Go · 2026-01-23  
 > [GitHub](https://github.com/hezhizheng/go-wxpush) · [Website](https://push.hzz.cool)  
 
 > `#微信推送` `#Golang` `#API接口` `#Docker部署` `#消息通知` `#测试公众号` `#Webhook` `#开源免费` >
@@ -422,7 +434,7 @@
 ## browserwing/browserwing
 
 > [!info]
-> ⭐ 867 · TypeScript · 2026-02-25  
+> ⭐ 878 · TypeScript · 2026-02-25  
 > [GitHub](https://github.com/browserwing/browserwing) · [Website](https://www.browserwing.com)  
 
 > `#浏览器自动化` `#AI 代理` `#MCP 协议` `#Claude Skill` `#可视化脚本` `#数据提取` `#RPA` `#会话管理` `#aibrowser` `#golang` `#llm` `#react` >
@@ -434,7 +446,7 @@
 ## RanFeng/clipsketch-ai
 
 > [!info]
-> ⭐ 1,621 · TypeScript · 2026-01-14  
+> ⭐ 1,623 · TypeScript · 2026-01-14  
 > [GitHub](https://github.com/RanFeng/clipsketch-ai) · [Website](https://clipsketch-ai.vercel.app)  
 
 > `#AI 内容生成` `#视频剪辑` `#手绘故事板` `#社交媒体文案` `#Gemini API` `#React` `#TypeScript` `#多平台适配` >
@@ -446,7 +458,7 @@
 ## oraios/serena
 
 > [!info]
-> ⭐ 20,669 · Python · 2026-02-25  
+> ⭐ 20,682 · Python · 2026-02-26  
 > [GitHub](https://github.com/oraios/serena) · [Website](https://oraios.github.io/serena)  
 
 > `#编码代理` `#语义检索` `#代码编辑` `#MCP协议` `#语言服务器` `#JetBrains插件` `#LLM集成` `#开源工具` `#agent` `#ai` `#ai-coding` `#claude` `#claude-code` `#language-server` `#llms` `#mcp-server` `#programming` `#vibe-coding` >
@@ -458,7 +470,7 @@
 ## wordflowlab/article-writer
 
 > [!info]
-> ⭐ 200 · TypeScript · 2025-11-27  
+> ⭐ 202 · TypeScript · 2025-11-27  
 > [GitHub](https://github.com/wordflowlab/article-writer)  
 
 > `#AI写作` `#微信公众号` `#智能助手` `#多模式创作` `#真实性优化` `#斜杠命令` `#素材库` `#文档爬虫` `#ai-article-writer` `#article` `#spec-kit` >
@@ -470,7 +482,7 @@
 ## wordflowlab/novel-writer
 
 > [!info]
-> ⭐ 639 · Shell · 2025-10-26  
+> ⭐ 643 · Shell · 2025-10-26  
 > [GitHub](https://github.com/wordflowlab/novel-writer)  
 
 > `#AI小说创作` `#规格驱动开发` `#斜杠命令` `#中文写作工具` `#情节追踪` `#插件系统` `#多平台支持` `#七步方法论` `#engineering` `#novels` `#sdd` `#spec` `#spec-driven` >
@@ -482,7 +494,7 @@
 ## siddharthvaddem/openscreen
 
 > [!info]
-> ⭐ 7,464 · TypeScript · 2026-02-23  
+> ⭐ 7,480 · TypeScript · 2026-02-23  
 > [GitHub](https://github.com/siddharthvaddem/openscreen) · [Website](https://openscreen.vercel.app)  
 
 > `#屏幕录制` `#开源软件` `#产品演示` `#视频编辑` `#无水印` `#免费商用` `#Electron` `#React` `#electron` `#open-source` `#pixijs` `#screen-capture` `#screen-recorder` >
@@ -494,7 +506,7 @@
 ## 666OS/ClashMac
 
 > [!info]
-> ⭐ 4,735 · N/A · 2026-01-31  
+> ⭐ 4,737 · N/A · 2026-01-31  
 > [GitHub](https://github.com/666OS/ClashMac) · [Website](https://clashmac.app)  
 
 > `#macOS代理` `#SwiftUI` `#流量可视化` `#TUN模式` `#订阅管理` `#隐私保护` `#原生体验` `#实时监控` `#clash` `#clash-meta` `#macos` `#mihomo` `#network` `#proxy` `#swiftui` >
@@ -518,7 +530,7 @@
 ## millylee/auo
 
 > [!info]
-> ⭐ 76 · TypeScript · 2025-09-17  
+> ⭐ 77 · TypeScript · 2025-09-17  
 > [GitHub](https://github.com/millylee/auo)  
 
 > `#Claude Code` `#多配置切换` `#环境变量管理` `#CLI 工具` `#Anthropic API` `#代理支持` `#自动升级` `#向后兼容` `#anyrouter` `#claude` `#claude-code` `#cli` `#glm` `#kimi` >
@@ -530,12 +542,154 @@
 ## millylee/anyrouter-check-in
 
 > [!info]
-> ⭐ 709 · Python · 2026-02-25  
+> ⭐ 711 · Python · 2026-02-25  
 > [GitHub](https://github.com/millylee/anyrouter-check-in) · [Website](https://anyrouter.top/register?aff=gSsN)  
 
 > `#自动签到` `#多账号管理` `#NewAPI` `#OneAPI` `#GitHub Actions` `#WAF绕过` `#机器人通知` `#Claude Code` `#agentrouter` `#anyrouter` `#check-in` `#claude-code` `#claudecode` `#codex` `#newapi` `#oneapi` >
 > AnyRouter多账号自动签到工具，支持AnyRouter、AgentRouter及所有基于NewAPI/OneAPI的平台。提供多平台兼容、多账号管理、机器人通知和WAF绕过功能，通过GitHub Actions实现定时自动签到。
 
 > <sub>支持 AnyRouter、AgentRouter 的多平台多账号签到，理论兼容所有基于 NewAPI、OneAPI 的平台。</sub>
+
+---
+## tw93/Mole
+
+> [!info]
+> ⭐ 37,162 · Shell · 2026-02-26  
+> [GitHub](https://github.com/tw93/Mole) · [Website](https://x.com/HiTw93/status/2025424790467871149)  
+
+> `#macOS 清理工具` `#系统优化` `#磁盘分析` `#性能监控` `#analyzer` `#appcleaner` `#clean` `#cleaner` `#cleaner-cli` `#cleaner-script` `#command-line` `#daisydisk` `#istat` `#mac` `#macos` `#optimize` `#sensei` `#shell` `#uninstall` >
+> Mole 是一款 macOS 深度清理优化工具，集成 CleanMyMac、AppCleaner 等核心功能于一体。支持一键清理缓存、日志、浏览器残留等占用大量空间的文件，智能卸载应用及其关联组件，可视化磁盘分析，实时监控 CPU/GPU/内存/网络状态，并提供系统服务刷新与 Touch ID 配置等高级功能，显著提升 Mac 性能与存储空间利用率。
+
+> <sub>🐹 Deep clean and optimize your Mac.</sub>
+
+---
+## anthropics/skills
+
+> [!info]
+> ⭐ 76,820 · Python · 2026-02-25  
+> [GitHub](https://github.com/anthropics/skills)  
+
+> `#智能体技能` `#文档处理` `#AI 自动化` `#Claude 扩展` `#agent-skills` >
+> Anthropic 开源 Claude 智能体技能库，提供文档处理（PDF/PPTX/DOCX/XLSX）、开发工具（MCP 服务器生成）、创意设计等多样化技能模板。每个技能包含独立指令集和元数据，支持动态加载与重复任务执行，采用 Apache 2.0 许可，适用于企业级自动化与个性化 AI 助手构建。
+
+> <sub>Public repository for Agent Skills</sub>
+
+---
+## tianchangNorth/WeSpy
+
+> [!info]
+> ⭐ 217 · Python · 2025-11-24  
+> [GitHub](https://github.com/tianchangNorth/WeSpy)  
+
+> `#微信公众号` `#Markdown转换` `#内容抓取` `#批量下载` >
+> WeSpy 是一款专为微信公众号文章设计的 Python 工具，支持智能提取文章内容并转换为 Markdown 格式，具备图片防盗链处理、专辑批量下载及多格式输出（HTML/JSON）功能，同时提供命令行与 Python API 两种使用方式，适用于内容归档与知识管理场景。
+
+> <sub>WeSpy 是一个用于获取wx公众号文章并转换为 Markdown 格式的 Python 工具</sub>
+
+---
+## github/spec-kit
+
+> [!info]
+> ⭐ 72,235 · Python · 2026-02-25  
+> [GitHub](https://github.com/github/spec-kit) · [Website](https://github.github.com/spec-kit/)  
+
+> `#规范驱动开发` `#AI代码生成` `#CLI工具` `#ai` `#copilot` `#development` `#engineering` `#prd` `#spec` `#spec-driven` >
+> Spec Kit 是一个开源工具包，旨在通过规范驱动开发（Spec-Driven Development）提升软件开发效率与质量。它将传统文档式规范转化为可执行的代码生成流程，结合 AI 助手实现从产品场景描述到高质量代码的自动化构建，减少重复编码，聚焦业务逻辑与可预测结果。
+
+> <sub>💫 Toolkit to help you get started with Spec-Driven Development</sub>
+
+---
+## Scipline/Image_matting
+
+> [!info]
+> ⭐ 14 · Python · 2023-01-11  
+> [GitHub](https://github.com/Scipline/Image_matting)  
+
+> `#图像抠图` `#批量处理` `#ONNX模型` `#remove.bg` >
+> 该项目提供一键批量图像抠图功能，支持两种模式：基于 remove.bg 免费 API 的在线抠图（精度高但依赖网络）和基于 rembg + ONNX 的本地模型抠图（速度快、清晰度高）。支持自动切换 API Key、批量处理、背景替换及规范文件命名，适用于无 GUI 需求的自动化场景。
+
+> <sub>一键批量抠图。两种方法。一.使用remove.bg网站账号免费api额度，二.使用rembg和onnxruntime训练模型本地抠图</sub>
+
+---
+## VoltAgent/awesome-claude-code-subagents
+
+> [!info]
+> ⭐ 11,522 · Shell · 2026-02-21  
+> [GitHub](https://github.com/VoltAgent/awesome-claude-code-subagents) · [Website](https://github.com/VoltAgent/voltagent)  
+
+> `#AI编程助手` `#Claude Code插件` `#智能开发代理` `#全栈开发工具` `#ai-agent-framework` `#ai-agent-tools` `#ai-agents` `#awesome` `#awesome-list` `#claude` `#claude-ai` `#claude-code-subagents` `#claude-subagents` `#subagents` >
+> 这是一个专为 Claude Code 设计的 100+ 专项子代理集合，覆盖 API 设计、前后端开发、DevOps、测试等全栈场景。支持插件化安装与分类管理，显著提升 AI 编程助手的任务专业化能力。
+
+> <sub>A collection of 100+ specialized Claude Code subagents covering a wide range of development use cases</sub>
+
+---
+## UfoMiao/zcf
+
+> [!info]
+> ⭐ 5,529 · TypeScript · 2026-02-26  
+> [GitHub](https://github.com/UfoMiao/zcf) · [Website](http://zcf.ufomiao.com/)  
+
+> `#零配置部署` `#Claude Code` `#AI 编程助手` `#MCP 工作流` `#agent` `#ai` `#ai-agent` `#bmad-method` `#ccr` `#claude` `#claude-4` `#claude-ai` `#claude-code` `#cli` `#gpt` `#gpt-5` `#llm` `#llm-code` `#nodejs` `#openai` `#prompt` `#typescript` `#workflow` `#zcf` >
+> ZCF 是一款零配置代码流工具，专为 Claude Code 和 Codex 设计，支持一键部署、多语言界面、智能代理系统和个性化 AI 助手。集成 MCP 工作流、API 路由与多平台赞助服务，提供开箱即用的开发体验。
+
+> <sub>Zero-Config Code Flow for Claude code & Codex</sub>
+
+---
+## MapleShaw/auto-claude-writing-agent-pub
+
+> [!info]
+> ⭐ 359 · N/A · 2025-11-29  
+> [GitHub](https://github.com/MapleShaw/auto-claude-writing-agent-pub)  
+
+> `#AI写作助手` `#内容创作流程` `#风格迁移` `#多平台适配` >
+> 基于 Claude Sonnet 4.5 的多平台 AI 写作助手，提供从选题到发布的完整创作流程。通过‘首要原则’确保关键步骤执行，包含创意排水、三遍审校、标题优化等机制，显著降低 AI 味并提升可读性。支持风格学习、素材积累与版本管理，实现透明化协作。
+
+---
+## google-gemini/gemini-cli
+
+> [!info]
+> ⭐ 95,781 · TypeScript · 2026-02-26  
+> [GitHub](https://github.com/google-gemini/gemini-cli) · [Website](https://geminicli.com)  
+
+> `#终端AI助手` `#Gemini模型` `#命令行工具` `#MCP协议` `#ai` `#ai-agents` `#cli` `#gemini` `#gemini-api` `#mcp-client` `#mcp-server` >
+> Gemini CLI 是一个开源 AI 代理，将 Gemini 的强大能力直接引入终端。它提供轻量级访问，支持代码理解与生成、自动化任务、内置工具（如 Google 搜索、文件操作）以及 MCP 协议扩展，专为命令行开发者设计，免费层级支持每分钟 60 次请求。
+
+> <sub>An open-source AI agent that brings the power of Gemini directly into your terminal.</sub>
+
+---
+## xunbu/docutranslate
+
+> [!info]
+> ⭐ 789 · Python · 2026-02-25  
+> [GitHub](https://github.com/xunbu/docutranslate)  
+
+> `#文档翻译` `#多格式支持` `#大模型驱动` `#本地部署` `#file-transla` `#llm` `#pdf-converter` `#pdf-translator` `#translate` >
+> DocuTranslate 是一款基于大语言模型的轻量级本地文档翻译工具，支持 PDF、Word、Excel、JSON、EPUB、SRT 等十余种格式，具备表格公式识别、术语表自动生成、多AI平台并发调用及异步处理能力，提供 Web 界面与 RESTful API，适用于小说、论文、字幕等场景，兼顾格式保留与高效翻译。
+
+> <sub>文档（小说、论文、字幕）翻译工具（支持 pdf/word/excel/json/epub/srt...）Document (Novel, Thesis, Subtitle) Translation Tool (Supports pdf/word/excel/json/epub/srt...)</sub>
+
+---
+## dataease/SQLBot
+
+> [!info]
+> ⭐ 5,566 · JavaScript · 2026-02-24  
+> [GitHub](https://github.com/dataease/SQLBot) · [Website](https://sqlbot.org/)  
+
+> `#Text-to-SQL` `#RAG` `#智能问数` `#ChatBI` `#chatbi` `#deepseek` `#llm` `#nl2sql` `#rag` `#sqlbot` `#text-to-sql` `#text2sql` >
+> SQLBot 是由 DataEase 团队开发的基于大模型与 RAG 技术的智能问数系统，支持自然语言转 SQL（Text-to-SQL），实现对话式数据分析。具备开箱即用、安全可控、易于集成和持续优化等核心优势，可快速嵌入各类应用平台，助力企业实现 ChatBI 能力。
+
+> <sub>🔥 基于大模型和 RAG 的智能问数系统，对话式数据分析神器。Text-to-SQL Generation via LLMs using RAG.</sub>
+
+---
+## ckanner/jta
+
+> [!info]
+> ⭐ 126 · Go · 2025-11-12  
+> [GitHub](https://github.com/ckanner/jta)  
+
+> `#AI翻译` `#JSON国际化` `#代理式自省` `#多语言支持` `#agentic-ai` `#ai` `#anthropic` `#cli` `#gemini` `#golang` `#i18n` `#json` `#llm` `#localization` `#openai` `#reflection` `#terminology` `#translation` `#translation-tool` >
+> Jta 是一款基于 AI 的 JSON 国际化文件翻译工具，支持 OpenAI、Anthropic 和 Gemini 多平台 API。其核心特性是代理式自省机制：AI 先翻译，再自我评估并优化结果，确保翻译在准确性、流畅性、风格适配和术语一致性上的高质量。支持增量翻译、术语管理和格式保护，适用于生产环境。
+
+> <sub>AI-powered JSON translation tool with agentic reflection using OpenAI, Anthropic, and Gemini APIs</sub>
 
 ---

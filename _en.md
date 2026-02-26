@@ -1,6 +1,6 @@
 # ⭐ GitHub Stars Index
 
-> Updated: 2026-02-26 07:44 UTC · Total: 41
+> Updated: 2026-02-26 14:41 UTC · Total: 53
 
 ---
 
@@ -46,13 +46,25 @@
 - [[#guiyumin/vget|guiyumin/vget]]
 - [[#millylee/auo|millylee/auo]]
 - [[#millylee/anyrouter-check-in|millylee/anyrouter-check-in]]
+- [[#tw93/Mole|tw93/Mole]]
+- [[#anthropics/skills|anthropics/skills]]
+- [[#tianchangNorth/WeSpy|tianchangNorth/WeSpy]]
+- [[#github/spec-kit|github/spec-kit]]
+- [[#Scipline/Image_matting|Scipline/Image_matting]]
+- [[#VoltAgent/awesome-claude-code-subagents|VoltAgent/awesome-claude-code-subagents]]
+- [[#UfoMiao/zcf|UfoMiao/zcf]]
+- [[#MapleShaw/auto-claude-writing-agent-pub|MapleShaw/auto-claude-writing-agent-pub]]
+- [[#google-gemini/gemini-cli|google-gemini/gemini-cli]]
+- [[#xunbu/docutranslate|xunbu/docutranslate]]
+- [[#dataease/SQLBot|dataease/SQLBot]]
+- [[#ckanner/jta|ckanner/jta]]
 
 ---
 
 ## LifeArchiveProject/WeChatDataAnalysis
 
 > [!info]
-> ⭐ 372 · Python · 2026-02-22  
+> ⭐ 375 · Python · 2026-02-26  
 > [GitHub](https://github.com/LifeArchiveProject/WeChatDataAnalysis)  
 
 > `#WeChat decryption` `#chat analysis` `#data export` `#annual summary` `#data visualization` `#SQLite` `#privacy tool` `#desktop app` >
@@ -64,7 +76,7 @@
 ## op7418/Document-illustrator-skill
 
 > [!info]
-> ⭐ 257 · Python · 2026-01-21  
+> ⭐ 260 · Python · 2026-01-21  
 > [GitHub](https://github.com/op7418/Document-illustrator-skill)  
 
 > `#AI illustration` `#document visualization` `#content summarization` `#multi-style generation` `#social media` `#Claude Skill` `#Gemini API` `#Python tool` >
@@ -76,7 +88,7 @@
 ## HKUDS/nanobot
 
 > [!info]
-> ⭐ 25,388 · Python · 2026-02-26  
+> ⭐ 25,644 · Python · 2026-02-26  
 > [GitHub](https://github.com/HKUDS/nanobot)  
 
 > `#AI assistant` `#lightweight` `#multi-platform` `#MCP` `#open-source` `#Python` `#personal agent` `#research-ready` >
@@ -88,7 +100,7 @@
 ## NevaMind-AI/memU
 
 > [!info]
-> ⭐ 10,958 · Python · 2026-02-24  
+> ⭐ 11,027 · Python · 2026-02-24  
 > [GitHub](https://github.com/NevaMind-AI/memU) · [Website](https://memu.pro)  
 
 > `#AI memory framework` `#proactive agents` `#user intent capture` `#cost efficiency` `#file-system memory` `#long-term memory` `#LLM optimization` `#production AI` `#agent-memory` `#agentic-workflow` `#claude` `#claude-skills` `#clawdbot` `#clawdbot-skill` `#mcp` `#memory` `#proactive` `#proactive-ai` `#sandbox` `#skills` >
@@ -100,7 +112,7 @@
 ## linshenkx/prompt-optimizer
 
 > [!info]
-> ⭐ 22,113 · TypeScript · 2026-02-10  
+> ⭐ 22,179 · TypeScript · 2026-02-10  
 > [GitHub](https://github.com/linshenkx/prompt-optimizer) · [Website](https://prompt.always200.com)  
 
 > `#prompt optimization` `#AI prompt engineering` `#multi-model integration` `#image generation` `#MCP protocol` `#Docker deployment` `#Chrome extension` `#cross-platform` `#llm` `#prompt` `#prompt-engineering` `#prompt-optimization` `#prompt-toolkit` `#prompt-tuning` >
@@ -124,7 +136,7 @@
 ## farion1231/cc-switch
 
 > [!info]
-> ⭐ 20,276 · TypeScript · 2026-02-25  
+> ⭐ 20,497 · TypeScript · 2026-02-25  
 > [GitHub](https://github.com/farion1231/cc-switch) · [Website](https://github.com/farion1231/cc-switch)  
 
 > `#AI coding assistant` `#cross-platform desktop` `#Tauri framework` `#API relay` `#Claude Code` `#Codex` `#Gemini CLI` `#multi-model integration` `#ai-tools` `#claude-code` `#codex` `#desktop-app` `#kimi-k2-thiking` `#mcp` `#minimax` `#open-source` `#opencode` `#provider-management` `#rust` `#skills` `#skills-management` `#tauri` `#typescript` `#wsl-support` >
@@ -136,7 +148,7 @@
 ## affaan-m/everything-claude-code
 
 > [!info]
-> ⭐ 52,702 · JavaScript · 2026-02-25  
+> ⭐ 53,105 · JavaScript · 2026-02-25  
 > [GitHub](https://github.com/affaan-m/everything-claude-code)  
 
 > `#Claude Code` `#AI agents` `#configuration` `#multi-language` `#continuous learning` `#MCP` `#GitHub Marketplace` `#automation` `#ai-agents` `#anthropic` `#claude` `#claude-code` `#developer-tools` `#llm` `#mcp` `#productivity` >
@@ -148,7 +160,7 @@
 ## HisMax/RedInk
 
 > [!info]
-> ⭐ 4,902 · Python · 2025-12-29  
+> ⭐ 4,905 · Python · 2025-12-29  
 > [GitHub](https://github.com/HisMax/RedInk) · [Website](https://redink.top)  
 
 > `#Xiaohongshu generator` `#AI content creation` `#Nano Banana Pro` `#Gemini` `#Docker deployment` `#Vue3` `#Flask` `#content automation` >
@@ -160,7 +172,7 @@
 ## lukilabs/beautiful-mermaid
 
 > [!info]
-> ⭐ 7,777 · TypeScript · 2026-02-25  
+> ⭐ 7,798 · TypeScript · 2026-02-26  
 > [GitHub](https://github.com/lukilabs/beautiful-mermaid)  
 
 > `#Mermaid` `#SVG rendering` `#ASCII diagrams` `#theming` `#React integration` `#synchronous rendering` `#zero dependencies` `#AI-assisted coding` >
@@ -170,7 +182,7 @@
 ## bmad-code-org/BMAD-METHOD
 
 > [!info]
-> ⭐ 37,964 · JavaScript · 2026-02-26  
+> ⭐ 38,060 · JavaScript · 2026-02-26  
 > [GitHub](https://github.com/bmad-code-org/BMAD-METHOD)  
 
 > `#AI-driven development` `#agile development` `#agent collaboration` `#full lifecycle` `#open source` `#scale-adaptive` `#expert workflows` `#Node.js` >
@@ -182,7 +194,7 @@
 ## lbjlaq/Antigravity-Manager
 
 > [!info]
-> ⭐ 24,372 · Rust · 2026-02-25  
+> ⭐ 24,436 · Rust · 2026-02-26  
 > [GitHub](https://github.com/lbjlaq/Antigravity-Manager) · [Website](https://lbjlaq.github.io/Antigravity-Manager/)  
 
 > `#AI account management` `#protocol proxy` `#Tauri` `#Rust` `#React` `#model routing` `#multimodal support` `#one-click switching` `#account-manager` `#antigravity` >
@@ -194,7 +206,7 @@
 ## openmozi/openmozi
 
 > [!info]
-> ⭐ 163 · TypeScript · 2026-02-13  
+> ⭐ 164 · TypeScript · 2026-02-13  
 > [GitHub](https://github.com/openmozi/openmozi) · [Website](https://mozi.aigcshow.com/)  
 
 > `#AI assistant` `#Chinese LLMs` `#multi-platform bot` `#Function Calling` `#skills system` `#context compression` `#memory system` `#lightweight framework` `#agent` `#claude` `#claude-code` `#clawdbot` `#deepseek` `#dingding` `#feishu` `#minimax` `#moltbot` `#openclaw` `#qq` `#qqbot` >
@@ -206,7 +218,7 @@
 ## nocmt/toMic
 
 > [!info]
-> ⭐ 50 · JavaScript · 2026-02-14  
+> ⭐ 51 · JavaScript · 2026-02-14  
 > [GitHub](https://github.com/nocmt/toMic)  
 
 > `#virtual microphone` `#phone as mic` `#LAN audio streaming` `#WebRTC` `#Opus codec` `#virtual audio cable` `#cross-platform` `#low latency` >
@@ -230,7 +242,7 @@
 ## antvis/Infographic
 
 > [!info]
-> ⭐ 4,497 · TypeScript · 2026-02-26  
+> ⭐ 4,498 · TypeScript · 2026-02-26  
 > [GitHub](https://github.com/antvis/Infographic) · [Website](https://infographic.antv.vision)  
 
 > `#infographic generation` `#AI visualization` `#declarative syntax` `#SVG rendering` `#theme system` `#streaming rendering` `#data storytelling` `#AntV` `#ai` `#antv` `#infographic` `#llm` `#visualization` >
@@ -278,7 +290,7 @@
 ## DayuanJiang/next-ai-draw-io
 
 > [!info]
-> ⭐ 21,887 · TypeScript · 2026-02-25  
+> ⭐ 21,937 · TypeScript · 2026-02-26  
 > [GitHub](https://github.com/DayuanJiang/next-ai-draw-io) · [Website](https://next-ai-drawio.jiang.jp/)  
 
 > `#AI diagramming` `#draw.io integration` `#natural language` `#cloud architecture` `#Next.js` `#MCP protocol` `#diagram generation` `#real-time collaboration` `#ai` `#diagrams` `#productivity` >
@@ -290,7 +302,7 @@
 ## ZeframLou/call-me
 
 > [!info]
-> ⭐ 2,323 · TypeScript · 2026-01-09  
+> ⭐ 2,324 · TypeScript · 2026-01-09  
 > [GitHub](https://github.com/ZeframLou/call-me)  
 
 > `#phone notification` `#Claude Code plugin` `#voice interaction` `#Telnyx` `#Twilio` `#MCP tools` `#real-time communication` `#automated callback` >
@@ -302,7 +314,7 @@
 ## lingfengQAQ/webnovel-writer
 
 > [!info]
-> ⭐ 225 · Python · 2026-02-11  
+> ⭐ 225 · Python · 2026-02-26  
 > [GitHub](https://github.com/lingfengQAQ/webnovel-writer)  
 
 > `#AI writing` `#webnovel creation` `#anti-hallucination` `#dual-agent architecture` `#six-dimensional review` `#RAG retrieval` `#reader engagement` `#long-form serialization` >
@@ -326,7 +338,7 @@
 ## cjpais/Handy
 
 > [!info]
-> ⭐ 16,130 · Rust · 2026-02-26  
+> ⭐ 16,171 · Rust · 2026-02-26  
 > [GitHub](https://github.com/cjpais/Handy) · [Website](https://handy.computer)  
 
 > `#speech-to-text` `#offline transcription` `#open source` `#cross-platform` `#privacy` `#Whisper` `#accessibility` `#Tauri` `#accessibility` `#cross-platform` `#speech-to-text` `#tauri-v2` >
@@ -338,11 +350,11 @@
 ## nextlevelbuilder/ui-ux-pro-max-skill
 
 > [!info]
-> ⭐ 34,797 · Python · 2026-02-12  
+> ⭐ 34,922 · Python · 2026-02-12  
 > [GitHub](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill) · [Website](https://www.uupm.cc/)  
 
-> `#ai-skills` `#antigravity` `#claude` `#claude-code` `#codex` `#command-line` `#copilot` `#cursor-ai` `#html5` `#kiro` `#landing-page` `#mobile-ui` `#qoder` `#react` `#tailwindcss` `#trae` `#ui-design` `#uikit` `#windsurf-ai` >
-> 暂无摘要
+> `#AI Design` `#UI/UX` `#Design System` `#Multi-platform` `#Intelligent Generation` `#Accessibility` `#Soft UI` `#Responsive` `#ai-skills` `#antigravity` `#claude` `#claude-code` `#codex` `#command-line` `#copilot` `#cursor-ai` `#html5` `#kiro` `#landing-page` `#mobile-ui` `#qoder` `#react` `#tailwindcss` `#trae` `#ui-design` `#uikit` `#windsurf-ai` >
+> UI UX Pro Max is an AI skill delivering design intelligence for professional UI/UX across multiple platforms, featuring AI-powered design system generation with 100 reasoning rules, 67 UI styles, and accessibility compliance.
 
 > <sub>An AI SKILL that provide design intelligence for building professional UI/UX multiple platforms</sub>
 
@@ -350,7 +362,7 @@
 ## BloopAI/vibe-kanban
 
 > [!info]
-> ⭐ 21,911 · Rust · 2026-02-26  
+> ⭐ 21,952 · Rust · 2026-02-26  
 > [GitHub](https://github.com/BloopAI/vibe-kanban) · [Website](https://www.vibekanban.com/)  
 
 > `#AI coding agents` `#task orchestration` `#Kanban board` `#MCP configuration` `#remote development` `#multi-agent collaboration` `#developer productivity` `#self-hosting` `#agent` `#ai-agents` `#kanban` `#management` `#task-manager` >
@@ -374,7 +386,7 @@
 ## aiclientproxy/proxycast
 
 > [!info]
-> ⭐ 1,223 · Rust · 2026-02-25  
+> ⭐ 1,223 · Rust · 2026-02-26  
 > [GitHub](https://github.com/aiclientproxy/proxycast)  
 
 > `#AI创作` `#multimodal generation` `#content沉淀` `#social media` `#short video script` `#novel writing` `#lyric创作` `#knowledge management` `#agent` `#agentic-ai` `#ai` `#antigravity` `#gemini` `#kiro` >
@@ -398,7 +410,7 @@
 ## fishjar/kiss-translator
 
 > [!info]
-> ⭐ 8,850 · JavaScript · 2026-02-12  
+> ⭐ 8,854 · JavaScript · 2026-02-26  
 > [GitHub](https://github.com/fishjar/kiss-translator) · [Website](https://github.com/fishjar/kiss-translator)  
 
 > `#bilingual translation` `#browser extension` `#greasemonkey script` `#AI translation` `#YouTube subtitles` `#text selection translation` `#open source` `#multi-service support` `#extension` `#translate` `#translation` `#translator` `#userscript` `#userscripts` >
@@ -410,7 +422,7 @@
 ## hezhizheng/go-wxpush
 
 > [!info]
-> ⭐ 1,569 · Go · 2026-01-23  
+> ⭐ 1,573 · Go · 2026-01-23  
 > [GitHub](https://github.com/hezhizheng/go-wxpush) · [Website](https://push.hzz.cool)  
 
 > `#WeChat Push` `#Golang` `#API` `#Docker` `#Notification` `#Test Account` `#Webhook` `#Open Source` >
@@ -422,7 +434,7 @@
 ## browserwing/browserwing
 
 > [!info]
-> ⭐ 867 · TypeScript · 2026-02-25  
+> ⭐ 878 · TypeScript · 2026-02-25  
 > [GitHub](https://github.com/browserwing/browserwing) · [Website](https://www.browserwing.com)  
 
 > `#browser automation` `#AI agent` `#MCP protocol` `#Claude Skill` `#visual scripting` `#data extraction` `#RPA` `#session management` `#aibrowser` `#golang` `#llm` `#react` >
@@ -434,7 +446,7 @@
 ## RanFeng/clipsketch-ai
 
 > [!info]
-> ⭐ 1,621 · TypeScript · 2026-01-14  
+> ⭐ 1,623 · TypeScript · 2026-01-14  
 > [GitHub](https://github.com/RanFeng/clipsketch-ai) · [Website](https://clipsketch-ai.vercel.app)  
 
 > `#AI content generation` `#video editing` `#hand-drawn storyboard` `#social media captions` `#Gemini API` `#React` `#TypeScript` `#cross-platform` >
@@ -446,7 +458,7 @@
 ## oraios/serena
 
 > [!info]
-> ⭐ 20,669 · Python · 2026-02-25  
+> ⭐ 20,682 · Python · 2026-02-26  
 > [GitHub](https://github.com/oraios/serena) · [Website](https://oraios.github.io/serena)  
 
 > `#coding agent` `#semantic retrieval` `#code editing` `#MCP` `#language server` `#JetBrains plugin` `#LLM integration` `#open source` `#agent` `#ai` `#ai-coding` `#claude` `#claude-code` `#language-server` `#llms` `#mcp-server` `#programming` `#vibe-coding` >
@@ -458,7 +470,7 @@
 ## wordflowlab/article-writer
 
 > [!info]
-> ⭐ 200 · TypeScript · 2025-11-27  
+> ⭐ 202 · TypeScript · 2025-11-27  
 > [GitHub](https://github.com/wordflowlab/article-writer)  
 
 > `#AI writing` `#WeChat articles` `#AI assistants` `#multi-mode creation` `#authenticity optimization` `#slash commands` `#material library` `#document crawler` `#ai-article-writer` `#article` `#spec-kit` >
@@ -470,7 +482,7 @@
 ## wordflowlab/novel-writer
 
 > [!info]
-> ⭐ 639 · Shell · 2025-10-26  
+> ⭐ 643 · Shell · 2025-10-26  
 > [GitHub](https://github.com/wordflowlab/novel-writer)  
 
 > `#AI novel writing` `#specification-driven development` `#slash commands` `#Chinese writing tool` `#plot tracking` `#plugin system` `#multi-platform` `#7-step methodology` `#engineering` `#novels` `#sdd` `#spec` `#spec-driven` >
@@ -482,7 +494,7 @@
 ## siddharthvaddem/openscreen
 
 > [!info]
-> ⭐ 7,464 · TypeScript · 2026-02-23  
+> ⭐ 7,480 · TypeScript · 2026-02-23  
 > [GitHub](https://github.com/siddharthvaddem/openscreen) · [Website](https://openscreen.vercel.app)  
 
 > `#screen recording` `#open source` `#product demo` `#video editing` `#no watermark` `#free for commercial use` `#Electron` `#React` `#electron` `#open-source` `#pixijs` `#screen-capture` `#screen-recorder` >
@@ -494,7 +506,7 @@
 ## 666OS/ClashMac
 
 > [!info]
-> ⭐ 4,735 · N/A · 2026-01-31  
+> ⭐ 4,737 · N/A · 2026-01-31  
 > [GitHub](https://github.com/666OS/ClashMac) · [Website](https://clashmac.app)  
 
 > `#macOS proxy` `#SwiftUI` `#traffic visualization` `#TUN mode` `#subscription management` `#privacy protection` `#native experience` `#real-time monitoring` `#clash` `#clash-meta` `#macos` `#mihomo` `#network` `#proxy` `#swiftui` >
@@ -518,7 +530,7 @@
 ## millylee/auo
 
 > [!info]
-> ⭐ 76 · TypeScript · 2025-09-17  
+> ⭐ 77 · TypeScript · 2025-09-17  
 > [GitHub](https://github.com/millylee/auo)  
 
 > `#Claude Code` `#multi-config` `#environment variables` `#CLI tool` `#Anthropic API` `#proxy support` `#auto-upgrade` `#backward compatibility` `#anyrouter` `#claude` `#claude-code` `#cli` `#glm` `#kimi` >
@@ -530,12 +542,154 @@
 ## millylee/anyrouter-check-in
 
 > [!info]
-> ⭐ 709 · Python · 2026-02-25  
+> ⭐ 711 · Python · 2026-02-25  
 > [GitHub](https://github.com/millylee/anyrouter-check-in) · [Website](https://anyrouter.top/register?aff=gSsN)  
 
 > `#auto-checkin` `#multi-account` `#NewAPI` `#OneAPI` `#GitHub-Actions` `#WAF-bypass` `#bot-notification` `#Claude-Code` `#agentrouter` `#anyrouter` `#check-in` `#claude-code` `#claudecode` `#codex` `#newapi` `#oneapi` >
 > AnyRouter multi-account auto check-in tool supporting AnyRouter, AgentRouter, and all NewAPI/OneAPI-based platforms. Features multi-platform compatibility, multi-account management, bot notifications, and WAF bypass via GitHub Actions.
 
 > <sub>支持 AnyRouter、AgentRouter 的多平台多账号签到，理论兼容所有基于 NewAPI、OneAPI 的平台。</sub>
+
+---
+## tw93/Mole
+
+> [!info]
+> ⭐ 37,162 · Shell · 2026-02-26  
+> [GitHub](https://github.com/tw93/Mole) · [Website](https://x.com/HiTw93/status/2025424790467871149)  
+
+> `#macOS Cleanup` `#System Optimization` `#Disk Analyzer` `#Performance Monitor` `#analyzer` `#appcleaner` `#clean` `#cleaner` `#cleaner-cli` `#cleaner-script` `#command-line` `#daisydisk` `#istat` `#mac` `#macos` `#optimize` `#sensei` `#shell` `#uninstall` >
+> Mole is a comprehensive macOS optimization tool combining features of CleanMyMac, AppCleaner, and DaisyDisk. It enables deep cleaning of caches, logs, and browser data to reclaim gigabytes of space, intelligently uninstalls apps with all remnants, provides visual disk analysis, real-time system monitoring (CPU/GPU/memory/network), and system service optimization, significantly enhancing Mac performance and storage efficiency.
+
+> <sub>🐹 Deep clean and optimize your Mac.</sub>
+
+---
+## anthropics/skills
+
+> [!info]
+> ⭐ 76,820 · Python · 2026-02-25  
+> [GitHub](https://github.com/anthropics/skills)  
+
+> `#Agent Skills` `#Document Processing` `#AI Automation` `#Claude Extensions` `#agent-skills` >
+> Anthropic's open-source repository of Agent Skills for Claude, featuring document processing (PDF/PPTX/DOCX/XLSX), development tools (MCP server generation), and creative workflows. Each skill is self-contained with instructions and metadata, enabling dynamic loading for repeatable task automation. Licensed under Apache 2.0, it serves as a reference for building enterprise-grade AI assistants.
+
+> <sub>Public repository for Agent Skills</sub>
+
+---
+## tianchangNorth/WeSpy
+
+> [!info]
+> ⭐ 217 · Python · 2025-11-24  
+> [GitHub](https://github.com/tianchangNorth/WeSpy)  
+
+> `#WeChat Official Account` `#Markdown Conversion` `#Content Scraping` `#Batch Download` >
+> WeSpy is a Python tool designed for extracting WeChat public account articles and converting them into Markdown format. It features anti-hotlinking image handling, batch album downloading, multi-format output (HTML/JSON), and supports both CLI and Python API usage for content archiving and knowledge management.
+
+> <sub>WeSpy 是一个用于获取wx公众号文章并转换为 Markdown 格式的 Python 工具</sub>
+
+---
+## github/spec-kit
+
+> [!info]
+> ⭐ 72,235 · Python · 2026-02-25  
+> [GitHub](https://github.com/github/spec-kit) · [Website](https://github.github.com/spec-kit/)  
+
+> `#Spec-Driven Development` `#AI Code Generation` `#CLI Tool` `#ai` `#copilot` `#development` `#engineering` `#prd` `#spec` `#spec-driven` >
+> Spec Kit is an open-source toolkit that enables Spec-Driven Development, transforming traditional specifications into executable workflows. By integrating AI agents, it automates code generation from high-level product scenarios, reducing boilerplate coding and ensuring consistent, high-quality software outcomes.
+
+> <sub>💫 Toolkit to help you get started with Spec-Driven Development</sub>
+
+---
+## Scipline/Image_matting
+
+> [!info]
+> ⭐ 14 · Python · 2023-01-11  
+> [GitHub](https://github.com/Scipline/Image_matting)  
+
+> `#Image Matting` `#Batch Processing` `#ONNX Model` `#remove.bg` >
+> This project enables one-click batch image matting with two modes: online via remove.bg's free API (higher accuracy, requires internet) and local using rembg + ONNX (faster, higher resolution). It supports auto API key rotation, batch processing, background replacement, and standardized file naming, ideal for automated workflows without GUI.
+
+> <sub>一键批量抠图。两种方法。一.使用remove.bg网站账号免费api额度，二.使用rembg和onnxruntime训练模型本地抠图</sub>
+
+---
+## VoltAgent/awesome-claude-code-subagents
+
+> [!info]
+> ⭐ 11,522 · Shell · 2026-02-21  
+> [GitHub](https://github.com/VoltAgent/awesome-claude-code-subagents) · [Website](https://github.com/VoltAgent/voltagent)  
+
+> `#AI Coding Assistant` `#Claude Code Plugin` `#Intelligent Dev Agents` `#Full-Stack Development` `#ai-agent-framework` `#ai-agent-tools` `#ai-agents` `#awesome` `#awesome-list` `#claude` `#claude-ai` `#claude-code-subagents` `#claude-subagents` `#subagents` >
+> A curated collection of 100+ specialized subagents for Claude Code, spanning full-stack development, DevOps, testing, and more. Enables modular installation and task-specific AI assistance to boost coding productivity.
+
+> <sub>A collection of 100+ specialized Claude Code subagents covering a wide range of development use cases</sub>
+
+---
+## UfoMiao/zcf
+
+> [!info]
+> ⭐ 5,529 · TypeScript · 2026-02-26  
+> [GitHub](https://github.com/UfoMiao/zcf) · [Website](http://zcf.ufomiao.com/)  
+
+> `#Zero-Config` `#Claude Code` `#AI Coding Assistant` `#MCP Workflow` `#agent` `#ai` `#ai-agent` `#bmad-method` `#ccr` `#claude` `#claude-4` `#claude-ai` `#claude-code` `#cli` `#gpt` `#gpt-5` `#llm` `#llm-code` `#nodejs` `#openai` `#prompt` `#typescript` `#workflow` `#zcf` >
+> ZCF is a zero-config code flow tool for Claude Code & Codex, enabling one-click setup with bilingual support, intelligent agent system, and personalized AI assistant. It integrates MCP workflows, API routing, and sponsored relay services for seamless development.
+
+> <sub>Zero-Config Code Flow for Claude code & Codex</sub>
+
+---
+## MapleShaw/auto-claude-writing-agent-pub
+
+> [!info]
+> ⭐ 359 · N/A · 2025-11-29  
+> [GitHub](https://github.com/MapleShaw/auto-claude-writing-agent-pub)  
+
+> `#AI Writing Agent` `#Content Workflow` `#Style Transfer` `#Multi-Platform` >
+> A multi-platform AI writing agent powered by Claude Sonnet 4.5, offering an end-to-end content creation workflow from ideation to publishing. It enforces 9 core principles like creative drainage, triple editing, and title optimization to reduce AI-like tone and enhance readability. Features style learning, personal素材库, and transparent 'Think Aloud' reasoning.
+
+---
+## google-gemini/gemini-cli
+
+> [!info]
+> ⭐ 95,781 · TypeScript · 2026-02-26  
+> [GitHub](https://github.com/google-gemini/gemini-cli) · [Website](https://geminicli.com)  
+
+> `#Terminal AI Agent` `#Gemini Model` `#CLI Tool` `#MCP Protocol` `#ai` `#ai-agents` `#cli` `#gemini` `#gemini-api` `#mcp-client` `#mcp-server` >
+> Gemini CLI is an open-source AI agent that brings Gemini's capabilities directly into the terminal. It offers lightweight access with code understanding, automation, built-in tools like Google Search and file operations, and extensible MCP support, designed for developers who work primarily in the command line.
+
+> <sub>An open-source AI agent that brings the power of Gemini directly into your terminal.</sub>
+
+---
+## xunbu/docutranslate
+
+> [!info]
+> ⭐ 789 · Python · 2026-02-25  
+> [GitHub](https://github.com/xunbu/docutranslate)  
+
+> `#Document Translation` `#Multi-format Support` `#LLM-powered` `#Local Deployment` `#file-transla` `#llm` `#pdf-converter` `#pdf-translator` `#translate` >
+> DocuTranslate is a lightweight local document translation tool powered by large language models, supporting formats like PDF, DOCX, XLSX, JSON, EPUB, and SRT. It features table/formula recognition, auto-generated glossaries, multi-AI platform concurrency, async processing, Web UI, and RESTful API, ideal for translating novels, academic papers, and subtitles while preserving formatting.
+
+> <sub>文档（小说、论文、字幕）翻译工具（支持 pdf/word/excel/json/epub/srt...）Document (Novel, Thesis, Subtitle) Translation Tool (Supports pdf/word/excel/json/epub/srt...)</sub>
+
+---
+## dataease/SQLBot
+
+> [!info]
+> ⭐ 5,566 · JavaScript · 2026-02-24  
+> [GitHub](https://github.com/dataease/SQLBot) · [Website](https://sqlbot.org/)  
+
+> `#Text-to-SQL` `#RAG` `#Conversational Analytics` `#ChatBI` `#chatbi` `#deepseek` `#llm` `#nl2sql` `#rag` `#sqlbot` `#text-to-sql` `#text2sql` >
+> SQLBot is an intelligent data querying system powered by large language models and RAG technology, enabling natural language to SQL conversion for conversational data analysis. It offers out-of-the-box deployment, secure access control, easy integration via Web/MCP, and continuous optimization through user feedback, making ChatBI accessible across platforms.
+
+> <sub>🔥 基于大模型和 RAG 的智能问数系统，对话式数据分析神器。Text-to-SQL Generation via LLMs using RAG.</sub>
+
+---
+## ckanner/jta
+
+> [!info]
+> ⭐ 126 · Go · 2025-11-12  
+> [GitHub](https://github.com/ckanner/jta)  
+
+> `#AI Translation` `#JSON i18n` `#Agentic Reflection` `#Multilingual` `#agentic-ai` `#ai` `#anthropic` `#cli` `#gemini` `#golang` `#i18n` `#json` `#llm` `#localization` `#openai` `#reflection` `#terminology` `#translation` `#translation-tool` >
+> Jta is an AI-powered JSON i18n translation tool supporting OpenAI, Anthropic, and Gemini APIs. Its key innovation is an agentic reflection mechanism: AI translates, then self-evaluates and refines output across accuracy, fluency, style, and terminology consistency. Features include incremental translation, terminology management, and format preservation for production use.
+
+> <sub>AI-powered JSON translation tool with agentic reflection using OpenAI, Anthropic, and Gemini APIs</sub>
 
 ---
