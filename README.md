@@ -135,9 +135,29 @@ schedule:
 
 ## Obsidian 同步（可选）
 
-1. **设置 Token**: 创建一个具有 **Contents: Write** 权限的 [Fine-grained PAT](https://github.com/settings/personal-access-tokens) 存入 Secret `VAULT_PAT`。
-2. **配置仓库**: 设置 `VAULT_SYNC_ENABLED=true` 和 `VAULT_REPO=用户名/仓库名`。
-3. **设置路径**: 设置 `VAULT_SYNC_PATH`，文件将自动同步到该目录下（自动补全 `_zh.md` / `_en.md`）。
+该功能允许你将生成的 Stars 汇总自动推送到你的 Obsidian Vault (或任何其他) GitHub 仓库中，实现笔记软件内的自动更新。
+
+### 核心机制
+**本质是跨仓库自动同步**：许多 Obsidian 用户使用 GitHub 仓库来存储和同步笔记。本项目通过 GitHub API，将生成的 Markdown 文件直接推送到你指定的另一个仓库中（你的 Vault 仓库）。
+
+### 配置步骤
+
+1.  **准备目标仓库**: 确保你的 Obsidian Vault 已经托管在 GitHub 上。
+2.  **创建权限 Token (PAT)**:
+    - 访问 [Fine-grained PAT 配置页](https://github.com/settings/personal-access-tokens)。
+    - **Repository access**: 选择 "Only select repositories"，并选中你的 **Vault 仓库**。
+    - **Permissions**: 在 "Repository permissions" 中，设置 **Contents** 为 **Read and write**。
+    - 生成 Token 后，将其存入本项目的 **Settings -> Secrets -> Actions** 中，命名为 `VAULT_PAT`。
+3.  **开启同步配置**:
+    - 在本项目的 **Settings -> Variables -> Actions** 中：
+        - 设置 `VAULT_SYNC_ENABLED` 为 `true`。
+        - 设置 `VAULT_REPO` 为 `你的用户名/仓库名` (例如 `iblogc/my-obsidian-vault`)。
+        - 设置 `VAULT_SYNC_PATH` 为你希望在 Vault 中存放的目录 (例如 `Reading/GitHub-Stars/`)。
+4.  **保存完成**: 下次 Action 运行时，生成的 `stars_zh.md` 和 `stars_en.md` 将会自动出现在你的 Vault 仓库中。
+
+> [!TIP]
+> **本地如何查收？**
+> 远程同步完成后，你只需在本地 Obsidian 中使用 **Obsidian Git** 插件执行拉取 (Pull)，或者手动在仓库目录下 `git pull`，最新的 Stars 摘要就会出现在你的笔记库中了。
 
 ---
 
