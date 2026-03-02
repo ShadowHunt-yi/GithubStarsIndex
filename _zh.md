@@ -74,8 +74,8 @@
 ## iblogc/GithubStarsIndex
 
 > [!info]
-> ⭐ 40 · Jinja · 2026-02-28  
-> [GitHub](https://github.com/iblogc/GithubStarsIndex) · [Website](https://iblogc.github.io/GithubStarsIndex/)  
+> ⭐ 45 · Jinja · 2026-03-01  
+> [GitHub](https://github.com/iblogc/GithubStarsIndex) · [Website](https://stars.iblogc.com)  
 > `#GitHub Stars` `#AI 摘要` `#自动化同步` `#技术检索` 
 > 该项目自动抓取指定 GitHub 账号的 Star 仓库，利用 AI 生成智能摘要与技术标签，支持并发处理提升效率。通过 Jinja2 模板生成 Markdown 和 HTML 静态页面，支持增量更新、定时同步及可选推送到 Obsidian Vault 或 GitHub Pages，实现个人技术收藏的高效检索与管理。
 > <sub>自动抓取 GitHub Stars，生成 AI 摘要，便于检索。</sub>
@@ -84,7 +84,7 @@
 ## Haleclipse/Claudix
 
 > [!info]
-> ⭐ 971 · TypeScript · 2025-12-08  
+> ⭐ 973 · TypeScript · 2025-12-08  
 > [GitHub](https://github.com/Haleclipse/Claudix)  
 > `#VS Code 扩展` `#Claude AI` `#智能编程助手` `#代码分析` 
 > Claudix 是一款专为 VS Code 设计的 Claude Code 增强扩展，深度集成 Claude AI 到编辑器环境，提供交互式聊天界面、会话管理、智能代码分析、终端命令执行等功能，支持多模型切换与实时流式响应，显著提升开发效率。
@@ -104,7 +104,7 @@
 ## calderbuild/MeetSpot
 
 > [!info]
-> ⭐ 520 · Python · 2026-02-26  
+> ⭐ 520 · Python · 2026-03-02  
 > [GitHub](https://github.com/calderbuild/MeetSpot) · [Website](https://meetspot-irq2.onrender.com/)  
 > `#AI代理` `#会议地点推荐` `#地理中心计算` `#多因素评分` `#collaborate` `#fortheloveofcode` `#geolocation` `#meeting` `#meetspot` `#meetup` 
 > MeetSpot 是一个智能多人群体会议地点推荐 AI 代理系统，通过计算所有参与者的地理中心并运用 AI 多因素评分，自动推荐公平、便利且受所有人喜爱的会面地点。系统具备自主决策能力，根据请求复杂度在规则模式（2-4秒）和 LLM 增强代理模式（8-15秒）间智能切换，支持可解释的链式推理与双模自适应路径规划。
@@ -114,7 +114,7 @@
 ## Dreamy-rain/gemini-business2api
 
 > [!info]
-> ⭐ 909 · Python · 2026-02-28  
+> ⭐ 921 · Python · 2026-03-01  
 > [GitHub](https://github.com/Dreamy-rain/gemini-business2api) · [Website](https://free.nanohajimi.mom)  
 > `#Gemini API` `#OpenAI 兼容` `#多模态处理` `#图像生成` `#gemini` `#openai` 
 > Gemini Business2API 将 Google Gemini Business 转换为 OpenAI 兼容接口，支持多账号负载均衡、图像/视频生成及多模态处理，提供流式输出、自动化账号管理与内置管理面板，兼容 FastAPI 与 Docker 部署。
@@ -124,7 +124,7 @@
 ## oomol-lab/pdf-craft
 
 > [!info]
-> ⭐ 4,899 · Python · 2026-02-12  
+> ⭐ 4,902 · Python · 2026-02-12  
 > [GitHub](https://github.com/oomol-lab/pdf-craft) · [Website](https://pdf.oomol.com/)  
 > `#PDF转换` `#OCR识别` `#文档结构化` `#扫描书籍处理` `#deepseek-ocr` `#document` `#ocr` `#pdf` 
 > PDF Craft 是一款专注于扫描版书籍 PDF 转换的工具，基于 DeepSeek OCR 技术实现高精度文档识别，支持复杂表格、公式及脚注的提取。转换过程完全本地化，无需网络请求，可输出结构完整的 Markdown 或 EPUB 文件，并自动生成目录，保留原始内容完整性。
@@ -134,7 +134,7 @@
 ## ZToolsCenter/ZTools
 
 > [!info]
-> ⭐ 640 · TypeScript · 2026-02-28  
+> ⭐ 644 · TypeScript · 2026-03-01  
 > [GitHub](https://github.com/ZToolsCenter/ZTools)  
 > `#应用启动器` `#插件平台` `#Electron` `#跨平台` 
 > ZTools 是 uTools 的开源实现，一个高性能、可扩展的应用启动器和插件平台，支持 macOS 和 Windows。具备快速启动、插件系统、剪贴板管理、主题定制、LMDB 数据库、WebContentsView 架构等特性，提供完整的 TypeScript 类型支持和热重载开发，采用 Electron 38.5 + Node 22.20 + Chrome 140 最新技术栈。
@@ -144,7 +144,7 @@
 ## mtvpls/MoonTVPlus
 
 > [!info]
-> ⭐ 1,322 · TypeScript · 2026-02-23  
+> ⭐ 1,330 · TypeScript · 2026-02-23  
 > [GitHub](https://github.com/mtvpls/MoonTVPlus)  
 > `#视频播放器` `#WebGPU超分` `#弹幕系统` `#影视聚合` 
 > MoonTVPlus 是基于 MoonTV v100 的增强版影视聚合播放器，采用 Next.js 14 + TypeScript + TailwindCSS 构建。核心增强功能包括：支持 PotPlayer/VLC/MPV 等外部播放器、WebGPU 实时视频超分（1.5x-4x）、完整弹幕系统、豆瓣评论抓取、自定义去广告、多人观影室、M3U8 下载及服务器离线下载。支持 PWA、响应式布局，需自行配置播放源。
@@ -154,7 +154,7 @@
 ## nexmoe/VidBee
 
 > [!info]
-> ⭐ 6,745 · TypeScript · 2026-02-28  
+> ⭐ 6,790 · TypeScript · 2026-03-01  
 > [GitHub](https://github.com/nexmoe/VidBee) · [Website](https://vidbee.org)  
 > `#视频下载` `#yt-dlp` `#RSS自动下载` `#跨平台桌面应用` `#downloader` `#facebook` `#tiktok` `#twitter` `#youtube` 
 > VidBee 是一款现代化的开源视频下载工具，基于 Electron 和 yt-dlp 技术栈，支持从全球 1000+ 网站下载视频与音频。其核心亮点包括直观的界面设计、实时下载队列管理、一键暂停/恢复功能，以及强大的 RSS 自动订阅与后台下载能力，可自动获取并下载新内容，适用于 YouTube、TikTok、Instagram 等平台。
@@ -164,7 +164,7 @@
 ## mmulet/term.everything
 
 > [!info]
-> ⭐ 7,757 · Go · 2026-02-01  
+> ⭐ 7,761 · Go · 2026-02-01  
 > [GitHub](https://github.com/mmulet/term.everything)  
 > `#Wayland合成器` `#终端GUI` `#Linux命令行工具` `#远程桌面终端化` `#alacritty` `#cli` `#foss` `#iterm2` `#kitty` `#linux` `#ssh` `#terminal` `#wayland` `#wayland-compositor` 
 > Term.Everything 是一个革命性的 Linux CLI 工具，可将任意 GUI 应用无缝运行在终端中。它通过自研的 Wayland 合成器直接输出到终端，支持 X11 和 Wayland 系统，甚至可通过 SSH 远程运行完整桌面环境。项目用 Go 重写，提供从文件管理器到 Doom 游戏的多种演示，并兼容支持图像显示的终端（如 Kitty/iTerm2）。
@@ -174,7 +174,7 @@
 ## aigem/CFr2-webdav
 
 > [!info]
-> ⭐ 181 · TypeScript · 2024-09-20  
+> ⭐ 182 · TypeScript · 2024-09-20  
 > [GitHub](https://github.com/aigem/CFr2-webdav)  
 > `#WebDAV协议` `#Cloudflare Workers` `#R2存储` `#无服务器架构` `#cloudflare` `#cloudflare-workers` `#free` `#javascript` `#r2` `#s3` `#s3-bucket` `#typescript` `#webdav` `#webdav-client` `#webdav-server` 
 > 该项目基于 Cloudflare Workers 和 R2 存储实现了一个完全兼容 WebDAV 协议的服务器，支持文件上传、下载、删除、移动及目录管理，提供私有网盘功能。通过 GitHub Actions 实现一键自动化部署，支持基础身份验证，无需维护服务器，适合个人或小型团队使用。
@@ -184,7 +184,7 @@
 ## XIU2/TrackersListCollection
 
 > [!info]
-> ⭐ 30,689 · N/A · 2026-03-01  
+> ⭐ 30,695 · N/A · 2026-03-02  
 > [GitHub](https://github.com/XIU2/TrackersListCollection) · [Website](https://trackerslist.com)  
 > `#BitTorrent` `#Tracker列表` `#BT下载优化` `#CDN加速` `#aria2` `#aria2-format-tracker` `#bittorrent` `#bittorrent-trackers` `#qbittorrent` `#torrent` `#torrent-tracker` `#tracker` `#trackers` `#trackerslist` `#utorrent` 
 > XIU2/TrackersListCollection 是一个每日更新的热门 BitTorrent Tracker 列表仓库，提供 BEST、ALL、HTTP(S) 及非 HTTP 分类的 Tracker 资源。通过聚合全网优质 Tracker，显著提升 BT 下载效率，支持 Aria2、qBittorrent 等客户端配置，并提供多 CDN 备用地址确保稳定访问。
@@ -194,7 +194,7 @@
 ## jdx/mise
 
 > [!info]
-> ⭐ 25,117 · Rust · 2026-02-28  
+> ⭐ 25,148 · Rust · 2026-03-02  
 > [GitHub](https://github.com/jdx/mise) · [Website](https://mise.jdx.dev)  
 > `#开发工具管理` `#环境变量配置` `#任务执行系统` 
 > mise 是一个现代化的开发环境管理工具，整合了版本管理、环境变量配置和任务执行三大核心功能。它支持管理数百种开发工具（如 Node.js、Python、Terraform 等），通过项目级配置自动切换工具版本和环境变量，并提供类似 make 的任务系统来运行构建和测试脚本，极大简化了多项目环境下的开发配置流程。
@@ -204,7 +204,7 @@
 ## huangxy7/jd_scripts
 
 > [!info]
-> ⭐ 223 · Python · 2026-02-28  
+> ⭐ 222 · Python · 2026-03-01  
 > [GitHub](https://github.com/huangxy7/jd_scripts)  
 > `#京东自动化` `#京豆薅羊毛` `#抢票监控` `#Docker部署` 
 > jd_scripts 是一个京东自动化脚本集合，支持免费自助上车获取京豆、红包等福利，涵盖京东APP、京喜、极速版等多端任务。集成微信消息推送、Docker部署、NAS兼容，并提供大麦/12306/茅台等第三方抢票与监控工具，辅以Node.js/Go/Python多语言支持，适合个人及多账号自动化运营。
@@ -214,7 +214,7 @@
 ## CherryHQ/cherry-studio
 
 > [!info]
-> ⭐ 40,415 · TypeScript · 2026-03-01  
+> ⭐ 40,469 · TypeScript · 2026-03-02  
 > [GitHub](https://github.com/CherryHQ/cherry-studio) · [Website](https://cherry-ai.com)  
 > `#AI生产力` `#大语言模型` `#自主代理` `#智能助手` `#ai-agent` `#claude-code` `#code-agent` `#codex` `#openclaw` `#opencode` `#shannon` `#skills` `#superpowers` `#superpowers-core-skills` `#vibe-coding` 
 > Cherry Studio 是一款 AI 生产力工具，集成智能对话、自主代理和 300+ 助手，提供统一入口访问主流大语言模型，支持多语言界面与跨平台部署，显著提升开发者和内容创作者的工作效率。
@@ -234,7 +234,7 @@
 ## samqin123/MoonTV
 
 > [!info]
-> ⭐ 1,836 · TypeScript · 2025-08-04  
+> ⭐ 1,837 · TypeScript · 2025-08-04  
 > [GitHub](https://github.com/samqin123/MoonTV)  
 > `#影视聚合` `#Next.js 14` `#PWA` `#智能去广告` 
 > MoonTV 是基于 Next.js 14 + Tailwind CSS + TypeScript 构建的跨平台影视聚合播放器，支持多源搜索、HLS.js/ArtPlayer 在线播放、Redis/D1/Upstash 收藏同步、PWA 离线缓存及智能去广告功能，提供极简的 Docker/Vercel/Cloudflare 部署方案。
@@ -262,7 +262,7 @@
 ## millylee/anyrouter-check-in
 
 > [!info]
-> ⭐ 730 · Python · 2026-02-25  
+> ⭐ 731 · Python · 2026-02-25  
 > [GitHub](https://github.com/millylee/anyrouter-check-in) · [Website](https://anyrouter.top/register?aff=gSsN)  
 > `#自动签到` `#多账号管理` `#GitHub Actions` `#API 集成` `#agentrouter` `#anyrouter` `#check-in` `#claude-code` `#claudecode` `#codex` `#newapi` `#oneapi` 
 > AnyRouter 多账号自动签到工具，支持 AnyRouter 和 AgentRouter 平台，兼容 NewAPI/OneAPI 架构。通过 GitHub Actions 定时执行，支持多账号批量签到、WAF 绕过、机器人通知等功能，配置简单且维护活跃。
@@ -272,7 +272,7 @@
 ## jingyaogong/minimind
 
 > [!info]
-> ⭐ 40,093 · Python · 2026-02-06  
+> ⭐ 40,153 · Python · 2026-02-06  
 > [GitHub](https://github.com/jingyaogong/minimind) · [Website](https://jingyaogong.github.io/minimind)  
 > `#大语言模型` `#从零训练` `#轻量化架构` `#全流程代码` `#artificial-intelligence` `#large-language-model` 
 > MiniMind 是一个极简大语言模型项目，仅需26M参数和2小时训练，成本低至3元，可在个人GPU上运行。项目从零实现GPT原生架构，涵盖预训练、SFT、LoRA、DPO、PPO/GRPO强化学习等全流程代码，并开源数据集与Tokenizer训练。同时支持视觉多模态扩展（MiniMind-V），旨在降低LLM学习门槛，推动AI社区深入探索模型底层机制。
@@ -282,7 +282,7 @@
 ## beck-8/subs-check
 
 > [!info]
-> ⭐ 4,256 · Go · 2026-02-27  
+> ⭐ 4,275 · Go · 2026-03-01  
 > [GitHub](https://github.com/beck-8/subs-check) · [Website](https://t.me/subs_check)  
 > `#订阅管理` `#节点测速` `#流媒体检测` `#Web 控制面板` `#clash` `#mihomo` `#v2ray` 
 > subs-check 是一个功能强大的订阅管理工具，支持订阅合并、节点测速、可用性检测、流媒体解锁测试、去重、重命名及多格式导出。内置 Web 控制面板和 Sub-Store，支持 100+ 通知渠道，提供 Docker 部署和 Crontab 定时任务，适用于多平台环境。
@@ -292,7 +292,7 @@
 ## MatrixSeven/file-transfer-go
 
 > [!info]
-> ⭐ 4,683 · TypeScript · 2025-12-01  
+> ⭐ 4,685 · TypeScript · 2025-12-01  
 > [GitHub](https://github.com/MatrixSeven/file-transfer-go) · [Website](https://transfer.52python.cn)  
 > `#WebRTC` `#P2P传输` `#端到端加密` `#Go+React` 
 > 基于Go/React开发的端到端WebRTC文件传输工具，支持多文件、文字传输及桌面共享，采用P2P直连技术实现数据不经过服务器的安全隐私传输，具备响应式设计和Docker一键部署能力。
@@ -312,7 +312,7 @@
 ## 9001/copyparty
 
 > [!info]
-> ⭐ 42,814 · Python · 2026-02-25  
+> ⭐ 42,841 · Python · 2026-02-25  
 > [GitHub](https://github.com/9001/copyparty)  
 > `#文件服务器` `#断点续传` `#多协议支持` `#WebDAV` `#copyparty` `#file-server` `#file-sharing` `#file-upload-server` `#ftp-server` `#nas-frontend` `#tftp-server` `#webdav-server` 
 > Copyparty 是一款便携式文件服务器，支持断点续传、去重、WebDAV、SFTP、FTP、TFTP 等多种协议，集成媒体索引与缩略图生成，可在任意设备通过浏览器快速部署，适用于家庭、企业或移动场景的文件共享与传输。
@@ -332,7 +332,7 @@
 ## OI-wiki/OI-wiki
 
 > [!info]
-> ⭐ 25,558 · TypeScript · 2026-02-28  
+> ⭐ 25,565 · TypeScript · 2026-03-01  
 > [GitHub](https://github.com/OI-wiki/OI-wiki) · [Website](https://oi-wiki.org)  
 > `#编程竞赛` `#算法学习` `#OI Wiki` `#ICPC` `#acm-icpc` `#acm-icpc-handbook` `#algorithms` `#competitive-programming` `#data-structures` `#hacktoberfest` `#icpc` `#icpc-handbook` `#icpc-training` `#oi` `#oi-handbook` `#oi-training` 
 > OI Wiki 是一个免费开放的编程竞赛知识整合站点，专注于为 OI 和 ICPC 竞赛者提供系统化的学习资源，涵盖基础算法、数据结构、解题技巧等内容，采用 MkDocs 构建并支持本地部署，鼓励社区协作与知识共享，保持非营利性和独立性。
@@ -352,7 +352,7 @@
 ## aaa1115910/bv
 
 > [!info]
-> ⭐ 3,786 · Kotlin · 2025-12-08  
+> ⭐ 3,788 · Kotlin · 2025-12-08  
 > [GitHub](https://github.com/aaa1115910/bv)  
 > `#Jetpack Compose` `#哔哩哔哩第三方客户端` `#Android TV` `#实验性UI` 
 > BV 是一款基于 Jetpack Compose 开发的哔哩哔哩第三方 Android 应用，支持移动端与 TV 端，主打反人类设计、异样审美与极致性能优化，提供丰富多样的 Bug 体验，适用于技术测试与趣味探索场景。
@@ -372,7 +372,7 @@
 ## k4yt3x/video2x
 
 > [!info]
-> ⭐ 18,869 · C++ · 2026-01-27  
+> ⭐ 18,883 · C++ · 2026-01-27  
 > [GitHub](https://github.com/k4yt3x/video2x) · [Website](https://docs.video2x.org)  
 > `#视频超分辨率` `#帧插值` `#机器学习` `#Vulkan加速` `#anime4k` `#frame-interpolation` `#machine-learning` `#neural-networks` `#realcugan` `#realesrgan` `#rife` `#super-resoluion` `#upscale-video` `#vulkan` 
 > Video2X 是一个基于机器学习的视频超分辨率与帧插值框架，支持 Anime4K、Real-ESRGAN、RIFE 等先进模型，提供跨平台（Windows/Linux）高性能处理。其 6.0.0 版本采用 C/C++ 重写，显著提升速度与输出质量，并集成图形界面与 Vulkan 加速，适用于动漫与通用视频增强。
@@ -411,7 +411,7 @@
 ## beilunyang/moemail
 
 > [!info]
-> ⭐ 2,031 · TypeScript · 2026-02-13  
+> ⭐ 2,035 · TypeScript · 2026-02-13  
 > [GitHub](https://github.com/beilunyang/moemail) · [Website](https://moemail.app)  
 > `#临时邮箱` `#Next.js` `#Cloudflare` `#隐私保护` `#cloudflare` `#cloudflare-workers` `#email` `#temp-email` 
 > MoeMail 是一个基于 Next.js 和 Cloudflare 技术栈构建的可爱临时邮箱服务，提供隐私保护、实时邮件接收、灵活有效期设置、主题切换、PWA 支持等功能。支持自建部署、邮件发送、Webhook 通知、权限系统和 OpenAPI 访问，界面简洁友好，支持中英文切换。
@@ -421,7 +421,7 @@
 ## throneproj/Throne
 
 > [!info]
-> ⭐ 4,551 · C++ · 2026-02-28  
+> ⭐ 4,561 · C++ · 2026-03-01  
 > [GitHub](https://github.com/throneproj/Throne) · [Website](https://throneproj.github.io)  
 > `#sing-box` `#代理工具` `#Qt GUI` `#系统代理` `#anytls` `#clash` `#linux` `#macos` `#nekobox` `#nekoray` `#proxy` `#reality` `#sing-box` `#v2ray` `#vless` `#vpn` `#windows` `#xhttp` 
 > Throne 是一款基于 Qt 的跨平台 GUI 代理工具，集成 sing-box 核心，支持 Windows、macOS 和 Linux。它提供完整的代理协议支持（如 Shadowsocks、VLESS、Trojan 等），内置订阅管理、系统代理切换和自动权限提升功能，旨在替代已归档的 Nekoray 项目，提供更现代化、功能丰富的代理解决方案。
@@ -431,7 +431,7 @@
 ## codexu/note-gen
 
 > [!info]
-> ⭐ 10,969 · TypeScript · 2026-03-01  
+> ⭐ 10,972 · TypeScript · 2026-03-02  
 > [GitHub](https://github.com/codexu/note-gen) · [Website](https://notegen.top)  
 > `#AI 笔记` `#Markdown 编辑器` `#跨平台应用` `#RAG 检索增强` `#agent` `#chatbot` `#knowledge-base` `#llm` `#markdown` `#mcp` `#nextjs` `#note-taking` `#rag` `#tauri` `#webdav` 
 > NoteGen 是一款跨平台 Markdown AI 笔记软件，专注于通过 AI 将碎片化信息转化为结构化笔记。支持录音转写、智能摘要、RAG 检索增强生成及 MCP 工具集成，提供轻量（25MB）、无广告的免费解决方案，覆盖 Windows/macOS/Linux/Android/iOS 全平台。
@@ -451,7 +451,7 @@
 ## Dolov/chrome-QuickGo
 
 > [!info]
-> ⭐ 776 · TypeScript · 2025-06-29  
+> ⭐ 777 · TypeScript · 2025-06-29  
 > [GitHub](https://github.com/Dolov/chrome-QuickGo) · [Website](https://chromewebstore.google.com/detail/quickgo/homllehcipjgpbpepcojhgcpfdopjhml)  
 > `#浏览器扩展` `#外链跳转` `#安全中心绕过` `#browser-extension` `#chrome-extension` `#chrome-tools` `#navigation` `#productivity` `#quickgo` 
 > QuickGo 是一款 Chrome 扩展，专为绕过知乎、CSDN、掘金等 50+ 网站的安全中心跳转限制而设计。它通过自动识别并重定向外链，实现无感直达目标页面，显著提升浏览效率。支持自定义跳转规则、多主题 UI 切换及跳转统计，即装即用，极大优化外链访问体验。
@@ -461,7 +461,7 @@
 ## BewlyBewly/BewlyBewly
 
 > [!info]
-> ⭐ 8,648 · Vue · 2025-02-26  
+> ⭐ 8,652 · Vue · 2025-02-26  
 > [GitHub](https://github.com/BewlyBewly/BewlyBewly) · [Website](https://chromewebstore.google.com/detail/bewlybewly/bbbiejemhfihiooipfcjmjmbfdmobobp)  
 > `#浏览器扩展` `#哔哩哔哩` `#UI 重设计` `#深色模式` `#bilibili` `#browser-extension` `#chrome-extension` `#dark-mode` `#dark-theme` 
 > BewlyBewly 是一款针对哔哩哔哩的浏览器扩展，旨在通过重新设计用户界面提升用户体验。其设计灵感来源于 YouTube、Vision OS 和 iOS，使界面更加美观易用。项目基于 vitesse-webext 模板开发，支持 Chrome、Edge 和 Firefox 浏览器，提供深色模式适配及主页布局优化。
@@ -471,7 +471,7 @@
 ## x1xhlol/system-prompts-and-models-of-ai-tools
 
 > [!info]
-> ⭐ 126,498 · N/A · 2026-02-17  
+> ⭐ 126,904 · N/A · 2026-02-17  
 > [GitHub](https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools)  
 > `#AI系统提示` `#开发工具` `#提示工程` `#开源模型` `#ai` `#bolt` `#cluely` `#copilot` `#cursor` `#cursorai` `#devin` `#github-copilot` `#lovable` `#open-source` `#perplexity` `#replit` `#system-prompts` `#trae` `#trae-ai` `#trae-ide` `#v0` `#vscode` `#windsurf` `#windsurf-ai` 
 > 该仓库收集了30,000+行AI工具的系统提示、内部工具与模型数据，涵盖Claude Code、Cursor、Devin AI等30+主流开发工具。提供完整的系统提示结构解析，支持开发者深入理解AI编程助手的运作机制，适用于AI工具研究、提示工程优化及开发环境配置。
@@ -481,7 +481,7 @@
 ## rubickCenter/rubick
 
 > [!info]
-> ⭐ 9,514 · TypeScript · 2026-01-14  
+> ⭐ 9,515 · TypeScript · 2026-01-14  
 > [GitHub](https://github.com/rubickCenter/rubick) · [Website](https://rubickcenter.github.io/docs)  
 > `#Electron` `#桌面工具箱` `#插件生态` `#WebDAV同步` `#cross-platform` `#desktop-app` `#electron` `#javascript` `#macos` `#toolkit` `#utools` `#windows` 
 > Rubick 是一款基于 Electron 的开源桌面效率工具箱，支持 npm 插件生态、WebDAV 多端同步及内网部署，提供快速应用搜索、插件市场及系统级集成功能，兼顾轻量性与企业级安全。
@@ -491,7 +491,7 @@
 ## taojy123/KeymouseGo
 
 > [!info]
-> ⭐ 9,639 · Python · 2026-01-02  
+> ⭐ 9,641 · Python · 2026-01-02  
 > [GitHub](https://github.com/taojy123/KeymouseGo) · [Website](http://taojy123.github.io/KeymouseGo)  
 > `#自动化工具` `#鼠标键盘录制` `#Python` `#重复任务` `#automate` `#keyboard` `#mouse` `#python` `#simulation` 
 > KeymouseGo 是一款基于 Python 的鼠标键盘录制与自动化工具，支持跨平台（Windows/Linux/macOS）运行。它可记录用户操作并回放，适用于重复性任务自动化，类似轻量级按键精灵。核心功能包括录制、回放、热键控制及脚本编辑，支持相对坐标定位与事件序列化，适合办公自动化与测试场景。
@@ -501,7 +501,7 @@
 ## Huibq/keep-alive
 
 > [!info]
-> ⭐ 6,350 · JavaScript · 2026-01-21  
+> ⭐ 6,363 · JavaScript · 2026-01-21  
 > [GitHub](https://github.com/Huibq/keep-alive) · [Website](https://lxmusicapi.onrender.com)  
 > `#音乐音源` `#CDN加速` `#IP防护` 
 > 该项目提供洛雪音乐和MusicFree的音源接口，支持最高320k音质在线播放，适用于移动端和桌面端音乐应用。通过CDN加速的API实现音乐资源访问，需用户规范使用以避免IP封禁，强调仅用于试听且禁止批量下载。
@@ -511,7 +511,7 @@
 ## yonggekkk/Cloudflare-vless-trojan
 
 > [!info]
-> ⭐ 13,560 · JavaScript · 2026-02-11  
+> ⭐ 13,568 · JavaScript · 2026-02-11  
 > [GitHub](https://github.com/yonggekkk/Cloudflare-vless-trojan) · [Website](https://ygkkk.blogspot.com/2023/07/cfworkers-vless.html)  
 > `#Cloudflare代理` `#Vless/Trojan` `#ECH-TLS` `#Workers脚本` `#argo` `#cdn` `#clash-meta` `#cloudflare` `#cloudflare-pages` `#cloudflare-workers` `#ech` `#http` `#nat64` `#reality` `#sing-box` `#socks5` `#trojan` `#vless` `#xray` `#ygkkk` 
 > 该项目提供基于Cloudflare Workers/Pages的代理脚本，支持Vless-ws(tls)、Trojan-ws(tls)及Socks5/Http本地代理，可选ECH-TLS、普通TLS或无TLS三种模式，适配不同网络环境。支持单节点、订阅链接导出，内置优选IP自动填充，降低新手配置门槛，适用于软路由等本地化部署场景。
@@ -521,7 +521,7 @@
 ## luckjiawei/frpc-desktop
 
 > [!info]
-> ⭐ 6,575 · TypeScript · 2026-01-08  
+> ⭐ 6,577 · TypeScript · 2026-01-08  
 > [GitHub](https://github.com/luckjiawei/frpc-desktop) · [Website](https://jwinks.com/p/frp/)  
 > `#内网穿透` `#frp客户端` `#可视化配置` `#跨平台` `#desktop` `#electron` `#frp` `#frp-desktop` `#frp-linux` `#frp-macos` `#frp-window` `#frpc` `#javascript` `#tailwindcss` `#typescript` `#vite` `#vue` 
 > Frpc-Desktop 是一款跨平台桌面客户端，提供可视化配置界面，简化内网穿透部署。支持所有 frp 版本，具备自动启动、多用户管理、批量端口配置、协议扩展（TCP/UDP/STCP/XTCP）及配置导入导出功能，显著降低 frp 使用门槛。
@@ -531,7 +531,7 @@
 ## pagefaultgames/pokerogue
 
 > [!info]
-> ⭐ 5,562 · TypeScript · 2026-03-01  
+> ⭐ 5,563 · TypeScript · 2026-03-02  
 > [GitHub](https://github.com/pagefaultgames/pokerogue) · [Website](https://pokerogue.net)  
 > `#Roguelite` `#浏览器游戏` `#宝可梦同人` `#TypeScript` `#indie-game` `#open-source` `#pokemon` `#pokerogue` `#typescript` 
 > PokéRogue 是一款基于浏览器的宝可梦同人游戏，深度融合了 Roguelite 玩法，支持无尽战斗、道具叠加、多生物群落探索、训练师对战和 Boss 挑战，采用 TypeScript 开发，代码规范严格，具备高测试覆盖率，社区活跃。
@@ -541,7 +541,7 @@
 ## setube/vue-xiuxiangame
 
 > [!info]
-> ⭐ 1,682 · JavaScript · 2026-01-06  
+> ⭐ 1,683 · JavaScript · 2026-01-06  
 > [GitHub](https://github.com/setube/vue-xiuxiangame) · [Website](https://xiuxian.wenzi.games/)  
 > `#Vue.js` `#文字修仙` `#RPG游戏` `#Element Plus` `#game` `#javascript` `#vue` `#xiuxian` 
 > 基于 Vue.js 和 Element Plus 开发的文字修仙题材 RPG 游戏，采用 Pinia 进行状态管理。玩家通过文字互动推进剧情，体验沉浸式修仙成长。支持本地部署与 Docker 容器化运行，提供完整的游戏机制与角色养成系统。
@@ -571,7 +571,7 @@
 ## fly8888/cursor_machine_id
 
 > [!info]
-> ⭐ 2,250 · Python · 2025-12-01  
+> ⭐ 2,251 · Python · 2025-12-01  
 > [GitHub](https://github.com/fly8888/cursor_machine_id)  
 > `#设备ID修改` `#Cursor解锁` `#配置重置` 
 > 该工具提供一键修改 Cursor 编辑器设备 ID 的功能，支持 Windows、macOS 和 Linux 系统，自动备份原配置文件并生成新设备标识符，用于解除因设备锁定导致的使用限制。核心原理是修改 telemetry.machineId、macMachineId、devDeviceId 等关键标识字段。
@@ -581,7 +581,7 @@
 ## doocs/leetcode
 
 > [!info]
-> ⭐ 35,699 · Java · 2026-02-28  
+> ⭐ 35,702 · Java · 2026-03-01  
 > [GitHub](https://github.com/doocs/leetcode) · [Website](https://leetcode.doocs.org)  
 > `#算法题解` `#LeetCode` `#剑指Offer` `#多语言实现` `#algorithms` `#cpp` `#csharp` `#golang` `#java` `#javascript` `#leetcode` `#python3` 
 > 本项目提供 LeetCode、剑指 Offer 系列及《程序员面试金典》等经典算法题的详尽题解，涵盖 Java、Python、C++、Go、TypeScript、Rust 等多种编程语言实现。内容包含基础算法、数据结构、专项突破及竞赛题解，采用二分查找、单调栈、前缀和、双指针等核心算法优化解法，助力算法能力提升与面试准备。
