@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-16 21:20 UTC",
+  "last_updated": "2026-06-17 20:30 UTC",
   "repos": {
     "waoowaooAI/waoowaoo": {
       "metadata": {
@@ -1455,7 +1455,7 @@
         "name": "anyrouter-check-in",
         "owner": "millylee",
         "description": "支持 AnyRouter、AgentRouter 的多平台多账号签到，理论兼容所有基于 NewAPI、OneAPI 的平台。",
-        "stars": 1118,
+        "stars": 1124,
         "language": "Python",
         "url": "https://github.com/millylee/anyrouter-check-in",
         "homepage": "https://anyrouter.top/register?aff=gSsN",
@@ -2834,7 +2834,7 @@
         "name": "file-transfer-go",
         "owner": "MatrixSeven",
         "description": "Go/React开发的端到端webrtc的文件传输/文字传输/桌面共享，安全，隐私，数据不经过服务器。",
-        "stars": 5009,
+        "stars": 5012,
         "language": "TypeScript",
         "url": "https://github.com/MatrixSeven/file-transfer-go",
         "homepage": "https://transfer.52python.cn",
@@ -5391,7 +5391,7 @@
         "name": "system-prompts-and-models-of-ai-tools",
         "owner": "x1xhlol",
         "description": "FULL Augment Code, Claude Code, Cluely, CodeBuddy, Comet, Cursor, Devin AI, Junie, Kiro, Leap.new, Lovable, Manus, NotionAI, Orchids.app, Perplexity, Poke, Qoder, Replit, Same.dev, Trae, Traycer AI, VSCode Agent, Warp.dev, Windsurf, Xcode, Z.ai Code, Dia & v0. (And other Open Sourced) System Prompts, Internal Tools & AI Models",
-        "stars": 140672,
+        "stars": 140790,
         "language": "N/A",
         "url": "https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools",
         "homepage": "",
@@ -27918,7 +27918,7 @@
         "name": "starter",
         "owner": "mintlify",
         "description": "The starter kit for your mintlify project",
-        "stars": 1857,
+        "stars": 1858,
         "language": "MDX",
         "url": "https://github.com/mintlify/starter",
         "homepage": "https://starter.mintlify.com",
@@ -27955,7 +27955,7 @@
         "url": "https://github.com/iblogc/GithubStarsIndex",
         "homepage": "https://stars.iblogc.com",
         "topics": [],
-        "updated_at": "2026-06-15"
+        "updated_at": "2026-06-16"
       },
       "summary": {
         "zh": "自动抓取 GitHub Stars 仓库，通过 AI 生成智能摘要与技术标签，支持增量更新、并发处理、标签归一化，并可选同步至 Obsidian 或部署为 GitHub Pages 静态搜索页，实现个人技术资产的高效管理与检索。",
@@ -27982,7 +27982,7 @@
         "name": "MeetSpot",
         "owner": "calderbuild",
         "description": "End the \"Where should we meet?\" debate by instantly finding a spot that’s fair, convenient, and loved by everyone. An intelligent meeting point recommendation system.",
-        "stars": 525,
+        "stars": 524,
         "language": "Python",
         "url": "https://github.com/calderbuild/MeetSpot",
         "homepage": "https://meetspot-irq2.onrender.com/",
@@ -28019,7 +28019,7 @@
         "name": "pdf-craft",
         "owner": "oomol-lab",
         "description": "PDF craft can convert PDF files into various other formats. This project will focus on processing PDF files of scanned books.",
-        "stars": 5776,
+        "stars": 5780,
         "language": "Python",
         "url": "https://github.com/oomol-lab/pdf-craft",
         "homepage": "https://inkora.oomol.com/",
@@ -28054,7 +28054,7 @@
         "name": "ZTools",
         "owner": "ZToolsCenter",
         "description": "一个高性能、可扩展的应用启动器和插件平台  uTools 的开源实现 | 支持 macOS 和 Windows",
-        "stars": 2935,
+        "stars": 2948,
         "language": "TypeScript",
         "url": "https://github.com/ZToolsCenter/ZTools",
         "homepage": "",
@@ -28084,7 +28084,7 @@
         "name": "VidBee",
         "owner": "nexmoe",
         "description": "Download videos from almost any website worldwide",
-        "stars": 9447,
+        "stars": 9466,
         "language": "TypeScript",
         "url": "https://github.com/nexmoe/VidBee",
         "homepage": "https://vidbee.org",
@@ -28095,7 +28095,7 @@
           "twitter",
           "youtube"
         ],
-        "updated_at": "2026-06-12"
+        "updated_at": "2026-06-17"
       },
       "summary": {
         "zh": "VidBee 是一款现代化的开源视频下载工具，基于 Electron 和 yt-dlp 技术栈，支持从全球 1000+ 网站下载视频与音频。其核心亮点包括简洁直观的界面设计、强大的下载队列管理、实时进度追踪，以及 RSS 自动订阅功能，可无人值守下载新内容，适用于 YouTube、TikTok、Instagram 等主流平台。",
@@ -28120,7 +28120,7 @@
         "name": "MoonTVPlus",
         "owner": "mtvpls",
         "description": "MoonTVPlus 是基于 MoonTV v100 二次开发的增强版影视聚合播放器。它在原版基础上新增了外部播放器支持、视频超分、弹幕系统、评论抓取等实用功能，提供更强大的观影体验。",
-        "stars": 2492,
+        "stars": 2517,
         "language": "TypeScript",
         "url": "https://github.com/mtvpls/MoonTVPlus",
         "homepage": "",
@@ -28192,7 +28192,7 @@
         "name": "term.everything",
         "owner": "mmulet",
         "description": "Run any GUI app in the terminal❗",
-        "stars": 8006,
+        "stars": 8012,
         "language": "Go",
         "url": "https://github.com/mmulet/term.everything",
         "homepage": "",
@@ -28233,12 +28233,12 @@
         "name": "mise",
         "owner": "jdx",
         "description": "dev tools, env vars, task runner",
-        "stars": 29570,
+        "stars": 29609,
         "language": "Rust",
         "url": "https://github.com/jdx/mise",
         "homepage": "https://mise.en.dev",
         "topics": [],
-        "updated_at": "2026-06-16"
+        "updated_at": "2026-06-17"
       },
       "summary": {
         "zh": "mise 是一个现代化的开发环境管理工具，集版本管理、环境变量配置和任务执行于一体。它支持多语言工具链（如 Node.js、Python、Go 等）的版本切换，通过项目级配置自动加载环境变量，并提供类似 Make 的任务运行功能，极大提升开发效率与一致性。",
@@ -28263,7 +28263,7 @@
         "name": "TrackersListCollection",
         "owner": "XIU2",
         "description": "🎈 Updated daily! A list of popular BitTorrent Trackers! / 每天更新！全网热门 BT Tracker 列表！",
-        "stars": 31535,
+        "stars": 31545,
         "language": "N/A",
         "url": "https://github.com/XIU2/TrackersListCollection",
         "homepage": "https://trackerslist.com",
@@ -28280,7 +28280,7 @@
           "trackerslist",
           "utorrent"
         ],
-        "updated_at": "2026-06-16"
+        "updated_at": "2026-06-17"
       },
       "summary": {
         "zh": "该仓库每日更新热门 BitTorrent Tracker 列表，提供最佳、全部、HTTP(S) 及非 HTTP 四类 tracker 文件，支持 Aria2 等客户端直接配置使用，显著提升 BT 下载速度与连接效率，适用于 BitTorrent 用户优化网络性能。",
@@ -28307,7 +28307,7 @@
         "name": "cherry-studio",
         "owner": "CherryHQ",
         "description": "AI productivity studio with smart chat, autonomous agents, and 300+ assistants. Unified access to frontier LLMs",
-        "stars": 47427,
+        "stars": 47480,
         "language": "TypeScript",
         "url": "https://github.com/CherryHQ/cherry-studio",
         "homepage": "https://cherryai.com",
@@ -28323,7 +28323,7 @@
           "skills",
           "vibe-coding"
         ],
-        "updated_at": "2026-06-16"
+        "updated_at": "2026-06-17"
       },
       "summary": {
         "zh": "Cherry Studio 是一款 AI 生产力工具，集成智能对话、自主代理和300+助手，统一接入主流大语言模型，支持多语言界面，提供跨平台桌面应用，专注提升AI工作流效率。",
@@ -28378,7 +28378,7 @@
         "name": "MoonTV",
         "owner": "samqin123",
         "description": "",
-        "stars": 1973,
+        "stars": 1977,
         "language": "TypeScript",
         "url": "https://github.com/samqin123/MoonTV",
         "homepage": "",
@@ -28472,7 +28472,7 @@
         "name": "subs-check",
         "owner": "beck-8",
         "description": "订阅转换、测速、测活、流媒体检测、重命名、导出为任意格式订阅的工具",
-        "stars": 4978,
+        "stars": 4983,
         "language": "Go",
         "url": "https://github.com/beck-8/subs-check",
         "homepage": "https://t.me/subs_check",
@@ -28506,7 +28506,7 @@
         "name": "minimind",
         "owner": "jingyaogong",
         "description": "🧠「大模型」2小时完全从0训练64M的小参数LLM！Train a 64M-parameter LLM from scratch in just 2h!",
-        "stars": 51848,
+        "stars": 51903,
         "language": "Python",
         "url": "https://github.com/jingyaogong/minimind",
         "homepage": "https://jingyaogong.github.io/minimind",
@@ -28612,7 +28612,7 @@
         "name": "copyparty",
         "owner": "9001",
         "description": "Portable file server with accelerated resumable uploads, dedup, WebDAV, SFTP, FTP, TFTP, zeroconf, media indexer, thumbnails++ all in one file",
-        "stars": 45240,
+        "stars": 45247,
         "language": "Python",
         "url": "https://github.com/9001/copyparty",
         "homepage": "",
@@ -28681,7 +28681,7 @@
         "name": "OI-wiki",
         "owner": "OI-wiki",
         "description": ":star2: Wiki of OI / ICPC for everyone. （某大型游戏线上攻略，内含炫酷算术魔法）",
-        "stars": 26145,
+        "stars": 26147,
         "language": "TypeScript",
         "url": "https://github.com/OI-wiki/OI-wiki",
         "homepage": "https://oi-wiki.org",
@@ -28699,7 +28699,7 @@
           "oi-handbook",
           "oi-training"
         ],
-        "updated_at": "2026-06-16"
+        "updated_at": "2026-06-17"
       },
       "summary": {
         "zh": "OI Wiki 是一个免费开放的编程竞赛知识整合站点，涵盖算法、数据结构、竞赛技巧等内容，采用 MkDocs 构建，支持本地部署与镜像访问，鼓励社区协作完善内容，保持非商业化独立性质。",
@@ -28791,7 +28791,7 @@
         "name": "video2x",
         "owner": "k4yt3x",
         "description": "A machine learning-based video super resolution and frame interpolation framework. Est. Hack the Valley II, 2018.",
-        "stars": 20278,
+        "stars": 20286,
         "language": "C++",
         "url": "https://github.com/k4yt3x/video2x",
         "homepage": "https://docs.video2x.org",
@@ -28928,7 +28928,7 @@
         "name": "Throne",
         "owner": "throneproj",
         "description": "Cross-platform GUI proxy utility (Empowered by sing-box)",
-        "stars": 6165,
+        "stars": 6176,
         "language": "C++",
         "url": "https://github.com/throneproj/Throne",
         "homepage": "https://throneproj.github.io",
@@ -28949,7 +28949,7 @@
           "windows",
           "xhttp"
         ],
-        "updated_at": "2026-06-16"
+        "updated_at": "2026-06-17"
       },
       "summary": {
         "zh": "Throne 是一款基于 Qt 的跨平台 GUI 代理工具，集成 sing-box 核心，支持 Windows、macOS 和 Linux。提供 SOCKS、HTTP(S)、Shadowsocks、Trojan、VLESS 等多种协议，支持订阅链接、链式代理和系统级代理配置，具备自动更新和权限提升功能。",
@@ -28974,7 +28974,7 @@
         "name": "note-gen",
         "owner": "codexu",
         "description": "A cross-platform Markdown AI note-taking software.",
-        "stars": 12177,
+        "stars": 12184,
         "language": "TypeScript",
         "url": "https://github.com/codexu/note-gen",
         "homepage": "https://notegen.top",
@@ -29016,7 +29016,7 @@
         "name": "RSSWorker",
         "owner": "yllhwa",
         "description": "运行在Cloudflare Worker上的RSS订阅生成器",
-        "stars": 775,
+        "stars": 776,
         "language": "JavaScript",
         "url": "https://github.com/yllhwa/RSSWorker",
         "homepage": "",
@@ -29055,7 +29055,7 @@
         "name": "chrome-QuickGo",
         "owner": "Dolov",
         "description": "🚀 QuickGo 外链直达 — 无感知自动跳过知乎、简书、掘金、CSDN、少数派、Gitee 等 50+ 网站的安全中心跳转限制",
-        "stars": 779,
+        "stars": 780,
         "language": "TypeScript",
         "url": "https://github.com/Dolov/chrome-QuickGo",
         "homepage": "https://chromewebstore.google.com/detail/quickgo/homllehcipjgpbpepcojhgcpfdopjhml",
@@ -29094,7 +29094,7 @@
         "name": "rubick",
         "owner": "rubickCenter",
         "description": "🔧  Electron based open source toolbox, free integration of rich plug-ins. 基于 electron 的开源工具箱，自由集成丰富插件。",
-        "stars": 9925,
+        "stars": 9932,
         "language": "TypeScript",
         "url": "https://github.com/rubickCenter/rubick",
         "homepage": "https://rubickcenter.github.io/docs",
@@ -29171,7 +29171,7 @@
         "name": "KeymouseGo",
         "owner": "taojy123",
         "description": "类似按键精灵的鼠标键盘录制和自动化操作 模拟点击和键入 | automate mouse clicks and keyboard input",
-        "stars": 10312,
+        "stars": 10318,
         "language": "Python",
         "url": "https://github.com/taojy123/KeymouseGo",
         "homepage": "http://taojy123.github.io/KeymouseGo",
@@ -29209,7 +29209,7 @@
         "name": "frpc-desktop",
         "owner": "luckjiawei",
         "description": "Cross-platform desktop client for FRP, visual configuration, easily achieve intranet penetration!",
-        "stars": 6756,
+        "stars": 6760,
         "language": "Vue",
         "url": "https://github.com/luckjiawei/frpc-desktop",
         "homepage": "https://jwinks.com/p/frp/",
@@ -29253,7 +29253,7 @@
         "name": "Cloudflare-vless-trojan",
         "owner": "yonggekkk",
         "description": "CF-workers/pages代理脚本：支持Vless-ws(tls)、Trojan-ws(tls)；Socks5/http本地代理脚本：可选ECH-TLS、普通TLS、无TLS三种代理模式",
-        "stars": 15313,
+        "stars": 15339,
         "language": "JavaScript",
         "url": "https://github.com/yonggekkk/Cloudflare-vless-trojan",
         "homepage": "https://ygkkk.blogspot.com/2023/07/cfworkers-vless.html",
@@ -29275,7 +29275,7 @@
           "xray",
           "ygkkk"
         ],
-        "updated_at": "2026-05-20"
+        "updated_at": "2026-06-17"
       },
       "summary": {
         "zh": "本项目提供基于Cloudflare Workers/Pages的代理脚本，支持Vless-ws(tls)、Trojan-ws(tls)协议，兼容Socks5/HTTP本地代理，可选ECH-TLS、普通TLS或无TLS三种加密模式以应对网络封锁。支持单节点、聚合链接及订阅格式输出，内置优选IP自动填充，无需手动维护节点信息，适合软路由等本地化部署场景。",
@@ -29302,7 +29302,7 @@
         "name": "pokerogue",
         "owner": "pagefaultgames",
         "description": "A browser based Pokémon fangame heavily inspired by the roguelite genre.",
-        "stars": 5724,
+        "stars": 5738,
         "language": "TypeScript",
         "url": "https://github.com/pagefaultgames/pokerogue",
         "homepage": "https://pokerogue.net",
@@ -29313,7 +29313,7 @@
           "pokerogue",
           "typescript"
         ],
-        "updated_at": "2026-06-15"
+        "updated_at": "2026-06-17"
       },
       "summary": {
         "zh": "PokéRogue 是一款基于浏览器的宝可梦同人游戏，深度融合了 Roguelite 玩法，支持无尽战斗、道具叠加、多生物群落探索及训练师对战。采用 TypeScript 开发，具备完整的测试覆盖与 Biome 代码规范，社区活跃，支持本地部署与协作开发。",
@@ -29338,7 +29338,7 @@
         "name": "keep-alive",
         "owner": "Huibq",
         "description": "洛雪音乐音源、MusicFree音源、落雪音乐音源",
-        "stars": 6997,
+        "stars": 7003,
         "language": "JavaScript",
         "url": "https://github.com/Huibq/keep-alive",
         "homepage": "https://lxmusicapi.onrender.com",
@@ -29368,7 +29368,7 @@
         "name": "vue-xiuxiangame",
         "owner": "setube",
         "description": "文字游戏: 我的文字修仙全靠刷",
-        "stars": 1736,
+        "stars": 1737,
         "language": "JavaScript",
         "url": "https://github.com/setube/vue-xiuxiangame",
         "homepage": "https://xiuxian.wenzi.games/",
@@ -29495,7 +29495,7 @@
         "name": "leetcode",
         "owner": "doocs",
         "description": "🔥LeetCode solutions in any programming language | 多种编程语言实现 LeetCode、《剑指 Offer（第 2 版）》、《程序员面试金典（第 6 版）》题解",
-        "stars": 36161,
+        "stars": 36167,
         "language": "Java",
         "url": "https://github.com/doocs/leetcode",
         "homepage": "https://leetcode.doocs.org",
@@ -29922,7 +29922,7 @@
         "name": "happy-llm",
         "owner": "datawhalechina",
         "description": "📚 从零开始构建大模型",
-        "stars": 31333,
+        "stars": 31365,
         "language": "Jupyter Notebook",
         "url": "https://github.com/datawhalechina/happy-llm",
         "homepage": "https://datawhalechina.github.io/happy-llm/",
@@ -29956,7 +29956,7 @@
         "name": "gemini-business2api",
         "owner": "yukkcat",
         "description": "OpenAI-compatible API for Gemini Business with multi-account load balancing and multimodal capabilities (image/video generation, file parsing) | 将 Gemini Business 转为 OpenAI 兼容接口，支持多账户负载均衡及多模态能力（图像生成、视频生成、解析文件）",
-        "stars": 1287,
+        "stars": 1288,
         "language": "Python",
         "url": "https://github.com/yukkcat/gemini-business2api",
         "homepage": "https://gemini-business2api.nanohajimi.mom",
@@ -30063,7 +30063,7 @@
         "name": "AI-Chat",
         "owner": "HappyFox001",
         "description": "Open-source platform for AI-driven storytelling, worldbuilding, and immersive roleplay",
-        "stars": 813,
+        "stars": 814,
         "language": "TypeScript",
         "url": "https://github.com/HappyFox001/AI-Chat",
         "homepage": "",
@@ -30093,7 +30093,7 @@
         "name": "ai-agents-for-beginners",
         "owner": "microsoft",
         "description": "12 Lessons to Get Started Building AI Agents",
-        "stars": 67383,
+        "stars": 67456,
         "language": "Jupyter Notebook",
         "url": "https://github.com/microsoft/ai-agents-for-beginners",
         "homepage": "https://aka.ms/ai-agents-beginners",
@@ -30146,7 +30146,7 @@
         "tags_en": []
       },
       "pushed_at": "2026-06-09",
-      "updated_at": "2026-06-16"
+      "updated_at": "2026-06-17"
     }
   }
 }
