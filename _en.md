@@ -1,6 +1,6 @@
 # ⭐ GitHub Stars Index
 
-> Updated: 2026-06-25 20:23 UTC · Total: 67
+> Updated: 2026-06-26 20:12 UTC · Total: 67
 
 ---
 
@@ -87,7 +87,7 @@
 ## microsoft/ai-agents-for-beginners
 
 > [!info]
-> ⭐ 67,962 · Jupyter Notebook · 2026-06-25  
+> ⭐ 68,018 · Jupyter Notebook · 2026-06-25  
 > [GitHub](https://github.com/microsoft/ai-agents-for-beginners) · [Website](https://aka.ms/ai-agents-beginners)  
 > `#AI Agents` `#Educational Course` `#提示工程` `#agentic-ai` `#agentic-framework` `#agentic-rag` `#ai-agents` `#ai-agents-framework` `#autogen` `#generative-ai` `#semantic-kernel` 
 > Microsoft's beginner-friendly course on AI agents, featuring 12 structured lessons covering fundamentals to practical development. With support for 50+ languages and hands-on learning, it empowers developers to build autonomous AI agents for education, automation, and intelligent system applications.
@@ -116,7 +116,7 @@
 ## datawhalechina/happy-llm
 
 > [!info]
-> ⭐ 31,559 · Jupyter Notebook · 2026-05-06  
+> ⭐ 31,584 · Jupyter Notebook · 2026-05-06  
 > [GitHub](https://github.com/datawhalechina/happy-llm) · [Website](https://datawhalechina.github.io/happy-llm/)  
 > `#AI 大模型` `#Model Training` `#深度学习` `#agent` `#llm` `#rag` 
 > Happy-LLM is a free, systematic tutorial by Datawhale that delves into the core principles and training practices of large language models. It covers NLP fundamentals, Transformer architecture, pre-trained models, LLM training workflows, and advanced applications like RAG and Agent systems, with hands-on code examples for building and training an LLaMA2 model from scratch.
@@ -126,7 +126,7 @@
 ## iblogc/GithubStarsIndex
 
 > [!info]
-> ⭐ 75 · Jinja · 2026-06-24  
+> ⭐ 75 · Jinja · 2026-06-26  
 > [GitHub](https://github.com/iblogc/GithubStarsIndex) · [Website](https://stars.iblogc.com)  
 > `#AI 智能体` `#Automation Tool` `#Data Archiving` `#Knowledge Management` 
 > Automatically fetches GitHub Stars, generates AI-powered summaries and technical tags for each repo, supports incremental updates, concurrent processing, and tag normalization, with optional sync to Obsidian or deployment as a GitHub Pages static search site for efficient personal tech asset management.
@@ -146,7 +146,7 @@
 ## mintlify/starter
 
 > [!info]
-> ⭐ 1,862 · MDX · 2026-06-15  
+> ⭐ 1,864 · MDX · 2026-06-15  
 > [GitHub](https://github.com/mintlify/starter) · [Website](https://starter.mintlify.com)  
 > `#AI-Assisted Writing` `#Documentation` `#Mintlify` `#Quick Deployment` 
 > The Mintlify Starter Kit is a template for quickly setting up and deploying documentation sites, featuring guide pages, navigation, API references, and customizable components. It supports local preview via the Mintlify CLI and integrates AI-assisted writing tools for enhanced documentation workflows.
@@ -166,7 +166,7 @@
 ## yukkcat/gemini-business2api
 
 > [!info]
-> ⭐ 1,295 · Python · 2026-05-21  
+> ⭐ 1,294 · Python · 2026-05-21  
 > [GitHub](https://github.com/yukkcat/gemini-business2api) · [Website](https://gemini-business2api.nanohajimi.mom)  
 > `#AI Large Model` `#Multimodal Processing` `#OpenAI Compatible API` `#2api` `#business` `#chatgpt` `#gemini` `#openai` 
 > Gemini Business2API transforms Gemini Business into an OpenAI-compatible API with multi-account load balancing, multimodal support (100+ file types), image/video generation, and intelligent file parsing. Features automated account management, streaming responses, proxy configuration, admin panel, and Docker deployment with PostgreSQL/SQLite persistence.
@@ -176,7 +176,7 @@
 ## oomol-lab/pdf-craft
 
 > [!info]
-> ⭐ 5,801 · Python · 2026-06-06  
+> ⭐ 5,802 · Python · 2026-06-06  
 > [GitHub](https://github.com/oomol-lab/pdf-craft) · [Website](https://inkora.oomol.com/)  
 > `#DeepSeek OCR` `#Document Processing` `#PDF Conversion` `#deepseek-ocr` `#document` `#ocr` `#pdf` 
 > PDF Craft converts scanned book PDFs into formats like Markdown and EPUB using DeepSeek OCR for accurate text, table, and formula recognition. It runs locally without internet, auto-detects document structure, filters headers/footers, preserves footnotes and assets, and generates TOCs while maintaining readability and integrity.
@@ -186,7 +186,7 @@
 ## ZToolsCenter/ZTools
 
 > [!info]
-> ⭐ 3,022 · TypeScript · 2026-06-13  
+> ⭐ 3,033 · TypeScript · 2026-06-13  
 > [GitHub](https://github.com/ZToolsCenter/ZTools)  
 > `#App Launcher` `#Electron` `#Productivity Tool` 
 > ZTools is an open-source implementation of uTools, offering a high-performance app launcher and plugin platform for macOS and Windows. It features pinyin search, regex matching, clipboard management, theme customization, and uses LMDB database with Electron 38.5 stack. Includes plugin marketplace, in-app updates, and cross-platform development support for enhanced productivity.
@@ -196,7 +196,7 @@
 ## mtvpls/MoonTVPlus
 
 > [!info]
-> ⭐ 2,582 · TypeScript · 2026-06-25  
+> ⭐ 2,593 · TypeScript · 2026-06-25  
 > [GitHub](https://github.com/mtvpls/MoonTVPlus)  
 > `#Danmaku System` `#Media Aggregation` `#WebGPU` 
 > MoonTVPlus is an enhanced version of MoonTV v100, featuring external player support, WebGPU-based video upscaling, danmaku system, Douban comment fetching, synchronized viewing rooms, and private media libraries for an immersive streaming experience.
@@ -206,7 +206,7 @@
 ## nexmoe/VidBee
 
 > [!info]
-> ⭐ 9,559 · TypeScript · 2026-06-20  
+> ⭐ 9,563 · TypeScript · 2026-06-20  
 > [GitHub](https://github.com/nexmoe/VidBee) · [Website](https://vidbee.org)  
 > `#RSS Automation` `#Video Downloader` `#yt-dlp` `#downloader` `#facebook` `#tiktok` `#twitter` `#youtube` 
 > VidBee is a modern open-source video downloader built with Electron and powered by yt-dlp, supporting downloads from over 1000 global websites. It features a clean UI, real-time progress tracking, download queue management, and RSS auto-download automation for seamless background fetching of new content from platforms like YouTube, TikTok, and Instagram.
@@ -216,7 +216,7 @@
 ## mmulet/term.everything
 
 > [!info]
-> ⭐ 8,017 · Go · 2026-03-18  
+> ⭐ 8,019 · Go · 2026-03-18  
 > [GitHub](https://github.com/mmulet/term.everything)  
 > `#GUI Terminalization` `#Terminal Virtualization` `#Wayland Compositor` `#alacritty` `#cli` `#foss` `#iterm2` `#kitty` `#linux` `#ssh` `#terminal` `#wayland` `#wayland-compositor` 
 > Term.Everything is a revolutionary Linux CLI tool that runs any GUI application within the terminal by implementing a custom Wayland compositor. It supports both X11 and Wayland, works over SSH, and leverages terminal image protocols for high-resolution rendering, redefining terminal interactivity boundaries.
@@ -236,7 +236,7 @@
 ## XIU2/TrackersListCollection
 
 > [!info]
-> ⭐ 31,609 · N/A · 2026-06-25  
+> ⭐ 31,620 · N/A · 2026-06-26  
 > [GitHub](https://github.com/XIU2/TrackersListCollection) · [Website](https://trackerslist.com)  
 > `#Aria2` `#BitTorrent` `#Network Acceleration` `#Tracker List` `#aria2` `#aria2-format-tracker` `#bittorrent` `#bittorrent-trackers` `#qbittorrent` `#torrent` `#torrent-tracker` `#tracker` `#trackers` `#trackerslist` `#utorrent` 
 > This repository provides a daily-updated list of popular BitTorrent trackers, offering four categories (best, all, HTTP(S), and non-HTTP) in multiple formats. It is optimized for use with clients like Aria2 to enhance download speeds and peer connectivity in BitTorrent networks.
@@ -246,7 +246,7 @@
 ## jdx/mise
 
 > [!info]
-> ⭐ 30,128 · Rust · 2026-06-25  
+> ⭐ 30,155 · Rust · 2026-06-26  
 > [GitHub](https://github.com/jdx/mise) · [Website](https://mise.en.dev)  
 > `#Dev Tools Management` `#Environment Variables` `#Task Automation` 
 > mise is a modern dev environment manager that combines tool versioning, environment variable management, and task execution. It supports switching between versions of multi-language tools (e.g., Node.js, Python, Go), auto-loads project-specific environment variables, and provides Make-like task runners for streamlined development workflows.
@@ -266,7 +266,7 @@
 ## CherryHQ/cherry-studio
 
 > [!info]
-> ⭐ 47,797 · TypeScript · 2026-06-25  
+> ⭐ 47,839 · TypeScript · 2026-06-26  
 > [GitHub](https://github.com/CherryHQ/cherry-studio) · [Website](https://cherryai.com)  
 > `#AI 大模型` `#AI 智能体` `#Productivity Tool` `#agent-skills` `#ai-agent` `#awesome-skills` `#claude-code` `#codex` `#deepseek` `#hermes-agent` `#openclaw` `#skills` `#vibe-coding` 
 > Cherry Studio is an AI productivity studio featuring smart chat, autonomous agents, and 300+ assistants with unified access to leading LLMs. It offers a cross-platform desktop app with multi-language support, designed to enhance AI workflow efficiency.
@@ -314,7 +314,7 @@
 ## millylee/anyrouter-check-in
 
 > [!info]
-> ⭐ 1,164 · Python · 2026-06-23  
+> ⭐ 1,169 · Python · 2026-06-23  
 > [GitHub](https://github.com/millylee/anyrouter-check-in) · [Website](https://anyrouter.top/register?aff=gSsN)  
 > `#Automation Tool` `#Check-In System` `#Multi-Account Management` `#网页爬虫` `#agentrouter` `#anyrouter` `#check-in` `#claude-code` `#claudecode` `#codex` `#newapi` `#oneapi` 
 > A multi-account auto check-in tool for AnyRouter and AgentRouter platforms, compatible with NewAPI/OneAPI architectures. Uses GitHub Actions for scheduled automation, supports parallel account processing, WAF bypass, and notification alerts with flexible configuration.
@@ -324,7 +324,7 @@
 ## jingyaogong/minimind
 
 > [!info]
-> ⭐ 52,198 · Python · 2026-06-01  
+> ⭐ 52,232 · Python · 2026-06-01  
 > [GitHub](https://github.com/jingyaogong/minimind) · [Website](https://jingyaogong.github.io/minimind)  
 > `#AI Large Language Model` `#Lightweight LLM` `#PyTorch` `#Train From Scratch` `#artificial-intelligence` `#large-language-model` 
 > MiniMind is an ultra-lightweight LLM trained from scratch with only 26M parameters in 2 hours at a cost of $0.3. It provides full open-source code for pretraining, SFT, LoRA, DPO, and RLHF (PPO/GRPO), all reimplemented in native PyTorch without high-level abstractions. With multi-modal extension (MiniMind-V), it enables easy replication on consumer GPUs, serving as an educational entry point into LLM internals.
@@ -334,7 +334,7 @@
 ## beck-8/subs-check
 
 > [!info]
-> ⭐ 5,003 · Go · 2026-06-20  
+> ⭐ 5,006 · Go · 2026-06-20  
 > [GitHub](https://github.com/beck-8/subs-check) · [Website](https://t.me/subs_check)  
 > `#Automated Testing` `#Network Tools` `#Subscription Management` `#clash` `#mihomo` `#v2ray` 
 > A comprehensive subscription management tool for merging, testing, renaming, and converting proxy nodes into various formats, featuring speed tests, streaming detection, web UI, and extensive notification support with easy deployment via script or Docker.
@@ -354,7 +354,7 @@
 ## oslook/cursor-ai-downloads
 
 > [!info]
-> ⭐ 3,204 · TypeScript · 2026-06-25  
+> ⭐ 3,206 · TypeScript · 2026-06-25  
 > [GitHub](https://github.com/oslook/cursor-ai-downloads) · [Website](https://cursor.uuid.site)  
 > `#AI 智能体` `#Code Editor` `#Version Management` `#curosr` `#cursor` `#cursor-ai` `#cursor-ai-editor` `#cursor-ide` `#cursor-infinite-free-trial` `#cursor-installer` `#deepseek-r1` `#downloads` `#downloadurl` 
 > This repository offers comprehensive official download links for all Cursor AI versions, enabling easy upgrades, downgrades, and version selection across Windows, macOS, and Linux. It ensures secure access to stable or preview releases, ideal for developers needing version control.
@@ -364,7 +364,7 @@
 ## 9001/copyparty
 
 > [!info]
-> ⭐ 45,356 · Python · 2026-06-16  
+> ⭐ 45,374 · Python · 2026-06-26  
 > [GitHub](https://github.com/9001/copyparty)  
 > `#File Server` `#Multi-Protocol` `#Resumable Uploads` `#copyparty` `#file-server` `#file-sharing` `#file-upload-server` `#ftp-server` `#nas-frontend` `#tftp-server` `#webdav-server` 
 > Copyparty is a portable file server featuring accelerated resumable uploads, deduplication, and support for WebDAV, SFTP, FTP, TFTP, plus media indexing, thumbnails, and zeroconf—all accessible via any web browser with minimal Python dependency.
@@ -374,7 +374,7 @@
 ## wisdgod/cursor-tab
 
 > [!info]
-> ⭐ 76 · N/A · 2026-06-16  
+> ⭐ 76 · N/A · 2026-06-26  
 > [GitHub](https://github.com/wisdgod/cursor-tab)  
 > `#Cross-Platform Integration` `#Protocol Buffers` `#Reverse Engineering` 
 > This project delivers reverse-engineered Protocol Buffers definitions for Cursor Tab, enabling cross-platform integration of its core features. The main unite.proto file supports file synchronization and state management, dual-licensed under MIT and Apache 2.0, suitable for third-party app integration.
@@ -384,7 +384,7 @@
 ## OI-wiki/OI-wiki
 
 > [!info]
-> ⭐ 26,192 · TypeScript · 2026-06-25  
+> ⭐ 26,199 · TypeScript · 2026-06-26  
 > [GitHub](https://github.com/OI-wiki/OI-wiki) · [Website](https://oi-wiki.org)  
 > `#Algorithms` `#Competitive Programming` `#Knowledge Base` `#acm-icpc` `#acm-icpc-handbook` `#algorithms` `#competitive-programming` `#data-structures` `#hacktoberfest` `#icpc` `#icpc-handbook` `#icpc-training` `#oi` `#oi-handbook` `#oi-training` 
 > OI Wiki is a free, open, and continuously updated knowledge hub for competitive programming, covering algorithms, data structures, and contest strategies. Built with MkDocs, it supports local deployment and mirrors. It encourages community contributions and remains non-commercial.
@@ -394,7 +394,7 @@
 ## setube/vue-idle-xiuxian
 
 > [!info]
-> ⭐ 276 · Vue · 2026-01-06  
+> ⭐ 275 · Vue · 2026-01-06  
 > [GitHub](https://github.com/setube/vue-idle-xiuxian) · [Website](https://idle-xiuxian.wenzi.games/)  
 > `#Idle Game` `#Idle RPG` `#Vue3` `#game` `#idle` `#idle-game` `#javascript` `#vue` `#xiuxian` 
 > My Idle Immortal Journey is an idle RPG web game built with Vue3, featuring cultivation mechanics, pet systems, equipment crafting, alchemy, and gacha. Powered by Vite, Pinia, and Naive UI, it supports offline progression, GM tools, and Docker deployment for seamless play and modding.
@@ -424,7 +424,7 @@
 ## k4yt3x/video2x
 
 > [!info]
-> ⭐ 20,366 · C++ · 2026-03-07  
+> ⭐ 20,373 · C++ · 2026-03-07  
 > [GitHub](https://github.com/k4yt3x/video2x) · [Website](https://docs.video2x.org)  
 > `#AI Super-Resolution` `#Cross-Platform Tool` `#Machine Learning Framework` `#Video Enhancement` `#anime4k` `#frame-interpolation` `#machine-learning` `#neural-networks` `#realcugan` `#realesrgan` `#rife` `#super-resoluion` `#upscale-video` `#vulkan` 
 > Video2X is a machine learning-based framework for video super-resolution and frame interpolation, supporting models like Anime4K, Real-ESRGAN, and RIFE. Rewritten in C/C++ for high performance, it offers cross-platform support (Windows/Linux), Vulkan acceleration, and includes a user-friendly GUI with installer for easy setup.
@@ -463,7 +463,7 @@
 ## beilunyang/moemail
 
 > [!info]
-> ⭐ 2,678 · TypeScript · 2026-06-16  
+> ⭐ 2,679 · TypeScript · 2026-06-16  
 > [GitHub](https://github.com/beilunyang/moemail) · [Website](https://moemail.app)  
 > `#Cloudflare` `#Privacy Protection` `#Temporary Email` `#cloudflare` `#cloudflare-workers` `#email` `#temp-email` 
 > MoeMail is a cute temporary email service built with Next.js and Cloudflare, offering privacy protection, real-time email receipt, flexible validity periods, theme switching, PWA support, and self-hosting capabilities. It supports email sending, webhook notifications, OpenAPI access, and a user-friendly interface for personal or team use.
@@ -473,9 +473,9 @@
 ## throneproj/Throne
 
 > [!info]
-> ⭐ 6,257 · C++ · 2026-06-25  
+> ⭐ 6,267 · C++ · 2026-06-26  
 > [GitHub](https://github.com/throneproj/Throne) · [Website](https://throneproj.github.io)  
-> `#Cross-platform GUI` `#Proxy Tool` `#Sing-box` `#amenziawg` `#anytls` `#clash` `#linux` `#macos` `#nekobox` `#nekoray` `#proxy` `#reality` `#sing-box` `#v2ray` `#vless` `#vpn` `#windows` `#xhttp` 
+> `#Cross-platform GUI` `#Proxy Tool` `#Sing-box` `#amneziawg` `#amneziawg2` `#anytls` `#clash` `#linux` `#macos` `#nekobox` `#nekoray` `#proxy` `#reality` `#sing-box` `#v2ray` `#vless` `#vpn` `#windows` `#xhttp` 
 > Throne is a cross-platform GUI proxy utility built with Qt and powered by sing-box, supporting Windows, macOS, and Linux. It supports multiple protocols including SOCKS, HTTP(S), Shadowsocks, Trojan, VLESS, and offers subscription management, chaining, system proxy, and automatic privilege escalation.
 > <sub>Cross-platform GUI proxy utility (Empowered by sing-box)</sub>
 
@@ -483,7 +483,7 @@
 ## codexu/note-gen
 
 > [!info]
-> ⭐ 12,224 · TypeScript · 2026-06-23  
+> ⭐ 12,231 · TypeScript · 2026-06-23  
 > [GitHub](https://github.com/codexu/note-gen) · [Website](https://notegen.top)  
 > `#AI 智能体` `#Knowledge Management` `#Markdown` `#agent` `#chatbot` `#knowledge-base` `#llm` `#markdown` `#mcp` `#nextjs` `#note-taking` `#rag` `#tauri` `#webdav` 
 > NoteGen is a cross-platform Markdown AI note-taking application that leverages AI to bridge recording and writing, transforming fragmented knowledge into structured, readable notes. It features native Markdown storage, out-of-the-box RAG, MCP integration, and intelligent agents for automated processing, offering a lightweight, free, and ad-free experience across devices for knowledge management and content creation.
@@ -513,7 +513,7 @@
 ## BewlyBewly/BewlyBewly
 
 > [!info]
-> ⭐ 8,821 · Vue · 2025-02-26  
+> ⭐ 8,822 · Vue · 2025-02-26  
 > [GitHub](https://github.com/BewlyBewly/BewlyBewly) · [Website](https://chromewebstore.google.com/detail/bewlybewly/bbbiejemhfihiooipfcjmjmbfdmobobp)  
 > `#Bilibili` `#Interface Optimization` `#UI Beautification` `#浏览器插件` `#bilibili` `#browser-extension` `#chrome-extension` `#dark-mode` `#dark-theme` 
 > BewlyBewly is a browser extension for Bilibili that redesigns the platform's UI by drawing inspiration from YouTube, Vision OS, and iOS, enhancing visual appeal and usability. Built with the vitesse-webext template, it supports Chrome, Edge, and Firefox, offering dark mode adaptation and homepage layout improvements focused on aesthetics rather than functional enhancements.
@@ -523,7 +523,7 @@
 ## x1xhlol/system-prompts-and-models-of-ai-tools
 
 > [!info]
-> ⭐ 141,157 · N/A · 2026-06-12  
+> ⭐ 141,208 · N/A · 2026-06-12  
 > [GitHub](https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools)  
 > `#AI Coding Agents` `#Development Tool Architecture` `#System Prompt Engineering` `#ai` `#bolt` `#cluely` `#copilot` `#cursor` `#cursorai` `#devin` `#github-copilot` `#lovable` `#open-source` `#perplexity` `#replit` `#system-prompts` `#trae` `#trae-ai` `#trae-ide` `#v0` `#vscode` `#windsurf` `#windsurf-ai` 
 > This repository contains over 30,000 lines of insights into system prompts, internal tools, and AI models of major AI coding agents (e.g., Claude Code, Cursor, Devin AI), offering deep technical analysis of their architecture, functionality, and design principles for developers seeking to understand and leverage AI-powered development tools.
@@ -533,7 +533,7 @@
 ## rubickCenter/rubick
 
 > [!info]
-> ⭐ 9,959 · TypeScript · 2026-01-14  
+> ⭐ 9,958 · TypeScript · 2026-01-14  
 > [GitHub](https://github.com/rubickCenter/rubick) · [Website](https://rubickcenter.github.io/docs)  
 > `#Electron` `#Plugin Architecture` `#Productivity Tool` `#cross-platform` `#desktop-app` `#electron` `#javascript` `#macos` `#toolkit` `#utools` `#windows` 
 > Rubick is an Electron-based open-source desktop toolbox enabling lightweight plugin ecosystem via npm packages, featuring secure multi-device sync via WebDAV, system app/file launching, plugin marketplace, and enterprise intranet deployment with cross-platform support.
@@ -543,7 +543,7 @@
 ## taojy123/KeymouseGo
 
 > [!info]
-> ⭐ 10,347 · Python · 2026-06-07  
+> ⭐ 10,349 · Python · 2026-06-07  
 > [GitHub](https://github.com/taojy123/KeymouseGo) · [Website](http://taojy123.github.io/KeymouseGo)  
 > `#Automation Tool` `#CrossPlatform` `#Python` `#Script Recording` `#automate` `#keyboard` `#mouse` `#python` `#simulation` 
 > KeymouseGo is a cross-platform mouse and keyboard automation tool written in Python, similar to Keymacro, enabling users to record and replay mouse/keyboard actions. It supports GUI and CLI modes, runs on Windows, Linux, and macOS, and is ideal for automating repetitive tasks with customizable delays and loop counts.
@@ -553,7 +553,7 @@
 ## Huibq/keep-alive
 
 > [!info]
-> ⭐ 7,036 · JavaScript · 2026-01-21  
+> ⭐ 7,041 · JavaScript · 2026-01-21  
 > [GitHub](https://github.com/Huibq/keep-alive) · [Website](https://lxmusicapi.onrender.com)  
 > `#Music Streaming` `#Online Listening` `#Third-party Sources` 
 > This repository provides third-party audio sources for LxMusic and MusicFree apps, supporting up to 320k audio quality for online streaming. Users can integrate CDN-hosted source links directly into the apps while adhering to usage guidelines to prevent IP bans.
@@ -563,7 +563,7 @@
 ## yonggekkk/Cloudflare-vless-trojan
 
 > [!info]
-> ⭐ 15,439 · JavaScript · 2026-06-24  
+> ⭐ 15,446 · JavaScript · 2026-06-24  
 > [GitHub](https://github.com/yonggekkk/Cloudflare-vless-trojan) · [Website](https://ygkkk.blogspot.com/2023/07/cfworkers-vless.html)  
 > `#Cloudflare Workers` `#ECH-TLS Encryption` `#Network Proxy` `#Vless/Trojan Protocol` `#argo` `#cdn` `#clash-meta` `#cloudflare` `#cloudflare-pages` `#cloudflare-workers` `#ech` `#http` `#nat64` `#reality` `#sing-box` `#socks5` `#trojan` `#vless` `#xray` `#ygkkk` 
 > This project provides proxy scripts based on Cloudflare Workers/Pages, supporting Vless-ws(tls), Trojan-ws(tls), and Socks5/HTTP local proxy protocols. It offers three encryption modes: ECH-TLS, standard TLS, or no TLS, to bypass network restrictions. Features include single-node links, aggregated subscriptions, and automatic proxy IP management, ideal for local deployment on routers or NAS devices.
@@ -583,7 +583,7 @@
 ## pagefaultgames/pokerogue
 
 > [!info]
-> ⭐ 5,755 · TypeScript · 2026-06-25  
+> ⭐ 5,756 · TypeScript · 2026-06-26  
 > [GitHub](https://github.com/pagefaultgames/pokerogue) · [Website](https://pokerogue.net)  
 > `#Browser Game` `#Game Development` `#Roguelite` `#indie-game` `#open-source` `#pokemon` `#pokerogue` `#typescript` 
 > PokéRogue is a browser-based Pokémon fangame inspired by the roguelite genre, featuring endless battles, stacking items, diverse biome exploration, and trainer/boss fights. Built with TypeScript, it includes comprehensive test coverage, Biome linting, and active community support via Discord. Fully open for local development and contributions.
@@ -593,7 +593,7 @@
 ## setube/vue-xiuxiangame
 
 > [!info]
-> ⭐ 1,746 · JavaScript · 2026-03-02  
+> ⭐ 1,747 · JavaScript · 2026-03-02  
 > [GitHub](https://github.com/setube/vue-xiuxiangame) · [Website](https://xiuxian.wenzi.games/)  
 > `#Cultivation RPG` `#Text Game` `#Vue.js` `#game` `#javascript` `#vue` `#xiuxian` 
 > A text-based cultivation RPG game built with Vue.js, Element Plus, and Pinia, where players level up through quests and cultivation. Supports local installation and Docker deployment, licensed under CC BY-NC 4.0. Ideal for fans of narrative-driven idle games.
@@ -623,7 +623,7 @@
 ## fly8888/cursor_machine_id
 
 > [!info]
-> ⭐ 2,224 · Python · 2025-12-01  
+> ⭐ 2,222 · Python · 2025-12-01  
 > [GitHub](https://github.com/fly8888/cursor_machine_id)  
 > `#Config Modification` `#Cross-Platform` `#Device Unlock` `#Editor Tools` 
 > This tool enables one-click modification of Cursor editor's device ID across Windows, macOS, and Linux. It automatically backs up original config files and generates random device IDs to bypass device-locking restrictions in Cursor 0.45.x versions.
@@ -633,7 +633,7 @@
 ## doocs/leetcode
 
 > [!info]
-> ⭐ 36,206 · Java · 2026-06-25  
+> ⭐ 36,213 · Java · 2026-06-25  
 > [GitHub](https://github.com/doocs/leetcode) · [Website](https://leetcode.doocs.org)  
 > `#Algorithm Practice` `#Interview Preparation` `#Multi-Language Solutions` `#algorithms` `#cpp` `#csharp` `#golang` `#java` `#javascript` `#leetcode` `#python3` 
 > This repository offers comprehensive solutions to LeetCode, Jianzhi Offer, and other classic algorithm problems in multiple programming languages including Python, Java, C++, Go, TypeScript, and Rust. It covers core algorithms, data structures, and specialized practice tracks to enhance algorithmic problem-solving skills and prepare for technical interviews.
