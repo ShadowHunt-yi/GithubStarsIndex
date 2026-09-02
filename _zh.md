@@ -1,6 +1,6 @@
 # ⭐ GitHub Stars Index
 
-> Updated: 2026-09-01 21:04 UTC · Total: 73
+> Updated: 2026-09-02 21:05 UTC · Total: 73
 
 ---
 
@@ -84,7 +84,7 @@
 ## boyang-hu/website-rebuild-skill
 
 > [!info]
-> ⭐ 654 · JavaScript · 2026-09-01  
+> ⭐ 817 · JavaScript · 2026-09-02  
 > [GitHub](https://github.com/boyang-hu/website-rebuild-skill)  
 > `#agent-skills` `#ai-agents` `#claude` `#claude-code` `#codex` `#reverse-engineering` `#wayback-machine` `#web-archiving` 
 > 生成失败
@@ -94,7 +94,7 @@
 ## anywhere-labs/dsh-desktop
 
 > [!info]
-> ⭐ 22,750 · TypeScript · 2026-09-01  
+> ⭐ 23,030 · TypeScript · 2026-09-02  
 > [GitHub](https://github.com/anywhere-labs/dsh-desktop) · [Website](https://dshdesktop.cn)  
 > `#cordis` `#cordis-plugin` `#deepseek` `#deepseek-harness` `#desktop` `#dsh` `#dsh-plugin` `#dsh-plugin-desktop` 
 > 生成失败
@@ -104,7 +104,7 @@
 ## deepseek-ai/deepseek-harness
 
 > [!info]
-> ⭐ 207,983 · TypeScript · 2026-09-01  
+> ⭐ 209,514 · TypeScript · 2026-09-02  
 > [GitHub](https://github.com/deepseek-ai/deepseek-harness) · [Website](https://deepseek.com/harness)  
 > `#ai-agents` `#cordis` `#dsh` `#dsh-plugin` 
 > 生成失败
@@ -114,7 +114,7 @@
 ## Loyalsoldier/clash-rules
 
 > [!info]
-> ⭐ 28,257 · N/A · 2026-09-01  
+> ⭐ 28,273 · N/A · 2026-09-02  
 > [GitHub](https://github.com/Loyalsoldier/clash-rules)  
 > `#Clash Premium` `#网络代理` `#规则集` `#adblock` `#adguard` `#anticensorship` `#chinalist` `#clash` `#dnsmasq` `#easylist` `#geosite` `#gfw` `#gfwlist` `#proxy` `#routing` `#shadowsocks` `#ss` `#ssr` `#surge` `#v2ray` 
 > 本项目提供专为 Clash Premium 内核设计的规则集（RULE-SET），涵盖直连、代理和广告拦截域名列表，兼容 ClashX Pro、Clash for Windows 等主流客户端。规则数据源自 v2ray-rules-dat、domain-list-community 等权威源，每日自动更新，支持中国大陆 IP 地址识别，适用于科学上网与网络流量精细化管控。
@@ -124,7 +124,7 @@
 ## tirth8205/code-review-graph
 
 > [!info]
-> ⭐ 31,068 · Python · 2026-08-27  
+> ⭐ 31,115 · Python · 2026-08-27  
 > [GitHub](https://github.com/tirth8205/code-review-graph) · [Website](https://code-review-graph.com)  
 > `#ai-coding` `#claude` `#claude-code` `#code-review` `#graphrag` `#incremental` `#knowledge-graph` `#llm` `#mcp` `#python` `#static-analysis` `#tree-sitter` 
 > 生成失败
@@ -134,7 +134,7 @@
 ## bojieli/ai-agent-book
 
 > [!info]
-> ⭐ 44,097 · Python · 2026-09-01  
+> ⭐ 44,342 · Python · 2026-09-02  
 > [GitHub](https://github.com/bojieli/ai-agent-book)  
 > `#agent` `#agent-memory` `#ai-agent` `#book` `#coding-agent` `#context-engineering` `#large-language-models` `#llm` `#mcp` `#multi-agent` `#multimodal` `#rag` `#reinforcement-learning` 
 > 生成失败
@@ -144,7 +144,7 @@
 ## zhyese/grid-qa
 
 > [!info]
-> ⭐ 144 · Python · 2026-08-30  
+> ⭐ 145 · Python · 2026-09-02  
 > [GitHub](https://github.com/zhyese/grid-qa)  
 > 
 > 生成失败
@@ -163,7 +163,7 @@
 ## microsoft/ai-agents-for-beginners
 
 > [!info]
-> ⭐ 73,700 · Jupyter Notebook · 2026-08-27  
+> ⭐ 73,759 · Jupyter Notebook · 2026-08-27  
 > [GitHub](https://github.com/microsoft/ai-agents-for-beginners) · [Website](https://aka.ms/ai-agents-beginners)  
 > `#AI智能体` `#提示工程` `#教育课程` `#agentic-ai` `#agentic-framework` `#agentic-rag` `#ai-agents` `#ai-agents-framework` `#autogen` `#foundry` `#foundry-local` `#generative-ai` `#microsoft-foundry` `#semantic-kernel` 
 > 微软推出的AI智能体入门课程，包含12个结构化学习模块，涵盖从基础概念到实际开发的完整路径。课程采用多语言支持（50+语种），提供实践导向的教学内容，帮助开发者快速掌握构建自主AI代理的核心技能，适用于教育、自动化和智能系统开发场景。
@@ -173,7 +173,7 @@
 ## y49/tlive
 
 > [!info]
-> ⭐ 207 · TypeScript · 2026-08-21  
+> ⭐ 207 · TypeScript · 2026-09-02  
 > [GitHub](https://github.com/y49/tlive)  
 > `#AI智能体` `#终端自动化` `#跨平台IM集成` `#ai-coding` `#claude-code` `#claude-code-skills` `#cli` `#feishu-bot` `#mobile` `#telegram-bot-ai-assistant` `#terminal` `#webhook` 
 > TLive 是一款终端实时协作工具，支持通过 Telegram、Discord 和飞书与 Claude Code 等 AI 编程代理进行交互。核心功能包括：1）将任意命令包装为可远程访问的 Web 终端；2）在即时通讯平台中通过 /tlive 指令聊天并接收流式响应；3）在手机端审批 Claude Code 的工具执行权限。设计安全可控，支持静默模式、超时拒绝机制和会话管理。
@@ -192,7 +192,7 @@
 ## datawhalechina/happy-llm
 
 > [!info]
-> ⭐ 33,422 · Jupyter Notebook · 2026-08-08  
+> ⭐ 33,456 · Jupyter Notebook · 2026-08-08  
 > [GitHub](https://github.com/datawhalechina/happy-llm) · [Website](https://datawhalechina.github.io/happy-llm/)  
 > `#AI大模型` `#模型训练` `#深度学习` `#agent` `#llm` `#rag` 
 > 《Happy-LLM》是Datawhale开源的免费系统性教程，深入讲解大语言模型核心原理与训练实践。内容涵盖NLP基础、Transformer架构、预训练模型、LLM训练流程及RAG/Agent应用，并提供LLaMA2模型从零搭建与训练的完整代码实现，适合希望掌握LLM底层机制的开发者。
@@ -202,7 +202,7 @@
 ## iblogc/GithubStarsIndex
 
 > [!info]
-> ⭐ 82 · Jinja · 2026-09-01  
+> ⭐ 82 · Jinja · 2026-09-02  
 > [GitHub](https://github.com/iblogc/GithubStarsIndex) · [Website](https://stars.iblogc.com)  
 > `#AI智能体` `#数据归档` `#知识管理` `#自动化工具` 
 > 自动抓取 GitHub Stars 仓库，通过 AI 生成智能摘要与技术标签，支持增量更新、并发处理、标签归一化，并可选同步至 Obsidian 或部署为 GitHub Pages 静态搜索页，实现个人技术资产的高效管理与检索。
@@ -212,7 +212,7 @@
 ## Haleclipse/Claudix
 
 > [!info]
-> ⭐ 1,130 · Vue · 2026-04-01  
+> ⭐ 1,131 · Vue · 2026-04-01  
 > [GitHub](https://github.com/Haleclipse/Claudix)  
 > `#AI智能体` `#TypeScript` `#VS Code扩展` `#提示工程` 
 > Claudix 是一款为 VS Code 打造的 Claude Code 增强扩展，集成 Claude AI 作为交互式编程助手，支持对话历史、智能代码分析、终端命令执行及多模型支持，提供实时流式响应与语法高亮界面。
@@ -242,7 +242,7 @@
 ## yukkcat/gemini-business2api
 
 > [!info]
-> ⭐ 1,322 · Python · 2026-05-21  
+> ⭐ 1,324 · Python · 2026-05-21  
 > [GitHub](https://github.com/yukkcat/gemini-business2api) · [Website](https://gemini-business2api.nanohajimi.mom)  
 > `#AI大模型` `#OpenAI兼容接口` `#多模态处理` `#2api` `#business` `#chatgpt` `#gemini` `#openai` 
 > Gemini Business2API 将 Gemini Business 转换为 OpenAI 兼容接口，支持多账户负载均衡、多模态输入（100+文件类型）、图像/视频生成及智能文件解析。提供自动化账号管理、流式响应、代理配置和内置管理面板，兼容 Docker 部署与 PostgreSQL/SQLite 存储。
@@ -252,8 +252,8 @@
 ## oomol-lab/pdf-craft
 
 > [!info]
-> ⭐ 6,242 · Python · 2026-09-01  
-> [GitHub](https://github.com/oomol-lab/pdf-craft) · [Website](https://inkora.oomol.com/)  
+> ⭐ 6,245 · Python · 2026-09-01  
+> [GitHub](https://github.com/oomol-lab/pdf-craft) · [Website](https://pdf.oomol.com/)  
 > `#DeepSeek OCR` `#PDF转换` `#文档处理` `#deepseek-ocr` `#document` `#ocr` `#pdf` 
 > PDF Craft 是一款专注于将扫描版书籍 PDF 转换为多种格式（如 Markdown、EPUB）的工具，基于 DeepSeek OCR 实现高精度文档识别，支持表格、公式等复杂内容解析，本地运行无需网络，自动提取正文并过滤干扰元素，同时生成目录结构，保持内容完整性。
 > <sub>PDF craft can convert PDF files into various other formats. This project will focus on processing PDF files of scanned books.</sub>
@@ -262,7 +262,7 @@
 ## ZToolsCenter/ZTools
 
 > [!info]
-> ⭐ 3,694 · TypeScript · 2026-08-29  
+> ⭐ 3,702 · TypeScript · 2026-09-02  
 > [GitHub](https://github.com/ZToolsCenter/ZTools)  
 > `#Electron` `#应用启动器` `#生产力工具` 
 > ZTools 是 uTools 的开源实现，提供高性能应用启动器与插件平台，支持 macOS 和 Windows。具备拼音搜索、正则匹配、剪贴板管理、主题定制等功能，采用 LMDB 数据库与 Electron 38.5 技术栈，支持插件市场、应用内更新及跨平台开发，为生产力工具提供统一体验。
@@ -272,7 +272,7 @@
 ## mtvpls/MoonTVPlus
 
 > [!info]
-> ⭐ 3,102 · TypeScript · 2026-08-21  
+> ⭐ 3,111 · TypeScript · 2026-08-21  
 > [GitHub](https://github.com/mtvpls/MoonTVPlus)  
 > `#WebGPU` `#弹幕系统` `#影视聚合` 
 > MoonTVPlus 是基于 MoonTV v100 二次开发的影视聚合播放器增强版，新增外部播放器支持、WebGPU 视频超分、弹幕系统、豆瓣评论抓取、观影室及私人影库等功能，提供沉浸式观影体验。
@@ -282,7 +282,7 @@
 ## nexmoe/VidBee
 
 > [!info]
-> ⭐ 10,475 · TypeScript · 2026-08-30  
+> ⭐ 10,502 · TypeScript · 2026-08-30  
 > [GitHub](https://github.com/nexmoe/VidBee) · [Website](https://vidbee.org)  
 > `#RSS自动化` `#yt-dlp` `#视频下载` `#downloader` `#facebook` `#tiktok` `#twitter` `#youtube` 
 > VidBee 是一款现代化的开源视频下载工具，基于 Electron 和 yt-dlp 技术栈，支持从全球 1000+ 网站下载视频与音频。其核心亮点包括简洁直观的界面设计、强大的下载队列管理、实时进度追踪，以及 RSS 自动订阅功能，可无人值守下载新内容，适用于 YouTube、TikTok、Instagram 等主流平台。
@@ -292,7 +292,7 @@
 ## mmulet/term.everything
 
 > [!info]
-> ⭐ 8,087 · Go · 2026-03-18  
+> ⭐ 8,088 · Go · 2026-03-18  
 > [GitHub](https://github.com/mmulet/term.everything)  
 > `#GUI终端化` `#Wayland合成器` `#终端虚拟化` `#alacritty` `#cli` `#foss` `#iterm2` `#kitty` `#linux` `#ssh` `#terminal` `#wayland` `#wayland-compositor` 
 > Term.Everything 是一个革命性的 Linux CLI 工具，通过自研 Wayland 合成器将任意 GUI 应用无缝运行在终端内，支持 X11/Wayland 双协议，兼容 SSH 远程场景，并可通过终端图像协议实现高分辨率渲染，重新定义了终端的交互边界。
@@ -312,7 +312,7 @@
 ## XIU2/TrackersListCollection
 
 > [!info]
-> ⭐ 32,066 · N/A · 2026-09-01  
+> ⭐ 32,069 · N/A · 2026-09-02  
 > [GitHub](https://github.com/XIU2/TrackersListCollection) · [Website](https://trackerslist.com)  
 > `#Aria2` `#BT下载` `#Tracker列表` `#网络加速` `#aria2` `#aria2-format-tracker` `#bittorrent` `#bittorrent-trackers` `#qbittorrent` `#torrent` `#torrent-tracker` `#tracker` `#trackers` `#trackerslist` `#utorrent` 
 > 该仓库每日更新热门 BitTorrent Tracker 列表，提供最佳、全部、HTTP(S) 及非 HTTP 四类 tracker 文件，支持 Aria2 等客户端直接配置使用，显著提升 BT 下载速度与连接效率，适用于 BitTorrent 用户优化网络性能。
@@ -322,7 +322,7 @@
 ## jdx/mise
 
 > [!info]
-> ⭐ 33,335 · Rust · 2026-09-01  
+> ⭐ 33,391 · Rust · 2026-09-02  
 > [GitHub](https://github.com/jdx/mise) · [Website](https://mise.jdx.dev)  
 > `#任务自动化` `#开发工具管理` `#环境变量配置` 
 > mise 是一个现代化的开发环境管理工具，集版本管理、环境变量配置和任务执行于一体。它支持多语言工具链（如 Node.js、Python、Go 等）的版本切换，通过项目级配置自动加载环境变量，并提供类似 Make 的任务运行功能，极大提升开发效率与一致性。
@@ -342,7 +342,7 @@
 ## CherryHQ/cherry-studio
 
 > [!info]
-> ⭐ 51,340 · TypeScript · 2026-09-01  
+> ⭐ 51,373 · TypeScript · 2026-09-02  
 > [GitHub](https://github.com/CherryHQ/cherry-studio) · [Website](https://cherryai.com)  
 > `#AI智能体` `#大语言模型` `#生产力工具` `#agent-skills` `#ai-agent` `#claude-code` `#codex` `#deepseek` `#deepseek-harness` `#hermes-agent` `#skills` `#vibe-coding` 
 > Cherry Studio 是一款 AI 生产力工具，集成智能对话、自主代理和300+助手，统一接入主流大语言模型，支持多语言界面，提供跨平台桌面应用，专注提升AI工作流效率。
@@ -400,7 +400,7 @@
 ## jingyaogong/minimind
 
 > [!info]
-> ⭐ 56,974 · Python · 2026-08-31  
+> ⭐ 57,738 · Python · 2026-08-31  
 > [GitHub](https://github.com/jingyaogong/minimind) · [Website](https://jingyaogong.github.io/minimind)  
 > `#AI大模型` `#PyTorch` `#从零训练` `#轻量级LLM` `#artificial-intelligence` `#large-language-model` 
 > MiniMind 是一个从零开始训练的超轻量级大语言模型，仅需26M参数和2小时训练时间，成本低至3元。项目开源了完整的训练流程代码，包括预训练、SFT、LoRA、DPO、PPO/GRPO强化学习等，并实现原生PyTorch重构。支持多模态扩展（MiniMind-V），适合个人GPU快速复现，是理解LLM底层机制的入门级教程。
@@ -410,7 +410,7 @@
 ## beck-8/subs-check
 
 > [!info]
-> ⭐ 5,194 · Go · 2026-08-29  
+> ⭐ 5,195 · Go · 2026-08-29  
 > [GitHub](https://github.com/beck-8/subs-check) · [Website](https://t.me/subs_check)  
 > `#网络工具` `#自动化检测` `#订阅管理` `#clash` `#mihomo` `#v2ray` 
 > 订阅检测转换工具，支持订阅合并、节点测速、可用性检测、流媒体解锁测试、去重重命名及多格式导出，内置WEB控制面板与100+通知渠道，提供一键安装与Docker部署方案。
@@ -420,7 +420,7 @@
 ## MatrixSeven/file-transfer-go
 
 > [!info]
-> ⭐ 5,114 · TypeScript · 2026-06-08  
+> ⭐ 5,116 · TypeScript · 2026-06-08  
 > [GitHub](https://github.com/MatrixSeven/file-transfer-go) · [Website](https://transfer.52python.cn)  
 > `#P2P直连` `#WebRTC` `#文件传输` 
 > 基于Go/React和WebRTC的端到端P2P文件传输工具，支持文件、文字传输及桌面共享，数据直连不经过服务器，具备端到端加密、响应式设计和Docker一键部署能力。
@@ -430,7 +430,7 @@
 ## oslook/cursor-ai-downloads
 
 > [!info]
-> ⭐ 3,237 · TypeScript · 2026-09-01  
+> ⭐ 3,236 · TypeScript · 2026-09-01  
 > [GitHub](https://github.com/oslook/cursor-ai-downloads) · [Website](https://cursor.uuid.site)  
 > `#AI智能体` `#版本管理` `#编辑器工具` `#curosr` `#cursor` `#cursor-ai` `#cursor-ai-editor` `#cursor-ide` `#cursor-infinite-free-trial` `#cursor-installer` `#deepseek-r1` `#downloads` `#downloadurl` 
 > 本项目提供 Cursor AI 官方所有版本的完整下载链接，支持快速更新、降级及版本选择，涵盖 Windows、macOS 和 Linux 平台，确保用户安全获取稳定或最新预览版，适用于需要灵活控制编辑器版本的开发者。
@@ -440,7 +440,7 @@
 ## 9001/copyparty
 
 > [!info]
-> ⭐ 46,468 · Python · 2026-09-01  
+> ⭐ 46,481 · Python · 2026-09-01  
 > [GitHub](https://github.com/9001/copyparty)  
 > `#多协议支持` `#文件服务器` `#断点续传` `#copyparty` `#file-server` `#file-sharing` `#file-upload-server` `#ftp-server` `#nas-frontend` `#tftp-server` `#webdav-server` 
 > copyparty 是一款便携式文件服务器，支持高速断点续传、去重、WebDAV、SFTP、FTP、TFTP 等多种协议，集成媒体索引、缩略图生成等功能，可通过任意浏览器访问，仅需 Python 环境即可运行。
@@ -460,7 +460,7 @@
 ## OI-wiki/OI-wiki
 
 > [!info]
-> ⭐ 26,600 · TypeScript · 2026-09-01  
+> ⭐ 26,602 · TypeScript · 2026-09-02  
 > [GitHub](https://github.com/OI-wiki/OI-wiki) · [Website](https://oi-wiki.org)  
 > `#知识库` `#算法` `#编程竞赛` `#acm-icpc` `#acm-icpc-handbook` `#algorithms` `#competitive-programming` `#data-structures` `#hacktoberfest` `#icpc` `#icpc-handbook` `#icpc-training` `#oi` `#oi-handbook` `#oi-training` 
 > OI Wiki 是一个免费开放的编程竞赛知识整合站点，涵盖算法、数据结构、竞赛技巧等内容，采用 MkDocs 构建，支持本地部署与镜像访问，鼓励社区协作完善内容，保持非商业化独立性质。
@@ -500,7 +500,7 @@
 ## k4yt3x/video2x
 
 > [!info]
-> ⭐ 21,458 · C++ · 2026-03-07  
+> ⭐ 21,475 · C++ · 2026-03-07  
 > [GitHub](https://github.com/k4yt3x/video2x) · [Website](https://docs.video2x.org)  
 > `#AI超分辨率` `#机器学习框架` `#视频增强` `#跨平台工具` `#anime4k` `#frame-interpolation` `#machine-learning` `#neural-networks` `#realcugan` `#realesrgan` `#rife` `#super-resoluion` `#upscale-video` `#vulkan` 
 > Video2X 是基于机器学习的视频超分辨率与帧插值框架，支持 Anime4K、Real-ESRGAN 和 RIFE 模型，采用 C/C++ 重构实现高性能处理。提供跨平台支持（Windows/Linux），集成 Vulkan 加速，具备 GUI 界面与一键安装程序，显著提升画质并降低使用门槛。
@@ -549,7 +549,7 @@
 ## codexu/note-gen
 
 > [!info]
-> ⭐ 12,718 · TypeScript · 2026-08-27  
+> ⭐ 12,722 · TypeScript · 2026-08-27  
 > [GitHub](https://github.com/codexu/note-gen) · [Website](https://notegen.top)  
 > `#AI智能体` `#Markdown` `#知识管理` `#agent` `#ai-notes` `#knowledge-base` `#knowledge-management` `#llm` `#local-first` `#markdown` `#markdown-editor` `#mcp` `#nextjs` `#note-taking` `#open-source` `#personal-knowledge-management` `#rag` `#tauri` `#webdav` 
 > NoteGen 是一款跨平台 Markdown AI 笔记软件，专注于通过人工智能桥接记录与写作，将碎片化知识高效整理为可读性强的结构化笔记。支持原生 Markdown 存储、开箱即用的 RAG 检索增强生成、MCP 工具集成及智能体自动化处理，具备轻量免费、无广告、多端同步等特性，适用于知识管理与内容创作场景。
@@ -579,7 +579,7 @@
 ## BewlyBewly/BewlyBewly
 
 > [!info]
-> ⭐ 8,829 · Vue · 2025-02-26  
+> ⭐ 8,828 · Vue · 2025-02-26  
 > [GitHub](https://github.com/BewlyBewly/BewlyBewly) · [Website](https://chromewebstore.google.com/detail/bewlybewly/bbbiejemhfihiooipfcjmjmbfdmobobp)  
 > `#UI美化` `#哔哩哔哩` `#浏览器插件` `#界面优化` `#bilibili` `#browser-extension` `#chrome-extension` `#dark-mode` `#dark-theme` 
 > BewlyBewly 是一款针对哔哩哔哩的浏览器扩展，通过借鉴 YouTube、Vision OS 和 iOS 的设计理念，重新设计 Bilibili 的 UI 界面，提升视觉体验和用户友好度。项目基于 vitesse-webext 模板开发，支持 Chrome、Edge 和 Firefox 浏览器，提供深色模式适配和主页布局优化，注重界面美观而非功能增强。
@@ -589,7 +589,7 @@
 ## x1xhlol/system-prompts-and-models-of-ai-tools
 
 > [!info]
-> ⭐ 143,279 · N/A · 2026-08-11  
+> ⭐ 143,298 · N/A · 2026-08-11  
 > [GitHub](https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools)  
 > `#AI编程助手` `#开发工具架构` `#系统提示工程` `#ai` `#bolt` `#cluely` `#copilot` `#cursor` `#cursorai` `#devin` `#github-copilot` `#lovable` `#open-source` `#perplexity` `#replit` `#system-prompts` `#trae` `#trae-ai` `#trae-ide` `#v0` `#vscode` `#windsurf` `#windsurf-ai` 
 > 该仓库汇集了30,000+行关于主流AI编程工具（如Claude Code、Cursor、Devin AI等）的系统提示、内部工具和模型架构的深度解析，涵盖其设计理念、功能实现与技术细节，为开发者提供全面的AI编程助手技术洞察与最佳实践参考。
@@ -619,7 +619,7 @@
 ## Huibq/keep-alive
 
 > [!info]
-> ⭐ 7,343 · JavaScript · 2026-01-21  
+> ⭐ 7,350 · JavaScript · 2026-01-21  
 > [GitHub](https://github.com/Huibq/keep-alive) · [Website](https://lxmusicapi.onrender.com)  
 > `#在线试听` `#第三方音源` `#音乐流媒体` 
 > 该仓库提供洛雪音乐和MusicFree两款音乐应用的第三方音源支持，最高支持320k音质，适用于在线试听场景。通过CDN加速的音源链接，用户可直接集成到应用中，但需遵守规范使用以避免IP封禁。
@@ -629,7 +629,7 @@
 ## yonggekkk/Cloudflare-vless-trojan
 
 > [!info]
-> ⭐ 16,013 · JavaScript · 2026-06-24  
+> ⭐ 16,017 · JavaScript · 2026-06-24  
 > [GitHub](https://github.com/yonggekkk/Cloudflare-vless-trojan) · [Website](https://ygkkk.blogspot.com/2023/07/cfworkers-vless.html)  
 > `#Cloudflare Workers` `#ECH-TLS加密` `#Vless/Trojan协议` `#网络代理` `#argo` `#cdn` `#clash-meta` `#cloudflare` `#cloudflare-pages` `#cloudflare-workers` `#ech` `#http` `#nat64` `#reality` `#sing-box` `#socks5` `#trojan` `#vless` `#xray` `#ygkkk` 
 > 本项目提供基于Cloudflare Workers/Pages的代理脚本，支持Vless-ws(tls)、Trojan-ws(tls)协议，兼容Socks5/HTTP本地代理，可选ECH-TLS、普通TLS或无TLS三种加密模式以应对网络封锁。支持单节点、聚合链接及订阅格式输出，内置优选IP自动填充，无需手动维护节点信息，适合软路由等本地化部署场景。
@@ -639,7 +639,7 @@
 ## luckjiawei/frpc-desktop
 
 > [!info]
-> ⭐ 6,854 · TypeScript · 2026-08-31  
+> ⭐ 6,853 · TypeScript · 2026-08-31  
 > [GitHub](https://github.com/luckjiawei/frpc-desktop) · [Website](https://jwinks.com/p/frp/)  
 > `#frp客户端` `#内网穿透` `#跨平台桌面应用` `#desktop` `#electron` `#frp` `#frp-desktop` `#frp-linux` `#frp-macos` `#frp-window` `#frpc` `#javascript` `#tailwindcss` `#typescript` `#vite` `#vue` 
 > Frpc-Desktop 是一款跨平台桌面客户端，提供可视化配置界面，简化内网穿透部署流程。支持所有 frp 版本，具备自动启动、多用户管理、批量端口配置、协议支持（TCP/UDP/STCP/XTCP）、一键导入导出配置等功能，显著降低 frp 使用门槛。
@@ -649,7 +649,7 @@
 ## pagefaultgames/pokerogue
 
 > [!info]
-> ⭐ 5,825 · TypeScript · 2026-09-01  
+> ⭐ 5,824 · TypeScript · 2026-09-02  
 > [GitHub](https://github.com/pagefaultgames/pokerogue) · [Website](https://pokerogue.net)  
 > `#Roguelite` `#浏览器游戏` `#游戏开发` `#indie-game` `#open-source` `#pokemon` `#pokerogue` `#typescript` 
 > PokéRogue 是一款基于浏览器的宝可梦同人游戏，深度融合了 Roguelite 玩法，支持无尽战斗、道具叠加、多生物群落探索及训练师对战。采用 TypeScript 开发，具备完整的测试覆盖与 Biome 代码规范，社区活跃，支持本地部署与协作开发。
@@ -699,7 +699,7 @@
 ## doocs/leetcode
 
 > [!info]
-> ⭐ 36,531 · Java · 2026-09-01  
+> ⭐ 36,535 · Java · 2026-09-02  
 > [GitHub](https://github.com/doocs/leetcode) · [Website](https://leetcode.doocs.org)  
 > `#多语言实现` `#算法刷题` `#面试准备` `#algorithms` `#cpp` `#csharp` `#golang` `#java` `#javascript` `#leetcode` `#python3` 
 > 本项目提供 LeetCode、剑指 Offer 及《程序员面试金典》等经典算法题的多语言题解，涵盖 Python、Java、C++、Go、TypeScript、Rust 等主流编程语言，支持算法基础、数据结构、专项突破等学习路径，助力算法能力提升与面试准备。
