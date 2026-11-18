@@ -1,10 +1,12 @@
 # ⭐ GitHub Stars Index
 
-> Updated: 2026-11-17 01:52 UTC · Total: 78
+> Updated: 2026-11-18 00:59 UTC · Total: 80
 
 ---
 
 ## 📑 Index
+- [[#xiaoRui278/mac-status-land|xiaoRui278/mac-status-land]]
+- [[#t8y2/dbx|t8y2/dbx]]
 - [[#CodeEditApp/CodeEdit|CodeEditApp/CodeEdit]]
 - [[#QingYunA/answer-me-with-html|QingYunA/answer-me-with-html]]
 - [[#Lin-arm/GKD_subscription|Lin-arm/GKD_subscription]]
@@ -86,6 +88,26 @@
 
 ---
 
+## xiaoRui278/mac-status-land
+
+> [!info]
+> ⭐ 10 · Swift · 2026-07-31  
+> [GitHub](https://github.com/xiaoRui278/mac-status-land)  
+> 
+> Generation failed
+> <sub>macOS 菜单栏应用，管理被刘海屏遮挡的状态栏图标</sub>
+
+---
+## t8y2/dbx
+
+> [!info]
+> ⭐ 30,633 · Rust · 2026-11-17  
+> [GitHub](https://github.com/t8y2/dbx) · [Website](https://dbxio.com)  
+> `#ai` `#cli` `#clickhouse` `#database` `#database-client` `#database-management` `#docker` `#gui` `#mcp` `#mongodb` `#mysql` `#postgresql` `#redis` `#rust` `#sql-server` `#sqlite` `#tauri` `#vue` 
+> Generation failed
+> <sub>25 MB lightweight cross-platform database client for 100+ databases, including MySQL, PostgreSQL, SQLite, Redis, MongoDB, DuckDB, SQL Server, and Dameng. Built-in AI, MCP Server, CLI, desktop and Docker. | 轻量级跨平台数据库管理工具，支持 MySQL、PostgreSQL、SQLite、Redis、MongoDB、达梦等 100+ 数据库，提供桌面端、Docker、CLI、内置 AI 助手和 MCP。</sub>
+
+---
 ## CodeEditApp/CodeEdit
 
 > [!info]
@@ -99,7 +121,7 @@
 ## QingYunA/answer-me-with-html
 
 > [!info]
-> ⭐ 6,368 · JavaScript · 2026-11-16  
+> ⭐ 6,495 · JavaScript · 2026-11-17  
 > [GitHub](https://github.com/QingYunA/answer-me-with-html) · [Website](https://answer-me-with-html.com/)  
 > `#agent-skill` `#ai-agent` `#claude-code` `#claude-code-skill` `#claude-skill` `#claude-skills` `#cli` `#diagram` `#dsh-plugin` `#explainer` `#html` `#llm` `#ste100` 
 > Generation failed
@@ -109,7 +131,7 @@
 ## Lin-arm/GKD_subscription
 
 > [!info]
-> ⭐ 7,305 · TypeScript · 2026-11-17  
+> ⭐ 7,356 · TypeScript · 2026-11-17  
 > [GitHub](https://github.com/Lin-arm/GKD_subscription)  
 > `#ad` `#gkd` `#gkd-subscription` `#subscription` 
 > Generation failed
@@ -119,7 +141,7 @@
 ## babygoton/WorkDaddy
 
 > [!info]
-> ⭐ 3,091 · JavaScript · 2026-11-16  
+> ⭐ 3,152 · JavaScript · 2026-11-17  
 > [GitHub](https://github.com/babygoton/WorkDaddy) · [Website](https://workdaddy.dev)  
 > `#codebuddy` `#codebuddy-cn` `#workbuddy` `#workbuddy-ai` 
 > Generation failed
@@ -129,7 +151,7 @@
 ## vastsa/PI-Desktop
 
 > [!info]
-> ⭐ 8,021 · TypeScript · 2026-11-16  
+> ⭐ 8,049 · TypeScript · 2026-11-17  
 > [GitHub](https://github.com/vastsa/PI-Desktop) · [Website](https://www.aiuo.net)  
 > `#ai-agent` `#coding-agent` `#desktop-app` `#electron` `#global` `#i18n` `#local-first` `#mcp` `#pi` `#pi-agent` `#pi-desktop` `#plugins` `#react` `#rust` `#typescript` 
 > Generation failed
@@ -139,7 +161,7 @@
 ## boyang-hu/website-rebuild-skill
 
 > [!info]
-> ⭐ 1,761 · JavaScript · 2026-11-14  
+> ⭐ 1,795 · JavaScript · 2026-11-14  
 > [GitHub](https://github.com/boyang-hu/website-rebuild-skill)  
 > `#agent-skills` `#ai-agents` `#claude` `#claude-code` `#codex` `#reverse-engineering` `#wayback-machine` `#web-archiving` 
 > Generation failed
@@ -149,7 +171,7 @@
 ## anywhere-labs/dsh-desktop
 
 > [!info]
-> ⭐ 36,171 · TypeScript · 2026-11-16  
+> ⭐ 36,269 · TypeScript · 2026-11-17  
 > [GitHub](https://github.com/anywhere-labs/dsh-desktop) · [Website](https://dshdesktop.cn)  
 > `#cordis` `#cordis-plugin` `#deepseek` `#deepseek-harness` `#desktop` `#dsh` `#dsh-plugin` `#dsh-plugin-desktop` 
 > Generation failed
@@ -159,7 +181,7 @@
 ## deepseek-ai/deepseek-harness
 
 > [!info]
-> ⭐ 282,364 · TypeScript · 2026-11-13  
+> ⭐ 283,005 · TypeScript · 2026-11-17  
 > [GitHub](https://github.com/deepseek-ai/deepseek-harness) · [Website](https://deepseek.com/harness)  
 > `#ai-agents` `#cordis` `#dsh` `#dsh-plugin` 
 > Generation failed
@@ -169,7 +191,7 @@
 ## Loyalsoldier/clash-rules
 
 > [!info]
-> ⭐ 29,331 · N/A · 2026-11-16  
+> ⭐ 29,353 · N/A · 2026-11-17  
 > [GitHub](https://github.com/Loyalsoldier/clash-rules)  
 > `#Clash Premium` `#Network Proxy` `#Rule Sets` `#adblock` `#adguard` `#anticensorship` `#chinalist` `#clash` `#dnsmasq` `#easylist` `#geosite` `#gfw` `#gfwlist` `#proxy` `#routing` `#shadowsocks` `#ss` `#ssr` `#surge` `#v2ray` 
 > This project provides rule sets (RULE-SET) specifically designed for Clash Premium kernel, including direct, proxy, and ad-blocking domain lists. Compatible with ClashX Pro, Clash for Windows, and other GUI clients. Data sources include v2ray-rules-dat and domain-list-community, with daily automatic updates and support for China IP address recognition, ideal for network traffic control and bypassing restrictions.
@@ -179,7 +201,7 @@
 ## tirth8205/code-review-graph
 
 > [!info]
-> ⭐ 32,804 · Python · 2026-11-16  
+> ⭐ 32,827 · Python · 2026-11-16  
 > [GitHub](https://github.com/tirth8205/code-review-graph) · [Website](https://code-review-graph.com)  
 > `#ai-coding` `#claude` `#claude-code` `#code-review` `#graphrag` `#incremental` `#knowledge-graph` `#llm` `#mcp` `#python` `#static-analysis` `#tree-sitter` 
 > Generation failed
@@ -189,7 +211,7 @@
 ## bojieli/ai-agent-book
 
 > [!info]
-> ⭐ 58,372 · Python · 2026-10-08  
+> ⭐ 58,551 · Python · 2026-10-08  
 > [GitHub](https://github.com/bojieli/ai-agent-book)  
 > `#agent` `#agent-memory` `#ai-agent` `#book` `#coding-agent` `#context-engineering` `#large-language-models` `#llm` `#mcp` `#multi-agent` `#multimodal` `#rag` `#reinforcement-learning` 
 > Generation failed
@@ -218,7 +240,7 @@
 ## microsoft/ai-agents-for-beginners
 
 > [!info]
-> ⭐ 79,851 · Jupyter Notebook · 2026-11-17  
+> ⭐ 80,059 · Jupyter Notebook · 2026-11-17  
 > [GitHub](https://github.com/microsoft/ai-agents-for-beginners) · [Website](https://aka.ms/ai-agents-beginners)  
 > `#AI Agents` `#Educational Course` `#提示工程` `#agentic-ai` `#agentic-framework` `#agentic-rag` `#ai-agents` `#ai-agents-framework` `#autogen` `#foundry` `#foundry-local` `#generative-ai` `#microsoft-foundry` `#semantic-kernel` 
 > Microsoft's beginner-friendly course on AI agents, featuring 12 structured lessons covering fundamentals to practical development. With support for 50+ languages and hands-on learning, it empowers developers to build autonomous AI agents for education, automation, and intelligent system applications.
@@ -247,7 +269,7 @@
 ## datawhalechina/happy-llm
 
 > [!info]
-> ⭐ 34,956 · Jupyter Notebook · 2026-08-08  
+> ⭐ 34,980 · Jupyter Notebook · 2026-08-08  
 > [GitHub](https://github.com/datawhalechina/happy-llm) · [Website](https://datawhalechina.github.io/happy-llm/)  
 > `#AI 大模型` `#Model Training` `#深度学习` `#agent` `#llm` `#rag` 
 > Happy-LLM is a free, systematic tutorial by Datawhale that delves into the core principles and training practices of large language models. It covers NLP fundamentals, Transformer architecture, pre-trained models, LLM training workflows, and advanced applications like RAG and Agent systems, with hands-on code examples for building and training an LLaMA2 model from scratch.
@@ -257,7 +279,7 @@
 ## iblogc/GithubStarsIndex
 
 > [!info]
-> ⭐ 85 · Python · 2026-11-15  
+> ⭐ 85 · Python · 2026-11-18  
 > [GitHub](https://github.com/iblogc/GithubStarsIndex) · [Website](https://stars.iblogc.com)  
 > `#AI 智能体` `#Automation Tool` `#Data Archiving` `#Knowledge Management` 
 > Automatically fetches GitHub Stars, generates AI-powered summaries and technical tags for each repo, supports incremental updates, concurrent processing, and tag normalization, with optional sync to Obsidian or deployment as a GitHub Pages static search site for efficient personal tech asset management.
@@ -307,7 +329,7 @@
 ## oomol-lab/pdf-craft
 
 > [!info]
-> ⭐ 6,764 · Python · 2026-11-14  
+> ⭐ 6,766 · Python · 2026-11-14  
 > [GitHub](https://github.com/oomol-lab/pdf-craft) · [Website](https://pdfcraft.ai)  
 > `#DeepSeek OCR` `#Document Processing` `#PDF Conversion` `#book-digitization` `#deepseek-ocr` `#deepseek-ocr-2` `#document` `#document-processing` `#ebook` `#epub` `#epub-translation` `#markdown` `#ocr` `#pdf` `#pdf-converter` `#pdf-parser` `#pdf-to-epub` `#pdf-to-markdown` `#pdf-translation` `#python` `#scanned-pdf` `#text-extraction` `#translation` 
 > PDF Craft converts scanned book PDFs into formats like Markdown and EPUB using DeepSeek OCR for accurate text, table, and formula recognition. It runs locally without internet, auto-detects document structure, filters headers/footers, preserves footnotes and assets, and generates TOCs while maintaining readability and integrity.
@@ -317,7 +339,7 @@
 ## ZToolsCenter/ZTools
 
 > [!info]
-> ⭐ 4,139 · TypeScript · 2026-11-09  
+> ⭐ 4,144 · TypeScript · 2026-11-09  
 > [GitHub](https://github.com/ZToolsCenter/ZTools)  
 > `#App Launcher` `#Electron` `#Productivity Tool` 
 > ZTools is an open-source implementation of uTools, offering a high-performance app launcher and plugin platform for macOS and Windows. It features pinyin search, regex matching, clipboard management, theme customization, and uses LMDB database with Electron 38.5 stack. Includes plugin marketplace, in-app updates, and cross-platform development support for enhanced productivity.
@@ -327,7 +349,7 @@
 ## mtvpls/MoonTVPlus
 
 > [!info]
-> ⭐ 3,738 · TypeScript · 2026-10-28  
+> ⭐ 3,753 · TypeScript · 2026-10-28  
 > [GitHub](https://github.com/mtvpls/MoonTVPlus)  
 > `#Danmaku System` `#Media Aggregation` `#WebGPU` 
 > MoonTVPlus is an enhanced version of MoonTV v100, featuring external player support, WebGPU-based video upscaling, danmaku system, Douban comment fetching, synchronized viewing rooms, and private media libraries for an immersive streaming experience.
@@ -337,7 +359,7 @@
 ## nexmoe/VidBee
 
 > [!info]
-> ⭐ 11,159 · TypeScript · 2026-11-15  
+> ⭐ 11,165 · TypeScript · 2026-11-15  
 > [GitHub](https://github.com/nexmoe/VidBee) · [Website](https://vidbee.org)  
 > `#RSS Automation` `#Video Downloader` `#yt-dlp` `#ai-summary` `#audio-downloader` `#audio-transcription` `#cross-platform` `#downloader` `#electron` `#facebook` `#media-library` `#rss` `#speaker-diarization` `#speech-to-text` `#subtitles` `#tiktok` `#transcription` `#twitter` `#video-downloader` `#video-transcription` `#whisper` `#youtube` `#yt-dlp` 
 > VidBee is a modern open-source video downloader built with Electron and powered by yt-dlp, supporting downloads from over 1000 global websites. It features a clean UI, real-time progress tracking, download queue management, and RSS auto-download automation for seamless background fetching of new content from platforms like YouTube, TikTok, and Instagram.
@@ -347,7 +369,7 @@
 ## mmulet/term.everything
 
 > [!info]
-> ⭐ 8,123 · Go · 2026-03-18  
+> ⭐ 8,124 · Go · 2026-03-18  
 > [GitHub](https://github.com/mmulet/term.everything)  
 > `#GUI Terminalization` `#Terminal Virtualization` `#Wayland Compositor` `#alacritty` `#cli` `#foss` `#iterm2` `#kitty` `#linux` `#ssh` `#terminal` `#wayland` `#wayland-compositor` 
 > Term.Everything is a revolutionary Linux CLI tool that runs any GUI application within the terminal by implementing a custom Wayland compositor. It supports both X11 and Wayland, works over SSH, and leverages terminal image protocols for high-resolution rendering, redefining terminal interactivity boundaries.
@@ -367,7 +389,7 @@
 ## XIU2/TrackersListCollection
 
 > [!info]
-> ⭐ 32,421 · N/A · 2026-11-17  
+> ⭐ 32,431 · N/A · 2026-11-18  
 > [GitHub](https://github.com/XIU2/TrackersListCollection) · [Website](https://trackerslist.com)  
 > `#Aria2` `#BitTorrent` `#Network Acceleration` `#Tracker List` `#aria2` `#aria2-format-tracker` `#bittorrent` `#bittorrent-trackers` `#qbittorrent` `#torrent` `#torrent-tracker` `#tracker` `#trackers` `#trackerslist` `#utorrent` 
 > This repository provides a daily-updated list of popular BitTorrent trackers, offering four categories (best, all, HTTP(S), and non-HTTP) in multiple formats. It is optimized for use with clients like Aria2 to enhance download speeds and peer connectivity in BitTorrent networks.
@@ -377,7 +399,7 @@
 ## jdx/mise
 
 > [!info]
-> ⭐ 36,221 · Rust · 2026-11-17  
+> ⭐ 36,255 · Rust · 2026-11-18  
 > [GitHub](https://github.com/jdx/mise) · [Website](https://mise.jdx.dev)  
 > `#Dev Tools Management` `#Environment Variables` `#Task Automation` 
 > mise is a modern dev environment manager that combines tool versioning, environment variable management, and task execution. It supports switching between versions of multi-language tools (e.g., Node.js, Python, Go), auto-loads project-specific environment variables, and provides Make-like task runners for streamlined development workflows.
@@ -397,7 +419,7 @@
 ## CherryHQ/cherry-studio
 
 > [!info]
-> ⭐ 53,570 · TypeScript · 2026-11-17  
+> ⭐ 53,602 · TypeScript · 2026-11-18  
 > [GitHub](https://github.com/CherryHQ/cherry-studio) · [Website](https://cherryai.com)  
 > `#AI 大模型` `#AI 智能体` `#Productivity Tool` `#agent-skills` `#agent-workspace` `#agentic-workspace` `#ai-agents` `#ai-models` `#ai-productivity` `#ai-workspace` `#computer-use` `#llm` `#mcp` `#mcp-client` `#ollama` `#rag` 
 > Cherry Studio is an AI productivity studio featuring smart chat, autonomous agents, and 300+ assistants with unified access to leading LLMs. It offers a cross-platform desktop app with multi-language support, designed to enhance AI workflow efficiency.
@@ -417,7 +439,7 @@
 ## samqin123/MoonTV
 
 > [!info]
-> ⭐ 2,143 · TypeScript · 2026-11-12  
+> ⭐ 2,144 · TypeScript · 2026-11-12  
 > [GitHub](https://github.com/samqin123/MoonTV)  
 > `#Cross-Platform Sync` `#Media Aggregator` `#Next.js` `#PWA` 
 > MoonTV is a cross-platform media aggregator player built with Next.js 14, TypeScript, and Tailwind CSS. It supports multi-source search, HLS/ArtPlayer streaming, favorites and playback sync, and offers PWA support with deployment options for Vercel, Docker, and Cloudflare, including experimental ad-blocking.
@@ -445,7 +467,7 @@
 ## millylee/anyrouter-check-in
 
 > [!info]
-> ⭐ 1,434 · Python · 2026-11-16  
+> ⭐ 1,436 · Python · 2026-11-16  
 > [GitHub](https://github.com/millylee/anyrouter-check-in) · [Website](https://anyrouter.top/register?aff=gSsN)  
 > `#Automation Tool` `#Check-In System` `#Multi-Account Management` `#网页爬虫` `#agentrouter` `#anyrouter` `#check-in` `#claude-code` `#claudecode` `#codex` `#newapi` `#oneapi` 
 > A multi-account auto check-in tool for AnyRouter and AgentRouter platforms, compatible with NewAPI/OneAPI architectures. Uses GitHub Actions for scheduled automation, supports parallel account processing, WAF bypass, and notification alerts with flexible configuration.
@@ -455,7 +477,7 @@
 ## jingyaogong/minimind
 
 > [!info]
-> ⭐ 65,576 · Python · 2026-10-27  
+> ⭐ 65,967 · Python · 2026-10-27  
 > [GitHub](https://github.com/jingyaogong/minimind) · [Website](https://jingyaogong.github.io/minimind)  
 > `#AI Large Language Model` `#Lightweight LLM` `#PyTorch` `#Train From Scratch` `#artificial-intelligence` `#large-language-model` 
 > MiniMind is an ultra-lightweight LLM trained from scratch with only 26M parameters in 2 hours at a cost of $0.3. It provides full open-source code for pretraining, SFT, LoRA, DPO, and RLHF (PPO/GRPO), all reimplemented in native PyTorch without high-level abstractions. With multi-modal extension (MiniMind-V), it enables easy replication on consumer GPUs, serving as an educational entry point into LLM internals.
@@ -475,7 +497,7 @@
 ## MatrixSeven/file-transfer-go
 
 > [!info]
-> ⭐ 5,201 · TypeScript · 2026-06-08  
+> ⭐ 5,202 · TypeScript · 2026-06-08  
 > [GitHub](https://github.com/MatrixSeven/file-transfer-go) · [Website](https://transfer.52python.cn)  
 > `#File Transfer` `#P2P Direct` `#WebRTC` 
 > A secure, privacy-focused P2P file transfer tool built with Go/React and WebRTC, enabling direct file, text, and desktop sharing without server relay, featuring end-to-end encryption, responsive design, and Docker deployment.
@@ -495,7 +517,7 @@
 ## 9001/copyparty
 
 > [!info]
-> ⭐ 47,377 · Python · 2026-10-21  
+> ⭐ 47,389 · Python · 2026-10-21  
 > [GitHub](https://github.com/9001/copyparty)  
 > `#File Server` `#Multi-Protocol` `#Resumable Uploads` `#copyparty` `#file-server` `#file-sharing` `#file-upload-server` `#ftp-server` `#nas-frontend` `#tftp-server` `#webdav-server` 
 > Copyparty is a portable file server featuring accelerated resumable uploads, deduplication, and support for WebDAV, SFTP, FTP, TFTP, plus media indexing, thumbnails, and zeroconf—all accessible via any web browser with minimal Python dependency.
@@ -515,7 +537,7 @@
 ## OI-wiki/OI-wiki
 
 > [!info]
-> ⭐ 27,177 · TypeScript · 2026-11-16  
+> ⭐ 27,191 · TypeScript · 2026-11-17  
 > [GitHub](https://github.com/OI-wiki/OI-wiki) · [Website](https://oi-wiki.org)  
 > `#Algorithms` `#Competitive Programming` `#Knowledge Base` `#acm-icpc` `#acm-icpc-handbook` `#algorithms` `#competitive-programming` `#data-structures` `#hacktoberfest` `#icpc` `#icpc-handbook` `#icpc-training` `#oi` `#oi-handbook` `#oi-training` 
 > OI Wiki is a free, open, and continuously updated knowledge hub for competitive programming, covering algorithms, data structures, and contest strategies. Built with MkDocs, it supports local deployment and mirrors. It encourages community contributions and remains non-commercial.
@@ -535,7 +557,7 @@
 ## aaa1115910/bv
 
 > [!info]
-> ⭐ 3,940 · Kotlin · 2025-12-08  
+> ⭐ 3,942 · Kotlin · 2025-12-08  
 > [GitHub](https://github.com/aaa1115910/bv)  
 > `#Bilibili Client` `#Jetpack Compose` `#移动端应用` 
 > BV is a third-party Bilibili Android app built with Jetpack Compose, supporting mobile and TV platforms. It features intentionally poor UX, extreme lag, and unconventional design, with minimalist code focused on functionality over polish.
@@ -555,7 +577,7 @@
 ## k4yt3x/video2x
 
 > [!info]
-> ⭐ 22,767 · C++ · 2026-03-07  
+> ⭐ 22,792 · C++ · 2026-03-07  
 > [GitHub](https://github.com/k4yt3x/video2x) · [Website](https://docs.video2x.org)  
 > `#AI Super-Resolution` `#Cross-Platform Tool` `#Machine Learning Framework` `#Video Enhancement` `#anime4k` `#frame-interpolation` `#machine-learning` `#neural-networks` `#realcugan` `#realesrgan` `#rife` `#super-resoluion` `#upscale-video` `#vulkan` 
 > Video2X is a machine learning-based framework for video super-resolution and frame interpolation, supporting models like Anime4K, Real-ESRGAN, and RIFE. Rewritten in C/C++ for high performance, it offers cross-platform support (Windows/Linux), Vulkan acceleration, and includes a user-friendly GUI with installer for easy setup.
@@ -604,7 +626,7 @@
 ## codexu/note-gen
 
 > [!info]
-> ⭐ 13,024 · TypeScript · 2026-11-11  
+> ⭐ 13,028 · TypeScript · 2026-11-11  
 > [GitHub](https://github.com/codexu/note-gen) · [Website](https://notegen.top)  
 > `#AI 智能体` `#Knowledge Management` `#Markdown` `#agent` `#ai-notes` `#knowledge-base` `#knowledge-management` `#llm` `#local-first` `#markdown` `#markdown-editor` `#mcp` `#nextjs` `#note-taking` `#open-source` `#personal-knowledge-management` `#rag` `#tauri` `#webdav` 
 > NoteGen is a cross-platform Markdown AI note-taking application that leverages AI to bridge recording and writing, transforming fragmented knowledge into structured, readable notes. It features native Markdown storage, out-of-the-box RAG, MCP integration, and intelligent agents for automated processing, offering a lightweight, free, and ad-free experience across devices for knowledge management and content creation.
@@ -624,7 +646,7 @@
 ## Dolov/chrome-QuickGo
 
 > [!info]
-> ⭐ 780 · TypeScript · 2025-06-29  
+> ⭐ 781 · TypeScript · 2025-06-29  
 > [GitHub](https://github.com/Dolov/chrome-QuickGo) · [Website](https://chromewebstore.google.com/detail/quickgo/homllehcipjgpbpepcojhgcpfdopjhml)  
 > `#Automation Tool` `#Link Redirector` `#浏览器插件` `#网页爬虫` `#browser-extension` `#chrome-extension` `#chrome-tools` `#navigation` `#productivity` `#quickgo` 
 > QuickGo is a Chrome extension that bypasses security redirects on 50+ sites like Zhihu, CSDN, and Juejin. It automatically detects and redirects external links using optimized APIs, enabling seamless navigation without extra clicks. Features include custom rules, multiple themes, and usage statistics for a streamlined browsing experience.
@@ -634,7 +656,7 @@
 ## BewlyBewly/BewlyBewly
 
 > [!info]
-> ⭐ 8,764 · Vue · 2025-02-26  
+> ⭐ 8,763 · Vue · 2025-02-26  
 > [GitHub](https://github.com/BewlyBewly/BewlyBewly) · [Website](https://chromewebstore.google.com/detail/bewlybewly/bbbiejemhfihiooipfcjmjmbfdmobobp)  
 > `#Bilibili` `#Interface Optimization` `#UI Beautification` `#浏览器插件` `#bilibili` `#browser-extension` `#chrome-extension` `#dark-mode` `#dark-theme` 
 > BewlyBewly is a browser extension for Bilibili that redesigns the platform's UI by drawing inspiration from YouTube, Vision OS, and iOS, enhancing visual appeal and usability. Built with the vitesse-webext template, it supports Chrome, Edge, and Firefox, offering dark mode adaptation and homepage layout improvements focused on aesthetics rather than functional enhancements.
@@ -644,7 +666,7 @@
 ## x1xhlol/system-prompts-and-models-of-ai-tools
 
 > [!info]
-> ⭐ 144,714 · N/A · 2026-10-12  
+> ⭐ 144,734 · N/A · 2026-10-12  
 > [GitHub](https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools)  
 > `#AI Coding Agents` `#Development Tool Architecture` `#System Prompt Engineering` `#ai` `#bolt` `#cluely` `#copilot` `#cursor` `#cursorai` `#devin` `#github-copilot` `#lovable` `#open-source` `#perplexity` `#replit` `#system-prompts` `#trae` `#trae-ai` `#trae-ide` `#v0` `#vscode` `#windsurf` `#windsurf-ai` 
 > This repository contains over 30,000 lines of insights into system prompts, internal tools, and AI models of major AI coding agents (e.g., Claude Code, Cursor, Devin AI), offering deep technical analysis of their architecture, functionality, and design principles for developers seeking to understand and leverage AI-powered development tools.
@@ -654,7 +676,7 @@
 ## rubickCenter/rubick
 
 > [!info]
-> ⭐ 10,060 · TypeScript · 2026-01-14  
+> ⭐ 10,058 · TypeScript · 2026-01-14  
 > [GitHub](https://github.com/rubickCenter/rubick) · [Website](https://rubickcenter.github.io/docs)  
 > `#Electron` `#Plugin Architecture` `#Productivity Tool` `#cross-platform` `#desktop-app` `#electron` `#javascript` `#macos` `#toolkit` `#utools` `#windows` 
 > Rubick is an Electron-based open-source desktop toolbox enabling lightweight plugin ecosystem via npm packages, featuring secure multi-device sync via WebDAV, system app/file launching, plugin marketplace, and enterprise intranet deployment with cross-platform support.
@@ -664,7 +686,7 @@
 ## taojy123/KeymouseGo
 
 > [!info]
-> ⭐ 10,655 · Python · 2026-06-07  
+> ⭐ 10,656 · Python · 2026-06-07  
 > [GitHub](https://github.com/taojy123/KeymouseGo) · [Website](http://taojy123.github.io/KeymouseGo)  
 > `#Automation Tool` `#CrossPlatform` `#Python` `#Script Recording` `#automate` `#keyboard` `#mouse` `#python` `#simulation` 
 > KeymouseGo is a cross-platform mouse and keyboard automation tool written in Python, similar to Keymacro, enabling users to record and replay mouse/keyboard actions. It supports GUI and CLI modes, runs on Windows, Linux, and macOS, and is ideal for automating repetitive tasks with customizable delays and loop counts.
@@ -674,7 +696,7 @@
 ## Huibq/keep-alive
 
 > [!info]
-> ⭐ 7,789 · JavaScript · 2026-01-21  
+> ⭐ 7,797 · JavaScript · 2026-01-21  
 > [GitHub](https://github.com/Huibq/keep-alive) · [Website](https://lxmusicapi.onrender.com)  
 > `#Music Streaming` `#Online Listening` `#Third-party Sources` 
 > This repository provides third-party audio sources for LxMusic and MusicFree apps, supporting up to 320k audio quality for online streaming. Users can integrate CDN-hosted source links directly into the apps while adhering to usage guidelines to prevent IP bans.
@@ -684,7 +706,7 @@
 ## yonggekkk/Cloudflare-vless-trojan
 
 > [!info]
-> ⭐ 16,794 · JavaScript · 2026-09-20  
+> ⭐ 16,807 · JavaScript · 2026-09-20  
 > [GitHub](https://github.com/yonggekkk/Cloudflare-vless-trojan) · [Website](https://ygkkk.blogspot.com/2023/07/cfworkers-vless.html)  
 > `#Cloudflare Workers` `#ECH-TLS Encryption` `#Network Proxy` `#Vless/Trojan Protocol` `#argo` `#cdn` `#clash-meta` `#cloudflare` `#cloudflare-pages` `#cloudflare-workers` `#ech` `#http` `#nat64` `#reality` `#sing-box` `#socks5` `#trojan` `#vless` `#xray` `#ygkkk` 
 > This project provides proxy scripts based on Cloudflare Workers/Pages, supporting Vless-ws(tls), Trojan-ws(tls), and Socks5/HTTP local proxy protocols. It offers three encryption modes: ECH-TLS, standard TLS, or no TLS, to bypass network restrictions. Features include single-node links, aggregated subscriptions, and automatic proxy IP management, ideal for local deployment on routers or NAS devices.
@@ -694,7 +716,7 @@
 ## luckjiawei/frpc-desktop
 
 > [!info]
-> ⭐ 6,973 · Rust · 2026-11-16  
+> ⭐ 6,971 · Rust · 2026-11-17  
 > [GitHub](https://github.com/luckjiawei/frpc-desktop) · [Website](https://jwinks.com/p/frp/)  
 > `#Cross-Platform Desktop App` `#FRP Client` `#Intranet Penetration` `#desktop` `#electron` `#frp` `#frp-desktop` `#frp-linux` `#frp-macos` `#frp-window` `#frpc` `#javascript` `#tailwindcss` `#typescript` `#vite` `#vue` 
 > Frpc-Desktop is a cross-platform desktop client for FRP with visual configuration interface, simplifying intranet penetration setup. It supports all frp versions, auto-start, multi-user management, batch port configuration, protocol support (TCP/UDP/STCP/XTCP), and one-click config import/export, significantly lowering the barrier to entry for frp usage.
@@ -704,7 +726,7 @@
 ## pagefaultgames/pokerogue
 
 > [!info]
-> ⭐ 5,941 · TypeScript · 2026-11-16  
+> ⭐ 5,943 · TypeScript · 2026-11-16  
 > [GitHub](https://github.com/pagefaultgames/pokerogue) · [Website](https://pokerogue.net)  
 > `#Browser Game` `#Game Development` `#Roguelite` `#indie-game` `#open-source` `#pokemon` `#pokerogue` `#typescript` 
 > PokéRogue is a browser-based Pokémon fangame inspired by the roguelite genre, featuring endless battles, stacking items, diverse biome exploration, and trainer/boss fights. Built with TypeScript, it includes comprehensive test coverage, Biome linting, and active community support via Discord. Fully open for local development and contributions.
@@ -754,7 +776,7 @@
 ## doocs/leetcode
 
 > [!info]
-> ⭐ 36,770 · Java · 2026-11-16  
+> ⭐ 36,769 · Java · 2026-11-18  
 > [GitHub](https://github.com/doocs/leetcode) · [Website](https://leetcode.doocs.org)  
 > `#Algorithm Practice` `#Interview Preparation` `#Multi-Language Solutions` `#algorithms` `#cpp` `#csharp` `#golang` `#java` `#javascript` `#leetcode` `#python3` 
 > This repository offers comprehensive solutions to LeetCode, Jianzhi Offer, and other classic algorithm problems in multiple programming languages including Python, Java, C++, Go, TypeScript, and Rust. It covers core algorithms, data structures, and specialized practice tracks to enhance algorithmic problem-solving skills and prepare for technical interviews.
